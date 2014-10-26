@@ -13,8 +13,14 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    conversion.cpp \
+    Units/formula.cpp \
+    Units/unit.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    conversion.h \
+    Units/formula.h \
+    Units/unit.h
 
 FORMS    += mainwindow.ui
