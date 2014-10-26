@@ -15,6 +15,6 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked(bool checked)
 {
-    QMessageBox::information(this, "Header", "Текст сообщения");
+    QMessageBox::information(this, "Header1", "Текст сообщения");
 
 }
