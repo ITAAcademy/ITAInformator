@@ -6,6 +6,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    ui->menuBar->setNativeMenuBar(true);
 }
 
 MainWindow::~MainWindow()
@@ -13,8 +14,4 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_pushButton_clicked(bool checked)
-{
-    QMessageBox::information(this, "Header12", "Текст сообщения");
 
-}
