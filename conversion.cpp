@@ -4,6 +4,8 @@
 
 Conversion::Conversion()
 {
+    int C; int F;
     QString name;
-    Formula f;
+C=5*(F-32)/9;
+cout<<C<<endl;
 }
