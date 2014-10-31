@@ -13,27 +13,7 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralWidget">
-   <widget class="QMdiArea" name="mdiArea">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>721</width>
-      <height>511</height>
-     </rect>
-    </property>
-    <property name="background">
-     <brush brushstyle="SolidPattern">
-      <color alpha="255">
-       <red>0</red>
-       <green>191</green>
-       <blue>191</blue>
-      </color>
-     </brush>
-    </property>
-   </widget>
-  </widget>
+  <widget class="QWidget" name="centralWidget"/>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
     <enum>TopToolBarArea</enum>
@@ -49,7 +29,7 @@
      <x>0</x>
      <y>0</y>
      <width>723</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
    <property name="minimumSize">
@@ -69,21 +49,131 @@
    </property>
    <widget class="QMenu" name="menuNew">
     <property name="title">
-     <string>New</string>
+     <string>Widget you</string>
     </property>
-    <addaction name="actionConversion"/>
+    <widget class="QMenu" name="menuConversion">
+     <property name="title">
+      <string>Conversion                    Alt+c</string>
+     </property>
+     <addaction name="actionTemperature"/>
+     <addaction name="actionArea"/>
+     <addaction name="actionVolume_capacity"/>
+     <addaction name="actionDistance_and_Length"/>
+     <addaction name="actionWeight_weight"/>
+    </widget>
+    <addaction name="menuConversion"/>
+    <addaction name="action_2"/>
+    <addaction name="separator"/>
+    <addaction name="actionAbout"/>
    </widget>
    <widget class="QMenu" name="menuAbout">
     <property name="title">
-     <string>About</string>
+     <string>Tools</string>
     </property>
+    <widget class="QMenu" name="menuLengvich">
+     <property name="title">
+      <string>Language</string>
+     </property>
+     <addaction name="actionEn"/>
+     <addaction name="actionUk"/>
+     <addaction name="actionPol"/>
+    </widget>
+    <addaction name="menuLengvich"/>
+    <addaction name="action_4"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Assistance</string>
+    </property>
+    <addaction name="action_Widget_you"/>
+    <addaction name="action_5"/>
+    <addaction name="separator"/>
+    <addaction name="action_7"/>
+    <addaction name="separator"/>
+    <addaction name="action_Widget_you_2"/>
    </widget>
    <addaction name="menuNew"/>
    <addaction name="menuAbout"/>
+   <addaction name="menu"/>
   </widget>
-  <action name="actionConversion">
+  <action name="action">
    <property name="text">
-    <string>Conversion</string>
+    <string>Личные даные</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>Personal data</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About                    Alt+x</string>
+   </property>
+  </action>
+  <action name="actionEn">
+   <property name="text">
+    <string>En</string>
+   </property>
+  </action>
+  <action name="actionUk">
+   <property name="text">
+    <string>Uk</string>
+   </property>
+  </action>
+  <action name="actionPol">
+   <property name="text">
+    <string>Pol</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>Settings</string>
+   </property>
+  </action>
+  <action name="action_Widget_you">
+   <property name="text">
+    <string>Details on Widget_you</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="text">
+    <string>Support service</string>
+   </property>
+  </action>
+  <action name="action_7">
+   <property name="text">
+    <string>Check for updates</string>
+   </property>
+  </action>
+  <action name="action_Widget_you_2">
+   <property name="text">
+    <string>About Widget_you</string>
+   </property>
+  </action>
+  <action name="actionTemperature">
+   <property name="text">
+    <string>Temperature</string>
+   </property>
+  </action>
+  <action name="actionArea">
+   <property name="text">
+    <string>Area</string>
+   </property>
+  </action>
+  <action name="actionVolume_capacity">
+   <property name="text">
+    <string>Volume, capacity</string>
+   </property>
+  </action>
+  <action name="actionDistance_and_Length">
+   <property name="text">
+    <string>Distance and Length</string>
+   </property>
+  </action>
+  <action name="actionWeight_weight">
+   <property name="text">
+    <string>Weight, weight</string>
    </property>
   </action>
  </widget>
