@@ -14,7 +14,6 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget"/>
-  <widget class="QStatusBar" name="statusBar"/>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
@@ -57,6 +56,8 @@
      <addaction name="actionWeight_weight"/>
     </widget>
     <addaction name="menuConversion"/>
+    <addaction name="action_Oil_Charts"/>
+    <addaction name="action_Currency"/>
     <addaction name="action_2"/>
     <addaction name="separator"/>
     <addaction name="actionAbout"/>
@@ -91,6 +92,7 @@
    <addaction name="menuAbout"/>
    <addaction name="menu"/>
   </widget>
+  <widget class="QStatusBar" name="statusBar"/>
   <action name="action">
    <property name="text">
     <string>Личные даные</string>
@@ -175,6 +177,28 @@
   <action name="actionWeight_weight">
    <property name="text">
     <string>Weight, weight</string>
+   </property>
+  </action>
+  <action name="action_Oil_Charts">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Oil Charts</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+O</string>
+   </property>
+  </action>
+  <action name="action_Currency">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Currency</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+C</string>
    </property>
   </action>
  </widget>
