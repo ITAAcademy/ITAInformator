@@ -6,29 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>723</width>
-    <height>567</height>
+    <width>682</width>
+    <height>470</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget"/>
-  <widget class="QToolBar" name="mainToolBar">
-   <attribute name="toolBarArea">
-    <enum>TopToolBarArea</enum>
-   </attribute>
-   <attribute name="toolBarBreak">
-    <bool>false</bool>
-   </attribute>
-  </widget>
-  <widget class="QStatusBar" name="statusBar"/>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>723</width>
+     <width>682</width>
      <height>21</height>
     </rect>
    </property>
@@ -65,6 +56,8 @@
      <addaction name="actionWeight_weight"/>
     </widget>
     <addaction name="menuConversion"/>
+    <addaction name="action_Oil_Charts"/>
+    <addaction name="action_Currency"/>
     <addaction name="action_2"/>
     <addaction name="separator"/>
     <addaction name="actionAbout"/>
@@ -99,6 +92,7 @@
    <addaction name="menuAbout"/>
    <addaction name="menu"/>
   </widget>
+  <widget class="QStatusBar" name="statusBar"/>
   <action name="action">
    <property name="text">
     <string>Личные даные</string>
@@ -110,8 +104,14 @@
    </property>
   </action>
   <action name="actionAbout">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="text">
-    <string>&amp;About</string>
+    <string>&amp;Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+X</string>
    </property>
   </action>
   <action name="actionEn">
@@ -179,8 +179,47 @@
     <string>Weight, weight</string>
    </property>
   </action>
+  <action name="action_Oil_Charts">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Oil Charts</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+O</string>
+   </property>
+  </action>
+  <action name="action_Currency">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Currency</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+C</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>actionAbout</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>340</x>
+     <y>234</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
