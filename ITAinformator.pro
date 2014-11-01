@@ -28,3 +28,5 @@ CONFIG   += c++11
 
 FORMS += \
     mainwindow.ui
+
+win32:RC_FILE = IcoConvert.rc
