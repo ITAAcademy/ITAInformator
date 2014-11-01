@@ -6,6 +6,7 @@ class Formula
 {
 public:
     Formula();
+    virtual float calculate(float);
 private:
     Unit fromUnit;
     Unit toUnit;
