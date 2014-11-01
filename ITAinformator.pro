@@ -16,12 +16,14 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     conversion.cpp \
     Units/formula.cpp \
-    Units/unit.cpp
+    Units/unit.cpp \
+    Units/feetstometer.cpp
 
 HEADERS  += mainwindow.h \
     conversion.h \
     Units/formula.h \
-    Units/unit.h
+    Units/unit.h \
+    Units/feetstometer.h
 
 
 CONFIG   += c++11
