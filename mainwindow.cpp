@@ -15,3 +15,9 @@ MainWindow::~MainWindow()
 }
 
 
+
+void MainWindow::on_action_settings_triggered()
+{
+        QMessageBox::about(this, tr("Settings"),
+            tr("Here will be <b>Settings</b> "));
+}

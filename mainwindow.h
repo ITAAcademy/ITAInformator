@@ -23,6 +23,9 @@ public:
 
 
 
+private slots:
+    void on_action_settings_triggered();
+
 private:
     Ui::MainWindow *ui;
     QMdiArea* mdiArea;
