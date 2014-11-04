@@ -17,18 +17,21 @@ SOURCES += main.cpp\
     conversion.cpp \
     Units/formula.cpp \
     Units/unit.cpp \
-    Units/feetstometer.cpp
+    Units/feetstometer.cpp \
+    modal_window.cpp
 
 HEADERS  += mainwindow.h \
     conversion.h \
     Units/formula.h \
     Units/unit.h \
-    Units/feetstometer.h
+    Units/feetstometer.h \
+    modal_window.h
 
 
 CONFIG   += c++11
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    modal_window.ui
 
 win32:RC_FILE = IcoConvert.rc

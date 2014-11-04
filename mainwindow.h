@@ -23,6 +23,11 @@ public:
 
 
 
+private slots:
+    void on_action_Widget_you_triggered();
+
+    void on_action_Widget_you_2_triggered();
+
 private:
     Ui::MainWindow *ui;
     QMdiArea* mdiArea;
