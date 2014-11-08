@@ -18,20 +18,23 @@ SOURCES += main.cpp\
     Units/formula.cpp \
     Units/unit.cpp \
     Units/feetstometer.cpp \
-    modal_window.cpp
+    modal_window.cpp \
+    Units/Temperature/temperature.cpp
 
 HEADERS  += mainwindow.h \
     conversion.h \
     Units/formula.h \
     Units/unit.h \
     Units/feetstometer.h \
-    modal_window.h
+    modal_window.h \
+    Units/Temperature/temperature.h
 
 
 CONFIG   += c++11
 
 FORMS += \
     mainwindow.ui \
-    modal_window.ui
+    modal_window.ui \
+    Units/Temperature/temperature.ui
 
 win32:RC_FILE = IcoConvert.rc
