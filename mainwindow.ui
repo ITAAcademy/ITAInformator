@@ -75,7 +75,7 @@
      <addaction name="actionPol"/>
     </widget>
     <addaction name="menuLengvich"/>
-    <addaction name="action_4"/>
+    <addaction name="action_settings"/>
    </widget>
    <widget class="QMenu" name="menu">
     <property name="title">
@@ -129,7 +129,7 @@
     <string>Pol</string>
    </property>
   </action>
-  <action name="action_4">
+  <action name="action_settings">
    <property name="text">
     <string>&amp;Settings</string>
    </property>
