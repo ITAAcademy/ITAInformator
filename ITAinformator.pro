@@ -38,6 +38,8 @@ FORMS += \
     mainwindow.ui \
     modal_window.ui \
     oilprices.ui \
+    rubleinterbank.ui \
+    oilprices.ui \
     rubleinterbank.ui
 
 win32:RC_FILE = IcoConvert.rc
