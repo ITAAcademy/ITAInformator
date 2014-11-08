@@ -22,7 +22,10 @@ SOURCES += main.cpp\
     Units/feetstometer.cpp \
     modal_window.cpp \
     oilprices.cpp \
-    rubleinterbank.cpp
+    rubleinterbank.cpp \
+    farengtocel.cpp \
+    formula1.cpp \
+    unit1.cpp
 
 
 HEADERS  += mainwindow.h \
@@ -34,8 +37,10 @@ HEADERS  += mainwindow.h \
     Units/feetstometer.h \
     modal_window.h \
     oilprices.h \
-    rubleinterbank.h
-
+    rubleinterbank.h \
+    farengtocel.h \
+    formula1.h \
+    unit1.h
 
 
 CONFIG   += c++11
