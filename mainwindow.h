@@ -11,13 +11,13 @@
 #include "rubleinterbank.h"
 
 
-//QT_BEGIN_NAMESPACE
+
 class QMdiArea;
 class QSignalMapper;
 class DocWindow;
 //QT_BEGIN_NAMESPACE
 namespace Ui {
-class MainWindow;
+    class MainWindow;
 }
 
 class MainWindow : public QMainWindow
