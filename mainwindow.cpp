@@ -3,6 +3,8 @@
 #include "settings.h"
 #include "modal_window.h"
 #include "Units/Temperature/temperature.h"
+#include "oilprices.h"
+#include "rubleinterbank.h"
 
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -43,4 +45,18 @@ void MainWindow::on_actionTemperature_triggered()
 {
     formTemperature = new Temperature (this);
     formTemperature -> show();
+}
+
+void MainWindow::on_action_Oil_Charts_triggered()
+{
+       formOilPrices = new OilPrices(this);
+       formOilPrices->show();
+
+
+}
+
+void MainWindow::on_action_Currency_triggered()
+{
+    formrubleInterbank = new rubleInterbank(this);
+    formrubleInterbank->show();
 }

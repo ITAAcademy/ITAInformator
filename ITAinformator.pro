@@ -21,7 +21,8 @@ SOURCES += main.cpp\
     settings.cpp \
     Units/feetstometer.cpp \
     modal_window.cpp \
-
+    oilprices.cpp \
+    rubleinterbank.cpp
 
 
 HEADERS  += mainwindow.h \
@@ -32,6 +33,8 @@ HEADERS  += mainwindow.h \
     settings.h  \
     Units/feetstometer.h \
     modal_window.h \
+    oilprices.h \
+    rubleinterbank.h
 
 
 
@@ -41,6 +44,9 @@ FORMS += \
     mainwindow.ui \
     settings.ui    \
     modal_window.ui \
-    Units/Temperature/temperature.ui
+    Units/Temperature/temperature.ui \
+    oilprices.ui \
+    rubleinterbank.ui
+
 
 win32:RC_FILE = IcoConvert.rc

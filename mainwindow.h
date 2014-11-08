@@ -4,7 +4,13 @@
 #include <QMainWindow>
 #include <QMessageBox>
 #include <QtWidgets>
+
 #include "Units/Temperature/temperature.h"
+
+#include "oilprices.h"
+#include "rubleinterbank.h"
+
+
 //QT_BEGIN_NAMESPACE
 class QMdiArea;
 class QSignalMapper;
@@ -32,7 +38,13 @@ private slots:
 
     void on_action_Widget_you_2_triggered();
 
+
     void on_actionTemperature_triggered();
+
+
+    void on_action_Oil_Charts_triggered();
+
+    void on_action_Currency_triggered();
 
 
 private:
@@ -40,7 +52,13 @@ private:
     QMdiArea* mdiArea;
     QMenuBar* menuBar;
 
+
     Temperature *formTemperature;
+
+private:
+    OilPrices *formOilPrices;
+    rubleInterbank *formrubleInterbank;
+
 
 
 };
