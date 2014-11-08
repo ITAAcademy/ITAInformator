@@ -1,7 +1,7 @@
 #ifndef FARENGTOCEL_H
 #define FARENGTOCEL_H
-#include "formula1.h"
-class farengtocel: public formula1
+#include "../formula.h"
+class farengtocel: public Formula
 {
 public:
     farengtocel();

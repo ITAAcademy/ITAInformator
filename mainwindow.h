@@ -7,8 +7,8 @@
 
 #include "Units/Temperature/temperature.h"
 
-#include "oilprices.h"
-#include "rubleinterbank.h"
+#include "Charts/oilprices.h"
+#include "Charts/rubleinterbank.h"
 
 
 

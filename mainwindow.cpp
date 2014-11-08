@@ -1,10 +1,10 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "settings.h"
-#include "modal_window.h"
+#include "AdditionalFiles/settings.h"
+#include "AdditionalFiles/modal_window.h"
 #include "Units/Temperature/temperature.h"
-#include "oilprices.h"
-#include "rubleinterbank.h"
+#include "Charts/oilprices.h"
+#include "Charts/rubleinterbank.h"
 
 
 MainWindow::MainWindow(QWidget *parent) :
