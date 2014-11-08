@@ -18,14 +18,20 @@ SOURCES += main.cpp\
     Units/formula.cpp \
     Units/unit.cpp \
     Units/feetstometer.cpp \
-    modal_window.cpp
+    modal_window.cpp \
+    farengtocel.cpp \
+    formula1.cpp \
+    unit1.cpp
 
 HEADERS  += mainwindow.h \
     conversion.h \
     Units/formula.h \
     Units/unit.h \
     Units/feetstometer.h \
-    modal_window.h
+    modal_window.h \
+    farengtocel.h \
+    formula1.h \
+    unit1.h
 
 
 CONFIG   += c++11
