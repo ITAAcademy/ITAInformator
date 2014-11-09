@@ -20,7 +20,7 @@
      <x>0</x>
      <y>0</y>
      <width>682</width>
-     <height>26</height>
+     <height>21</height>
     </rect>
    </property>
    <property name="minimumSize">
@@ -181,7 +181,7 @@
   </action>
   <action name="action_Oil_Charts">
    <property name="checkable">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
    <property name="text">
     <string>&amp;Oil Charts</string>
@@ -192,7 +192,7 @@
   </action>
   <action name="action_Currency">
    <property name="checkable">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
    <property name="text">
     <string>&amp;Currency</string>
