@@ -2,6 +2,7 @@
 #define RUBLEINTERBANK_H
 
 #include <QDialog>
+#include <QtWebKitWidgets/QWebView>
 
 namespace Ui {
 class rubleInterbank;
