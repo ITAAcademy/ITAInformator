@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include <QtWebKitWidgets/QWebView>
+#include <QString>
 
 namespace Ui {
 class rubleInterbank;

@@ -24,8 +24,8 @@
   </property>
   <property name="maximumSize">
    <size>
-    <width>225</width>
-    <height>106</height>
+    <width>22500</width>
+    <height>10600</height>
    </size>
   </property>
   <property name="focusPolicy">
@@ -34,6 +34,31 @@
   <property name="windowTitle">
    <string>Ruble Interbank</string>
   </property>
+  <widget class="QLabel" name="label_pic">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>225</width>
+     <height>106</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>225</width>
+     <height>106</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>225</width>
+     <height>106</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>
