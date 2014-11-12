@@ -5,6 +5,9 @@
 #-------------------------------------------------
 
 QT       += core gui
+QT       += network
+QT       += webkit
+QT       += webkitwidgets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -52,3 +55,6 @@ FORMS += \
 
 
 win32:RC_FILE = IcoConvert.rc
+
+RESOURCES += \
+    Img.qrc
