@@ -6,7 +6,10 @@
 #include <QtWidgets>
 
 #include "Units/Temperature/temperature.h"
-
+#include "area.h"
+#include "volumecapacity.h"
+#include "distanceandlength.h"
+#include "weight.h"
 #include "Charts/oilprices.h"
 #include "Charts/rubleinterbank.h"
 
@@ -47,6 +50,14 @@ private slots:
     void on_action_Currency_triggered();
 
 
+    void on_actionArea_triggered();
+
+    void on_actionVolume_capacity_triggered();
+
+    void on_actionDistance_and_Length_triggered();
+
+    void on_actionWeight_weight_triggered();
+
 private:
     Ui::MainWindow *ui;
     QMdiArea* mdiArea;
@@ -54,6 +65,10 @@ private:
 
 
     Temperature *formTemperature;
+    Area *formArea;
+    VolumeCapacity *formVolumeCapacity;
+    DistanceAndLength *formDistanceAndLength;
+    Weight *formWeight;
 
 private:
     OilPrices *formOilPrices;
