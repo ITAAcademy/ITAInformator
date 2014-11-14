@@ -14,7 +14,8 @@ class rubleInterbank : public QDialog
 public:
     explicit rubleInterbank(QWidget *parent = 0);
     ~rubleInterbank();
-    void setRubleInterbankFont(QFont &font); //ad function (comment out it before merge)
+    //ad function (comment out it before merge)
+    void setRubleInterbankFont(QFont &font);
 private:
     Ui::rubleInterbank *ui;
 };

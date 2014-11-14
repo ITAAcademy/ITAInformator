@@ -13,9 +13,10 @@ rubleInterbank::~rubleInterbank()
     delete ui;
 }
 
-//Begin (comment out it before merge)
+//Begin (comment out it before merge
+//       create function for OilPrices)
 void rubleInterbank::setRubleInterbankFont(QFont &font)
 {
-    ui->l_rubleInterbank->setFont(font);          //access to RubleInterbank (setFont)
+    ui->l_rubleInterbank->setFont(font);
 }
 //End
