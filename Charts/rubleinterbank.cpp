@@ -12,3 +12,10 @@ rubleInterbank::~rubleInterbank()
 {
     delete ui;
 }
+
+//----------Begin(comment out it before merge)
+void rubleInterbank::setRubleInterbankFont(QFont &font)
+{
+    ui->l_rubleInterbank->setFont(font);
+}
+//----------End
