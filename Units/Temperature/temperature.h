@@ -14,7 +14,7 @@ class Temperature : public QDialog
 public:
     explicit Temperature(QWidget *parent = 0);
     ~Temperature();
-
+    void setTemperatureFont(QFont &font); //ad function (comment out it before merge)
 private:
     Ui::Temperature *ui;
 };

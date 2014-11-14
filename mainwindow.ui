@@ -13,14 +13,28 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="l_main_window">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>400</y>
+      <width>311</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Test F_Setting (Delete it before merge)</string>
+    </property>
+   </widget>
+  </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
      <width>682</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
    <property name="minimumSize">
@@ -74,8 +88,14 @@
      <addaction name="actionUk"/>
      <addaction name="actionPol"/>
     </widget>
+    <widget class="QMenu" name="menu_Settings">
+     <property name="title">
+      <string>&amp;Settings</string>
+     </property>
+     <addaction name="action_Font_settings"/>
+    </widget>
     <addaction name="menuLengvich"/>
-    <addaction name="action_settings"/>
+    <addaction name="menu_Settings"/>
    </widget>
    <widget class="QMenu" name="menu">
     <property name="title">
@@ -127,11 +147,6 @@
   <action name="actionPol">
    <property name="text">
     <string>Pol</string>
-   </property>
-  </action>
-  <action name="action_settings">
-   <property name="text">
-    <string>&amp;Settings</string>
    </property>
   </action>
   <action name="action_Widget_you">
@@ -199,6 +214,11 @@
    </property>
    <property name="shortcut">
     <string>Alt+C</string>
+   </property>
+  </action>
+  <action name="action_Font_settings">
+   <property name="text">
+    <string>&amp;Font settings</string>
    </property>
   </action>
  </widget>
