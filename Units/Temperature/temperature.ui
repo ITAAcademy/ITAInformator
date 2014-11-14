@@ -13,6 +13,19 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <widget class="QLabel" name="l_temperature">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>260</y>
+     <width>311</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Test F_Setting (Delete it before merge)</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

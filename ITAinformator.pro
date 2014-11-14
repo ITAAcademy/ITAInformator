@@ -21,7 +21,6 @@ SOURCES += main.cpp\
     Charts/oilprices.cpp \
     Charts/rubleinterbank.cpp \
     AdditionalFiles/modal_window.cpp \
-    AdditionalFiles/settings.cpp \
     Units/Temperature/farengtocel.cpp \
     Units/conversion.cpp
 
@@ -35,7 +34,6 @@ HEADERS  += mainwindow.h \
     Charts/oilprices.h \
     Charts/rubleinterbank.h \
     AdditionalFiles/modal_window.h \
-    AdditionalFiles/settings.h \
     Units/Temperature/farengtocel.h \
     Units/conversion.h
 
@@ -47,8 +45,7 @@ FORMS += \
     Units/Temperature/temperature.ui \
     Charts/oilprices.ui \
     Charts/rubleinterbank.ui \
-    AdditionalFiles/modal_window.ui \
-    AdditionalFiles/settings.ui
+    AdditionalFiles/modal_window.ui
 
 
 win32:RC_FILE = IcoConvert.rc
