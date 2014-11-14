@@ -12,3 +12,10 @@ OilPrices::~OilPrices()
 {
     delete ui;
 }
+//Begin (comment out it before merge
+//       create function for OilPrices)
+void OilPrices::setOilpricesFont(QFont &font)
+{
+    ui->l_oilprices->setFont(font);
+}
+//End

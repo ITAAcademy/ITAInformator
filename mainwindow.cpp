@@ -1,8 +1,10 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "AdditionalFiles/settings.h"
+
 #include "AdditionalFiles/modal_window.h"
+
 #include "Units/Temperature/temperature.h"
+
 #include "Charts/oilprices.h"
 #include "Charts/rubleinterbank.h"
 
@@ -20,15 +22,6 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-
-void MainWindow::on_action_settings_triggered()
-{
-    Settings formSettings;
-    formSettings.setModal(true);
-    formSettings.exec();
-}
-
-
 void MainWindow::on_action_Widget_you_triggered()
 {
 
@@ -43,20 +36,31 @@ void MainWindow::on_action_Widget_you_2_triggered()
 
 void MainWindow::on_actionTemperature_triggered()
 {
-    formTemperature = new Temperature (this);
-    formTemperature -> show();
+    //formTemperature = new Temperature (this);
+    formTemperature.show();
 }
 
 void MainWindow::on_action_Oil_Charts_triggered()
 {
-       formOilPrices = new OilPrices(this);
-       formOilPrices->show();
-
-
+    //formOilPrices = new OilPrices(this);
+    formOilPrices.show();
 }
 
 void MainWindow::on_action_Currency_triggered()
 {
-    formrubleInterbank = new rubleInterbank(this);
-    formrubleInterbank->show();
+    //formrubleInterbank = new rubleInterbank(this);
+    formrubleInterbank.show();
+}
+
+void MainWindow::on_action_Font_settings_triggered()
+{
+    bool ok;
+    QFont font = QFontDialog::getFont(&ok, QFont( "Helvetica [Cronyx]", 10), this );
+    if (!ok)
+        return;
+    // font is set to the font the user selected "Ok"
+    ui->l_main_window->setFont(font);               //comment out it before merge
+    formOilPrices.setOilpricesFont(font);           //comment out it before merge
+    formrubleInterbank.setRubleInterbankFont(font); //comment out it before merge
+    formTemperature.setTemperatureFont(font);       //comment out it before merge
 }
