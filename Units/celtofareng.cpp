@@ -7,6 +7,6 @@ CelToFareng::CelToFareng()
 float CelToFareng::calculate(float X)
 {
     //test function please fix it
-    return 9*(X+32)/5;
+    return X*9/5+32;
 }
 
