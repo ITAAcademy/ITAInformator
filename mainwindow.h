@@ -6,23 +6,25 @@
 #include <QtWidgets>
 #include <QFontDialog>
 
-#include "Units/Temperature/temperature.h"
 #include "area.h"
-#include "volumecapacity.h"
 #include "distanceandlength.h"
+#include "volumecapacity.h"
 #include "weight.h"
-#include "Charts/oilprices.h"
-#include "Charts/rubleinterbank.h"
 
 #include "AdditionalFiles/modal_window.h"
 
+#include "Charts/oilprices.h"
+#include "Charts/rubleinterbank.h"
+
+#include "Units/Temperature/temperature.h"
 
 
 class QMdiArea;
 class QSignalMapper;
 class DocWindow;
 //QT_BEGIN_NAMESPACE
-namespace Ui {
+namespace Ui
+{
     class MainWindow;
 }
 
@@ -60,20 +62,17 @@ private slots:
 
 private:
 
-    Area *formArea;
-    VolumeCapacity *formVolumeCapacity;
-    DistanceAndLength *formDistanceAndLength;
-    Weight *formWeight;
+    Ui::MainWindow      *ui;
+    QMdiArea            *mdiArea;
+    QMenuBar            *menuBar;
 
-private:
-
-    Ui::MainWindow  *ui;
-    QMdiArea        *mdiArea;
-    QMenuBar        *menuBar;
-
-    Temperature     formTemperature;
-    OilPrices       formOilPrices;
-    rubleInterbank  formrubleInterbank;
+    Area                *formArea;
+    VolumeCapacity      *formVolumeCapacity;
+    DistanceAndLength   *formDistanceAndLength;
+    Weight              *formWeight;
+    Temperature         formTemperature;
+    OilPrices           formOilPrices;
+    rubleInterbank      formrubleInterbank;
 };
 
 #endif // MAINWINDOW_H

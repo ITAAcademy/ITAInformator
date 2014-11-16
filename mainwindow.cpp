@@ -1,16 +1,17 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-#include "AdditionalFiles/modal_window.h"
+#include "area.h"
+#include "distanceandlength.h"
+#include "volumecapacity.h"
+#include "weight.h"
 
-#include "Units/Temperature/temperature.h"
+#include "AdditionalFiles/modal_window.h"
 
 #include "Charts/oilprices.h"
 #include "Charts/rubleinterbank.h"
-#include "area.h"
-#include "volumecapacity.h"
-#include "distanceandlength.h"
-#include "weight.h"
+
+#include "Units/Temperature/temperature.h"
 
 
 MainWindow::MainWindow(QWidget *parent) :
