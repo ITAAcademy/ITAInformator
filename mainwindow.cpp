@@ -51,16 +51,16 @@ void MainWindow::on_action_Currency_triggered()
     //formrubleInterbank = new rubleInterbank(this);
     formrubleInterbank.show();
 }
-//-----------------------------Begin(comment out it before merge)
+//-----------------------------Begin(Font_settings)
 void MainWindow::on_action_Font_settings_triggered()
 {
     bool ok;
     QFont font = QFontDialog::getFont(&ok, QFont( "Helvetica [Cronyx]", 10 ), this );
     if (!ok)
         return;
-    ui->l_main_window->setFont(font);
-    formOilPrices.setOilpricesFont(font);
-    formrubleInterbank.setRubleInterbankFont(font);
-    formTemperature.setTemperatureFont(font);
+//    ui->l_main_window->setFont(font);
+//    formOilPrices.setOilpricesFont(font);
+//    formrubleInterbank.setRubleInterbankFont(font);
+//    formTemperature.setTemperatureFont(font);
 }
 //-----------------------------End

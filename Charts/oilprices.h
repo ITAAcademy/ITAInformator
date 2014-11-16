@@ -14,8 +14,8 @@ class OilPrices : public QDialog
 public:
     explicit OilPrices(QWidget *parent = 0);
     ~OilPrices();
-//----------Begin(comment out it before merge)
-    void setOilpricesFont(QFont &font);
+//----------Begin(Font_settings)
+//    void setOilpricesFont(QFont &font);
 //----------End
 private:
     Ui::OilPrices *ui;

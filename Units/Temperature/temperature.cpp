@@ -13,9 +13,9 @@ Temperature::~Temperature()
     delete ui;
 }
 
-//----------Begin(comment out it before merge)
-void Temperature::setTemperatureFont(QFont &font)
-{
-    ui->l_temperature->setFont(font);
-}
+//----------Begin(Font_settings)
+//void Temperature::setTemperatureFont(QFont &font)
+//{
+//    ui->l_temperature->setFont(font);
+//}
 //----------End
