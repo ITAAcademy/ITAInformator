@@ -32,7 +32,7 @@
     <set>QDialogButtonBox::Close</set>
    </property>
   </widget>
-  <widget class="QTextEdit" name="textEdit">
+  <widget class="QTextEdit" name="textEdit_About">
    <property name="enabled">
     <bool>false</bool>
    </property>

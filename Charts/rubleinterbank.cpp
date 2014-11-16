@@ -25,4 +25,9 @@ rubleInterbank::~rubleInterbank()
     delete ui;
 }
 
-
+//----------Begin(Font_settings)
+//void rubleInterbank::setRubleInterbankFont(QFont &font)
+//{
+//    ui->l_rubleInterbank->setFont(font);
+//}
+//----------End

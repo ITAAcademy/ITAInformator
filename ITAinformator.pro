@@ -24,7 +24,6 @@ SOURCES += main.cpp\
     Charts/oilprices.cpp \
     Charts/rubleinterbank.cpp \
     AdditionalFiles/modal_window.cpp \
-    AdditionalFiles/settings.cpp \
     Units/Temperature/farengtocel.cpp \
     Units/conversion.cpp \
     area.cpp \
@@ -42,7 +41,6 @@ HEADERS  += mainwindow.h \
     Charts/oilprices.h \
     Charts/rubleinterbank.h \
     AdditionalFiles/modal_window.h \
-    AdditionalFiles/settings.h \
     Units/Temperature/farengtocel.h \
     Units/conversion.h \
     area.h \
@@ -59,7 +57,6 @@ FORMS += \
     Charts/oilprices.ui \
     Charts/rubleinterbank.ui \
     AdditionalFiles/modal_window.ui \
-    AdditionalFiles/settings.ui \
     area.ui \
     volumecapacity.ui \
     distanceandlength.ui \

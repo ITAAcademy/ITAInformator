@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QMessageBox>
 #include <QtWidgets>
+#include <QFontDialog>
 
 #include "Units/Temperature/temperature.h"
 #include "area.h"
@@ -12,6 +13,8 @@
 #include "weight.h"
 #include "Charts/oilprices.h"
 #include "Charts/rubleinterbank.h"
+
+#include "AdditionalFiles/modal_window.h"
 
 
 
@@ -35,20 +38,17 @@ public:
 
 private slots:
 
-    void on_action_settings_triggered();
-
     void on_action_Widget_you_triggered();
 
     void on_action_Widget_you_2_triggered();
 
-
     void on_actionTemperature_triggered();
-
 
     void on_action_Oil_Charts_triggered();
 
     void on_action_Currency_triggered();
 
+    void on_action_Font_settings_triggered();
 
     void on_actionArea_triggered();
 
@@ -59,23 +59,21 @@ private slots:
     void on_actionWeight_weight_triggered();
 
 private:
-    Ui::MainWindow *ui;
-    QMdiArea* mdiArea;
-    QMenuBar* menuBar;
 
-
-    Temperature *formTemperature;
     Area *formArea;
     VolumeCapacity *formVolumeCapacity;
     DistanceAndLength *formDistanceAndLength;
     Weight *formWeight;
 
 private:
-    OilPrices *formOilPrices;
-    rubleInterbank *formrubleInterbank;
 
+    Ui::MainWindow  *ui;
+    QMdiArea        *mdiArea;
+    QMenuBar        *menuBar;
 
-
+    Temperature     formTemperature;
+    OilPrices       formOilPrices;
+    rubleInterbank  formrubleInterbank;
 };
 
 #endif // MAINWINDOW_H

@@ -23,3 +23,9 @@ OilPrices::~OilPrices()
 {
     delete ui;
 }
+//----------Begin(Font_settings)
+//void OilPrices::setOilpricesFont(QFont& font)
+//{
+//    ui->l_oilprices->setFont(font);
+//}
+//----------End
