@@ -26,7 +26,11 @@ SOURCES += main.cpp\
     AdditionalFiles/modal_window.cpp \
     AdditionalFiles/settings.cpp \
     Units/Temperature/farengtocel.cpp \
-    Units/conversion.cpp
+    Units/conversion.cpp \
+    area.cpp \
+    volumecapacity.cpp \
+    distanceandlength.cpp \
+    weight.cpp
 
 
 HEADERS  += mainwindow.h \
@@ -40,7 +44,11 @@ HEADERS  += mainwindow.h \
     AdditionalFiles/modal_window.h \
     AdditionalFiles/settings.h \
     Units/Temperature/farengtocel.h \
-    Units/conversion.h
+    Units/conversion.h \
+    area.h \
+    volumecapacity.h \
+    distanceandlength.h \
+    weight.h
 
 
 CONFIG   += c++11
@@ -51,7 +59,11 @@ FORMS += \
     Charts/oilprices.ui \
     Charts/rubleinterbank.ui \
     AdditionalFiles/modal_window.ui \
-    AdditionalFiles/settings.ui
+    AdditionalFiles/settings.ui \
+    area.ui \
+    volumecapacity.ui \
+    distanceandlength.ui \
+    weight.ui
 
 
 win32:RC_FILE = IcoConvert.rc

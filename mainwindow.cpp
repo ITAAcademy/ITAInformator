@@ -5,6 +5,10 @@
 #include "Units/Temperature/temperature.h"
 #include "Charts/oilprices.h"
 #include "Charts/rubleinterbank.h"
+#include "area.h"
+#include "volumecapacity.h"
+#include "distanceandlength.h"
+#include "weight.h"
 
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -59,4 +63,28 @@ void MainWindow::on_action_Currency_triggered()
 {
     formrubleInterbank = new rubleInterbank(this);
     formrubleInterbank->show();
+}
+
+void MainWindow::on_actionArea_triggered()
+{
+    formArea = new Area (this);
+    formArea -> show();
+}
+
+void MainWindow::on_actionVolume_capacity_triggered()
+{
+    formVolumeCapacity = new VolumeCapacity (this);
+    formVolumeCapacity -> show();
+}
+
+void MainWindow::on_actionDistance_and_Length_triggered()
+{
+    formDistanceAndLength = new DistanceAndLength (this);
+    formDistanceAndLength -> show();
+}
+
+void MainWindow::on_actionWeight_weight_triggered()
+{
+    formWeight = new Weight;
+    formWeight -> show();
 }
