@@ -1,10 +1,11 @@
-#include "mainwindow.h"
-#include "ui_mainwindow.h"
-
 #include "area.h"
 #include "distanceandlength.h"
+#include "mainwindow.h"
+#include "qsettings.h"
+#include "qmessagebox.h"
 #include "volumecapacity.h"
 #include "weight.h"
+#include "ui_mainwindow.h"
 
 #include "AdditionalFiles/modal_window.h"
 
@@ -20,6 +21,15 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
    // ui->menuBar->setNativeMenuBar(true);
+    QSettings *set = new QSettings("settings.ini", QSettings::IniFormat);
+    if (set->value("FirstRun/IsRunFirst").toBool() == false)
+    {
+        QMessageBox::information(this, "First run",
+                                       "This is the first run of the program. \n Thank you for your choice");
+        set->setValue("FirstRun/IsRunFirst", true);
+    }
+    delete set;
+
 }
 
 MainWindow::~MainWindow()
@@ -92,5 +102,4 @@ void MainWindow::on_actionWeight_weight_triggered()
     formWeight = new Weight;
     formWeight -> show();
 }
-
 
