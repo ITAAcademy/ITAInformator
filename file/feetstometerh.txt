@@ -1,6 +1,6 @@
 #ifndef FEETSTOMETER_H
 #define FEETSTOMETER_H
-
+#include "formula.h"
 class FeetsToMeter : public Formula
 {
 public:
