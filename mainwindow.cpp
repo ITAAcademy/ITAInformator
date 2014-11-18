@@ -1,7 +1,6 @@
 #include "area.h"
 #include "distanceandlength.h"
 #include "mainwindow.h"
-#include "qsettings.h"
 #include "qmessagebox.h"
 #include "volumecapacity.h"
 #include "weight.h"
@@ -21,20 +20,34 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
    // ui->menuBar->setNativeMenuBar(true);
-    QSettings *set = new QSettings("settings.ini", QSettings::IniFormat);
-    if (set->value("FirstRun/IsRunFirst").toBool() == false)
-    {
-        QMessageBox::information(this, "First run",
-                                       "This is the first run of the program. \n Thank you for your choice");
-        set->setValue("FirstRun/IsRunFirst", true);
-    }
-    delete set;
 
+    settings = new QSettings("settings.ini", QSettings::IniFormat, this);
+    loadSettings();
 }
 
 MainWindow::~MainWindow()
 {
+    saveSettings();
     delete ui;
+}
+
+void MainWindow::saveSettings()
+{
+
+    settings->setValue("MainWindow/title", windowTitle());
+    settings->setValue("MainWindow/position", geometry());
+}
+
+void MainWindow::loadSettings()
+{
+    if (settings->value("FirstRun/IsRunFirst").toBool() == false)
+    {
+        QMessageBox::information(this, "First run",
+                                       "This is the first run of the program. \n Thank you for your choice");
+        settings->setValue("FirstRun/IsRunFirst", true);
+    }
+    setWindowTitle(settings->value("MainWindow/title", "MainFormITA").toString());
+    setGeometry(settings->value("MainWindow/position", QRect(200, 200, 300, 300)).toRect());
 }
 
 void MainWindow::on_action_Widget_you_triggered()

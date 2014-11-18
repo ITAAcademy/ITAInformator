@@ -5,6 +5,7 @@
 #include <QMessageBox>
 #include <QtWidgets>
 #include <QFontDialog>
+#include <QSettings>
 
 #include "area.h"
 #include "distanceandlength.h"
@@ -36,7 +37,8 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
-
+    void saveSettings();
+    void loadSettings();
 
 private slots:
 
@@ -70,6 +72,7 @@ private:
     VolumeCapacity      *formVolumeCapacity;
     DistanceAndLength   *formDistanceAndLength;
     Weight              *formWeight;
+    QSettings           *settings;
     Temperature         formTemperature;
     OilPrices           formOilPrices;
     rubleInterbank      formrubleInterbank;
