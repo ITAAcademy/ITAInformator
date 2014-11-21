@@ -1,10 +1,11 @@
-#include "mainwindow.h"
-#include "ui_mainwindow.h"
-
 #include "area.h"
 #include "distanceandlength.h"
+#include "mainwindow.h"
+#include "qmessagebox.h"
 #include "volumecapacity.h"
 #include "weight.h"
+#include "ui_mainwindow.h"
+#include "qmainwindow.h"
 
 #include "AdditionalFiles/modal_window.h"
 
@@ -19,11 +20,32 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-   // ui->menuBar->setNativeMenuBar(true);
+
+    if(mSettings.FirstRun())
+    {
+        QMessageBox::information(this, "First run", "This is the first run of the program. \n Thank you for your choice");
+        setWindowTitle("Some name");
+        setGeometry(QRect(100,100,200,600));
+        setFont(QFont("Times",10,1,false));
+
+        mSettings.setMainWindowRect(geometry());
+        mSettings.setMainWindowTitle(windowTitle());
+        mSettings.setMainWindowFont(font());
+    }
+    else
+    {
+        setWindowTitle(mSettings.getMainWindowTitle());
+        setGeometry(mSettings.getMainWindowRect());
+        setFont(mSettings.getMainWindowFont());
+    }
+
+    ui->menuBar->setFont(QFont("Times",10,1,false));
 }
 
 MainWindow::~MainWindow()
 {
+    mSettings.setMainWindowRect(geometry());
+    mSettings.setMainWindowFont(font());
     delete ui;
 }
 
@@ -56,19 +78,7 @@ void MainWindow::on_action_Currency_triggered()
     //formrubleInterbank = new rubleInterbank(this);
     formrubleInterbank.show();
 }
-//-----------------------------Begin(Font_settings)
-void MainWindow::on_action_Font_settings_triggered()
-{
-    bool ok;
-    QFont font = QFontDialog::getFont(&ok, QFont( "Helvetica [Cronyx]", 10 ), this );
-    if (!ok)
-        return;
-//    ui->l_main_window->setFont(font);
-//    formOilPrices.setOilpricesFont(font);
-//    formrubleInterbank.setRubleInterbankFont(font);
-//    formTemperature.setTemperatureFont(font);
-}
-//-----------------------------End
+
 void MainWindow::on_actionArea_triggered()
 {
     formArea = new Area (this);
@@ -93,4 +103,12 @@ void MainWindow::on_actionWeight_weight_triggered()
     formWeight -> show();
 }
 
-
+void MainWindow::on_action_Font_settings_triggered()
+{
+    bool ok;
+    QFont font;
+    font = QFontDialog::getFont(&ok, QFont( "Times", 10 ), this);
+    if (!ok)
+        return;
+    setFont(font);
+}

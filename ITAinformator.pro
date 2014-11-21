@@ -29,7 +29,8 @@ SOURCES += main.cpp\
     area.cpp \
     volumecapacity.cpp \
     distanceandlength.cpp \
-    weight.cpp
+    weight.cpp \
+    AdditionalFiles/settings.cpp
 
 
 HEADERS  += mainwindow.h \
@@ -46,7 +47,8 @@ HEADERS  += mainwindow.h \
     area.h \
     volumecapacity.h \
     distanceandlength.h \
-    weight.h
+    weight.h \
+    AdditionalFiles/settings.h
 
 
 CONFIG   += c++11
