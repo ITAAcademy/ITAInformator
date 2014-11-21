@@ -110,6 +110,5 @@ void MainWindow::on_action_Font_settings_triggered()
     font = QFontDialog::getFont(&ok, QFont( "Times", 10 ), this);
     if (!ok)
         return;
-    //ui->testlabel->setFont(font);
     setFont(font);
 }
