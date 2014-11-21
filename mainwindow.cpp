@@ -40,6 +40,9 @@ MainWindow::MainWindow(QWidget *parent) :
     }
 
     ui->menuBar->setFont(QFont("Times",10,1,false));
+
+
+   // ui->menuBar->setNativeMenuBar(true);
 }
 
 MainWindow::~MainWindow()
