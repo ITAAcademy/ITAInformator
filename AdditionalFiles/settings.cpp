@@ -2,12 +2,11 @@
 #include "settings.h"
 
 
-pSettings::pSettings(QObject *parent) :
-     QObject(parent)
-    ,isFirstRun(false)
+pSettings::pSettings() :
+    isFirstRun(false)
     ,mSettings(0)
 {
-    mSettings = new QSettings("settings.ini", QSettings::IniFormat, this);
+    mSettings = new QSettings("settings.ini", QSettings::IniFormat);
     loadSettings();
 }
 
@@ -20,10 +19,11 @@ pSettings::~pSettings()
 
 void pSettings::saveSettings()
 {
+    mSettings->remove("MainWindow/font");
     mSettings->setValue("FirstRun/IsRunFirst",  true);
     mSettings->setValue("MainWindow/title",     mainWindowTitle);
     mSettings->setValue("MainWindow/position",  mainWindowRect);
-    mSettings->setValue("MainWindow/font",      mainWindowFont);
+    mSettings->setValue("MainWindow/font",      mainWindowFont.toString());
 }
 
 void pSettings::loadSettings()
@@ -32,9 +32,9 @@ void pSettings::loadSettings()
     if(mSettings->value("FirstRun/IsRunFirst").toBool() == false)
         isFirstRun = true;
 
-    mainWindowTitle = mSettings->value("MainWindow/title")      .toString();
-    mainWindowRect  = mSettings->value("MainWindow/position")   .toRect();
-    mainWindowFont  = mSettings->value("MainWindow/font")       .toString();
+    mainWindowTitle = mSettings->value("MainWindow/title")              .toString();
+    mainWindowRect  = mSettings->value("MainWindow/position")           .toRect();
+    mainWindowFont.fromString(mSettings->value("MainWindow/font")       .toString());
 }
 
 void pSettings::setMainWindowTitle(const QString &aTitle)
@@ -67,7 +67,7 @@ const QRect &pSettings::getMainWindowRect()const
     return mainWindowRect;
 }
 
-const QFont &pSettings::getMainWindowFont() const
+const QFont &pSettings::getMainWindowFont()const
 {
     return mainWindowFont;
 }

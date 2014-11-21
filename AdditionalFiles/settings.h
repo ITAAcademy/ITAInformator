@@ -9,13 +9,12 @@
 
 
 
-class pSettings : public  QObject
+class pSettings
 {
-    Q_OBJECT
 
 public:
 
-    pSettings(QObject *parent = 0);
+    pSettings();
     ~pSettings();
 
 
