@@ -6,9 +6,8 @@
 #include <QtWidgets>
 #include <QFontDialog>
 
-#include "area.h"
+
 #include "distanceandlength.h"
-#include "volumecapacity.h"
 #include "weight.h"
 
 #include "AdditionalFiles/modal_window.h"
@@ -66,8 +65,7 @@ private:
     QMdiArea            *mdiArea;
     QMenuBar            *menuBar;
 
-    Area                *formArea;
-    VolumeCapacity      *formVolumeCapacity;
+
     DistanceAndLength   *formDistanceAndLength;
     Weight              *formWeight;
     Temperature         formTemperature;
