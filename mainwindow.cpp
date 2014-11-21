@@ -1,7 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-
 #include "distanceandlength.h"
 #include "weight.h"
 
