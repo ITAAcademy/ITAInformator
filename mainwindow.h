@@ -2,10 +2,6 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QMessageBox>
-#include <QtWidgets>
-#include <QFontDialog>
-#include <QSettings>
 
 #include "area.h"
 #include "distanceandlength.h"
@@ -13,6 +9,7 @@
 #include "weight.h"
 
 #include "AdditionalFiles/modal_window.h"
+#include "AdditionalFiles/settings.h"
 
 #include "Charts/oilprices.h"
 #include "Charts/rubleinterbank.h"
@@ -37,9 +34,6 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
-    void saveSettings();
-    void loadSettings();
-
 private slots:
 
     void on_action_Widget_you_triggered();
@@ -52,8 +46,6 @@ private slots:
 
     void on_action_Currency_triggered();
 
-    void on_action_Font_settings_triggered();
-
     void on_actionArea_triggered();
 
     void on_actionVolume_capacity_triggered();
@@ -61,6 +53,8 @@ private slots:
     void on_actionDistance_and_Length_triggered();
 
     void on_actionWeight_weight_triggered();
+
+    void on_action_Font_settings_triggered();
 
 private:
 
@@ -72,10 +66,10 @@ private:
     VolumeCapacity      *formVolumeCapacity;
     DistanceAndLength   *formDistanceAndLength;
     Weight              *formWeight;
-    QSettings           *settings;
     Temperature         formTemperature;
     OilPrices           formOilPrices;
     rubleInterbank      formrubleInterbank;
+    pSettings            mSettings;
 };
 
 #endif // MAINWINDOW_H
