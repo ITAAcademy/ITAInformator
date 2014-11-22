@@ -44,10 +44,6 @@ private slots:
 
     void on_action_Currency_triggered();
 
-    void on_actionArea_triggered();
-
-    void on_actionVolume_capacity_triggered();
-
     void on_actionDistance_and_Length_triggered();
 
     void on_actionWeight_weight_triggered();

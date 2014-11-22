@@ -1,8 +1,6 @@
-#include "area.h"
 #include "distanceandlength.h"
 #include "mainwindow.h"
 #include "qmessagebox.h"
-#include "volumecapacity.h"
 
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
@@ -86,12 +84,6 @@ void MainWindow::on_action_Currency_triggered()
 {
     //formrubleInterbank = new rubleInterbank(this);
     formrubleInterbank.show();
-}
-
-void MainWindow::on_actionArea_triggered()
-{
-    formArea = new Area (this);
-    formArea -> show();
 }
 
 void MainWindow::on_actionDistance_and_Length_triggered()
