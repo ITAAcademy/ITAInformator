@@ -48,7 +48,6 @@ SOURCES += main.cpp\
     Units/length/LeaToMetr.cpp \
     Units/length/LinkToMetr.cpp \
     Units/length/MetrToFur.cpp \
-    Units/length/MetrToChain.cpp \
     Units/length/RodToFut.cpp \
     Units/length/MetrToLea.cpp \
     Units/length/MetrToLink.cpp
@@ -87,7 +86,6 @@ HEADERS  += mainwindow.h \
     Units/length/LeaToMetr.h \
     Units/length/LinkToMetr.h \
     Units/length/MetrToFur.h \
-    Units/length/MetrToChain.h \
     Units/length/RodToFut.h \
     Units/length/MetrToLea.h \
     Units/length/MetrToLink.h \
