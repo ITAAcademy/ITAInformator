@@ -14,6 +14,11 @@ class Weight : public QDialog
 public:
     explicit Weight(QWidget *parent = 0);
     ~Weight();
+// Begin(List_Opened_Windows)
+protected:
+        void closeEvent(QCloseEvent *);
+        void showEvent(QShowEvent *);
+// End
 
 private:
     Ui::Weight *ui;

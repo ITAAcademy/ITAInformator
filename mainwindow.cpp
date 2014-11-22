@@ -17,6 +17,7 @@
 #include "Charts/rubleinterbank.h"
 
 #include "Units/Temperature/temperature.h"
+#include "AdditionalFiles/listopenedwindows.h"
 
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -107,3 +108,11 @@ void MainWindow::on_action_Font_settings_triggered()
         return;
     setFont(font);
 }
+
+// Begin(List_Opened_Windows)
+void MainWindow::on_actionList_opened_windows_triggered()
+{
+    formListOpenedWindows = new ListOpenedWindows (this);
+    formListOpenedWindows->show();
+}
+// End

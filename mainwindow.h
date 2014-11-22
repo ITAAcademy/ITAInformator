@@ -14,6 +14,10 @@
 
 #include "Units/Temperature/temperature.h"
 
+// Begin(List_Opened_Windows)
+#include "AdditionalFiles/listopenedwindows.h"
+// End
+
 
 class QMdiArea;
 class QSignalMapper;
@@ -50,6 +54,8 @@ private slots:
 
     void on_action_Font_settings_triggered();
 
+    void on_actionList_opened_windows_triggered();
+
 private:
 
     Ui::MainWindow      *ui;
@@ -63,6 +69,10 @@ private:
     OilPrices           formOilPrices;
     rubleInterbank      formrubleInterbank;
     pSettings            mSettings;
+
+    // Begin(List_Opened_Windows)
+    ListOpenedWindows   *formListOpenedWindows;
+    // End
 };
 
 #endif // MAINWINDOW_H

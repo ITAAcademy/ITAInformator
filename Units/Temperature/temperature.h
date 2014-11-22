@@ -14,6 +14,11 @@ class Temperature : public QDialog
 public:
     explicit Temperature(QWidget *parent = 0);
     ~Temperature();
+    // Begin(List_Opened_Windows)
+    protected:
+        void closeEvent(QCloseEvent *);
+        void showEvent(QShowEvent *);
+    // End
 
 //----------Begin(Font_settings)
 //    void setTemperatureFont(QFont &font);

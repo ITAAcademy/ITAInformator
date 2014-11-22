@@ -28,7 +28,9 @@ SOURCES += main.cpp\
     Units/conversion.cpp \
     distanceandlength.cpp \
     weight.cpp \
-    AdditionalFiles/settings.cpp
+    AdditionalFiles/settings.cpp \
+    AdditionalFiles/listopenedwindows.cpp \
+    AdditionalFiles/appsettings.cpp
 
 
 HEADERS  += mainwindow.h \
@@ -44,7 +46,9 @@ HEADERS  += mainwindow.h \
     Units/conversion.h \
     distanceandlength.h \
     weight.h \
-    AdditionalFiles/settings.h
+    AdditionalFiles/settings.h \
+    AdditionalFiles/listopenedwindows.h \
+    AdditionalFiles/appsettings.h
 
 
 CONFIG   += c++11
@@ -56,7 +60,8 @@ FORMS += \
     Charts/rubleinterbank.ui \
     AdditionalFiles/modal_window.ui \
     distanceandlength.ui \
-    weight.ui
+    weight.ui \
+    AdditionalFiles/listopenedwindows.ui
 
 
 win32:RC_FILE = IcoConvert.rc

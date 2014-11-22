@@ -2,6 +2,12 @@
 #include "ui_rubleinterbank.h"
 #include "QLabel"
 
+// Begin(List_Opened_Windows)
+#include "AdditionalFiles/appsettings.h"
+
+static const QString windowName = "ruble Interbank";
+// End
+
 QString myURLrubleInterbank = "<table width=\"210\"border=\"1\" style=\"border-collapse: collapse; text-align:center; font-size:11px; color:#000000; \"><tr bgcolor=\"\"><td height=\"10\" valign=\"top\" colspan=\"3\"><style>A.forexpf_ { text-decoration: none;} A.forexpf_:visited {color: #000000;} </style><a href=\"http://www.forexpf.ru/\" title=\"Курсы валют\"target=\"_blank\" class=\"forexpf_\">Курсы валют</a></td></tr><tr bgcolor=\"F6EDDD\"><td></td><td>Покупка</td><td>Продажа</td></tr><tr bgcolor=\"\"><td><a href=\"http://www.forexpf.ru/chart/usdrub/\" title=\"Курс доллара\" target=\"_blank\" class=\"forexpf_\">USD/RUB</a></td><td id=\"usdrubbid\">0.00</td><td id=\"usdrubask\">0.00</td></tr><tr bgcolor=\"F6EDDD\"><td><a href=\"http://www.forexpf.ru/chart/eurrub/\"title=\"Курс Евро\"target=\"_blank\" class=\"forexpf_\">EUR/RUB</a></td><td id=\"eurrubbid\">0.00</td><td id=\"eurrubask\">0.00</td></tr><tr bgcolor=\"\"><td colspan=\"3\"id=\"euusrutm\">Данные на</td></tr></table><script type=\"text/javascript\" charset=\"utf-8\"src=\"http://informers.forexpf.ru/export/euusrub.js\"></script>";
 
 rubleInterbank::rubleInterbank(QWidget *parent) :
@@ -24,6 +30,18 @@ rubleInterbank::~rubleInterbank()
 {
     delete ui;
 }
+// Begin(List_Opened_Windows)
+void rubleInterbank::closeEvent(QCloseEvent *)
+{
+    appActiveWindows &ref = appActiveWindows::getInstance();
+    ref.removeActiveWindow(windowName);
+}
+void rubleInterbank::showEvent(QShowEvent *)
+{
+    appActiveWindows &ref = appActiveWindows::getInstance();
+    ref.addActiveWindowName(windowName);
+}
+// End
 
 //----------Begin(Font_settings)
 //void rubleInterbank::setRubleInterbankFont(QFont &font)

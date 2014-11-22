@@ -71,6 +71,7 @@
     <addaction name="action_Oil_Charts"/>
     <addaction name="action_Currency"/>
     <addaction name="action_2"/>
+    <addaction name="actionList_opened_windows"/>
     <addaction name="separator"/>
     <addaction name="actionAbout"/>
    </widget>
@@ -217,6 +218,11 @@
   <action name="action_Font_settings">
    <property name="text">
     <string>&amp;Font settings</string>
+   </property>
+  </action>
+  <action name="actionList_opened_windows">
+   <property name="text">
+    <string>List opened windows</string>
    </property>
   </action>
  </widget>
