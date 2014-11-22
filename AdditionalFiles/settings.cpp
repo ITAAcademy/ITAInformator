@@ -1,7 +1,6 @@
 #include "qmessagebox.h"
 #include "settings.h"
 
-
 pSettings::pSettings() :
     isFirstRun(false)
     ,mSettings(0)

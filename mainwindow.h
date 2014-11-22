@@ -50,6 +50,8 @@ private slots:
 
     void on_action_Font_settings_triggered();
 
+    void on_action_Default_settings_triggered();
+
 private:
 
     Ui::MainWindow      *ui;

@@ -28,8 +28,6 @@ public:
     const QRect     &getMainWindowRect()const;
     const QFont     &getMainWindowFont()const;
 
-    void fontSettings();
-
 private:
 
     void saveSettings();

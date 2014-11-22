@@ -29,7 +29,7 @@ MainWindow::MainWindow(QWidget *parent) :
     {
         QMessageBox::information(this, "First run", "This is the first run of the program. \n Thank you for your choice");
         setWindowTitle("Some name");
-        setGeometry(QRect(100,100,200,600));
+        setGeometry(QRect(355,100,760,558));
         setFont(QFont("Times",10,1,false));
 
         mSettings.setMainWindowRect(geometry());
@@ -107,4 +107,11 @@ void MainWindow::on_action_Font_settings_triggered()
     if (!ok)
         return;
     setFont(font);
+}
+
+void MainWindow::on_action_Default_settings_triggered()
+{
+    setWindowTitle("Some name");
+    setGeometry(QRect(355,100,760,558));
+    setFont(QFont("Times",10,1,false));
 }
