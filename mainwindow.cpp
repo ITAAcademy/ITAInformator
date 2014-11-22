@@ -71,6 +71,7 @@ void MainWindow::on_action_Widget_you_2_triggered()
 void MainWindow::on_actionTemperature_triggered()
 {
     //formTemperature = new Temperature (this);
+    //wow
     formTemperature.show();
 }
 
