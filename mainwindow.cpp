@@ -1,9 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-#include "area.h"
 #include "distanceandlength.h"
-#include "volumecapacity.h"
 #include "weight.h"
 
 #include "AdditionalFiles/modal_window.h"
@@ -69,17 +67,9 @@ void MainWindow::on_action_Font_settings_triggered()
 //    formTemperature.setTemperatureFont(font);
 }
 //-----------------------------End
-void MainWindow::on_actionArea_triggered()
-{
-    formArea = new Area (this);
-    formArea -> show();
-}
 
-void MainWindow::on_actionVolume_capacity_triggered()
-{
-    formVolumeCapacity = new VolumeCapacity (this);
-    formVolumeCapacity -> show();
-}
+
+
 
 void MainWindow::on_actionDistance_and_Length_triggered()
 {
