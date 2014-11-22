@@ -64,8 +64,6 @@
       <string>&amp;Conversion</string>
      </property>
      <addaction name="actionTemperature"/>
-     <addaction name="actionArea"/>
-     <addaction name="actionVolume_capacity"/>
      <addaction name="actionDistance_and_Length"/>
      <addaction name="actionWeight_weight"/>
     </widget>

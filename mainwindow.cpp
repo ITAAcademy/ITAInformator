@@ -3,6 +3,12 @@
 #include "mainwindow.h"
 #include "qmessagebox.h"
 #include "volumecapacity.h"
+
+#include "mainwindow.h"
+#include "ui_mainwindow.h"
+
+#include "distanceandlength.h"
+
 #include "weight.h"
 #include "ui_mainwindow.h"
 #include "qmainwindow.h"
@@ -86,12 +92,6 @@ void MainWindow::on_actionArea_triggered()
 {
     formArea = new Area (this);
     formArea -> show();
-}
-
-void MainWindow::on_actionVolume_capacity_triggered()
-{
-    formVolumeCapacity = new VolumeCapacity (this);
-    formVolumeCapacity -> show();
 }
 
 void MainWindow::on_actionDistance_and_Length_triggered()
