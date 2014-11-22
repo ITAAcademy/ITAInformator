@@ -9,6 +9,6 @@ MetrToLea::MetrToLea()
 float MetrToLea::calculate(float X)
 {
     //test function please fix it
-    return X/0.3048;
+    return X/0.00207 ;
 }
 
