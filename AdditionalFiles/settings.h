@@ -23,10 +23,15 @@ public:
     void setMainWindowTitle(const QString &aTitle);
     void setMainWindowRect(const QRect &aRect);
     void setMainWindowFont (const QFont &aFont);
+    void setAppLang(const QString &aLang);
 
     const QString   &getMainWindowTitle()const;
     const QRect     &getMainWindowRect()const;
     const QFont     &getMainWindowFont()const;
+    const QString   &getAppLang()const;
+
+    void saveAppLang();
+    void loadAppLang();
 
 private:
 
@@ -37,7 +42,7 @@ private:
     QString     mainWindowTitle;
     QRect       mainWindowRect;
     QFont       mainWindowFont;
-
+    QString     appLang;
     QSettings   *mSettings;
 };
 

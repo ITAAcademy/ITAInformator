@@ -57,6 +57,8 @@ private:
     Ui::MainWindow      *ui;
     QMdiArea            *mdiArea;
     QMenuBar            *menuBar;
+    QString             appDefaultLang;
+    QString             pLang;
 
 
     DistanceAndLength   *formDistanceAndLength;
@@ -64,7 +66,7 @@ private:
     Temperature         formTemperature;
     OilPrices           formOilPrices;
     rubleInterbank      formrubleInterbank;
-    pSettings            mSettings;
+    pSettings           mSettings;
 };
 
 #endif // MAINWINDOW_H

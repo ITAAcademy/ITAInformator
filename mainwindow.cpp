@@ -23,6 +23,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
+    appDefaultLang = ("EN");
     ui->setupUi(this);
 
     if(mSettings.FirstRun())
@@ -31,26 +32,30 @@ MainWindow::MainWindow(QWidget *parent) :
         setWindowTitle("Some name");
         setGeometry(QRect(355,100,760,558));
         setFont(QFont("Times",10,1,false));
+        pLang = appDefaultLang;
 
         mSettings.setMainWindowRect(geometry());
         mSettings.setMainWindowTitle(windowTitle());
         mSettings.setMainWindowFont(font());
+        mSettings.setAppLang(appDefaultLang);
     }
     else
     {
         setWindowTitle(mSettings.getMainWindowTitle());
         setGeometry(mSettings.getMainWindowRect());
         setFont(mSettings.getMainWindowFont());
+        pLang = (mSettings.getAppLang());
     }
 
     ui->menuBar->setFont(QFont("Times",10,1,false));
-
 
    // ui->menuBar->setNativeMenuBar(true);
 }
 
 MainWindow::~MainWindow()
 {
+
+    mSettings.setAppLang(pLang);
     mSettings.setMainWindowRect(geometry());
     mSettings.setMainWindowFont(font());
     delete ui;
@@ -114,4 +119,6 @@ void MainWindow::on_action_Default_settings_triggered()
     setWindowTitle("Some name");
     setGeometry(QRect(355,100,760,558));
     setFont(QFont("Times",10,1,false));
+    pLang = appDefaultLang;
 }
+
