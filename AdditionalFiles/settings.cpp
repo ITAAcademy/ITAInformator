@@ -1,18 +1,19 @@
 #include "qmessagebox.h"
 #include "settings.h"
 
-
 pSettings::pSettings() :
     isFirstRun(false)
     ,mSettings(0)
 {
     mSettings = new QSettings("settings.ini", QSettings::IniFormat);
     loadSettings();
+    loadAppLang();
 }
 
 pSettings::~pSettings()
 {
     saveSettings();
+    saveAppLang();
     if(mSettings != 0)
         delete mSettings;
 }
@@ -26,6 +27,11 @@ void pSettings::saveSettings()
     mSettings->setValue("MainWindow/font",      mainWindowFont.toString());
 }
 
+void pSettings::saveAppLang()
+{
+    mSettings->setValue("AppLang/Lang",         appLang);
+}
+
 void pSettings::loadSettings()
 {
 
@@ -35,6 +41,11 @@ void pSettings::loadSettings()
     mainWindowTitle = mSettings->value("MainWindow/title")              .toString();
     mainWindowRect  = mSettings->value("MainWindow/position")           .toRect();
     mainWindowFont.fromString(mSettings->value("MainWindow/font")       .toString());
+}
+
+void pSettings::loadAppLang()
+{
+    appLang         = mSettings->value("AppLang/Lang")                  .toString();
 }
 
 void pSettings::setMainWindowTitle(const QString &aTitle)
@@ -50,6 +61,11 @@ void pSettings::setMainWindowRect(const QRect &aRect)
 void pSettings::setMainWindowFont(const QFont &aFont)
 {
     mainWindowFont = aFont;
+}
+
+void pSettings::setAppLang(const QString &aLang)
+{
+    appLang = aLang;
 }
 
 const bool &pSettings::FirstRun()const
@@ -70,5 +86,10 @@ const QRect &pSettings::getMainWindowRect()const
 const QFont &pSettings::getMainWindowFont()const
 {
     return mainWindowFont;
+}
+
+const QString &pSettings::getAppLang()const
+{
+    return appLang;
 }
 

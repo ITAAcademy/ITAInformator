@@ -91,6 +91,7 @@
       <string>&amp;Settings</string>
      </property>
      <addaction name="action_Font_settings"/>
+     <addaction name="action_Default_settings"/>
     </widget>
     <addaction name="menuLengvich"/>
     <addaction name="menu_Settings"/>
@@ -217,6 +218,11 @@
   <action name="action_Font_settings">
    <property name="text">
     <string>&amp;Font settings</string>
+   </property>
+  </action>
+  <action name="action_Default_settings">
+   <property name="text">
+    <string>Default settings</string>
    </property>
   </action>
  </widget>
