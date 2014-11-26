@@ -16,6 +16,11 @@ class rubleInterbank : public QDialog
 public:
     explicit rubleInterbank(QWidget *parent = 0);
     ~rubleInterbank();
+// Begin(List_Opened_Windows)
+protected:
+        void closeEvent(QCloseEvent *);
+        void showEvent(QShowEvent *);
+// End
 
 //----------Begin(Font_settings
 //    void setRubleInterbankFont(QFont &font);
