@@ -224,6 +224,8 @@
   <action name="actionList_opened_windows">
    <property name="text">
     <string>List opened windows</string>
+    </property>
+   </action>
   <action name="action_Default_settings">
    <property name="text">
     <string>Default settings</string>
