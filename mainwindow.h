@@ -77,7 +77,6 @@ private:
     // Begin(List_Opened_Windows)
     ListOpenedWindows   *formListOpenedWindows;
     // End
-    pSettings           mSettings;
 };
 
 #endif // MAINWINDOW_H
