@@ -101,10 +101,7 @@
     <property name="title">
      <string>Assistance</string>
     </property>
-    <addaction name="action_Widget_you"/>
-    <addaction name="action_5"/>
     <addaction name="separator"/>
-    <addaction name="action_7"/>
     <addaction name="separator"/>
     <addaction name="action_Widget_you_2"/>
    </widget>
@@ -147,11 +144,6 @@
   <action name="actionPol">
    <property name="text">
     <string>Pol</string>
-   </property>
-  </action>
-  <action name="action_Widget_you">
-   <property name="text">
-    <string>&amp;Details on Widget_you</string>
    </property>
   </action>
   <action name="action_5">
@@ -224,8 +216,8 @@
   <action name="actionList_opened_windows">
    <property name="text">
     <string>List opened windows</string>
-    </property>
-   </action>
+   </property>
+  </action>
   <action name="action_Default_settings">
    <property name="text">
     <string>Default settings</string>
