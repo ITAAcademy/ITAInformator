@@ -146,11 +146,6 @@
     <string>Pol</string>
    </property>
   </action>
-  <action name="action_Widget_you">
-   <property name="text">
-    <string>&amp;Details on Widget_you</string>
-   </property>
-  </action>
   <action name="action_5">
    <property name="text">
     <string>&amp;Support service</string>
