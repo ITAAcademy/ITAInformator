@@ -17,6 +17,7 @@
 #include "Charts/rubleinterbank.h"
 
 #include "Units/Temperature/temperature.h"
+#include "AdditionalFiles/listopenedwindows.h"
 
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -59,10 +60,6 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_action_Widget_you_triggered()
-{
-
-}
 
 void MainWindow::on_action_Widget_you_2_triggered()
 {
@@ -112,6 +109,13 @@ void MainWindow::on_action_Font_settings_triggered()
     setFont(font);
 }
 
+// Begin(List_Opened_Windows)
+void MainWindow::on_actionList_opened_windows_triggered()
+{
+    formListOpenedWindows = new ListOpenedWindows (this);
+    formListOpenedWindows->show();
+}
+// End
 void MainWindow::on_action_Default_settings_triggered()
 {
     setWindowTitle("Some name");

@@ -4,6 +4,13 @@
 #include <QTextBrowser>
 #include <QPushButton>
 
+// Begin(List_Opened_Windows)
+#include "QLabel"
+#include "AdditionalFiles/appsettings.h"
+
+static const QString windowName = "Temperature";
+// End
+
 Temperature::Temperature(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Temperature)
@@ -22,6 +29,18 @@ Temperature::~Temperature()
 {
     delete ui;
 }
+// Begin(List_Opened_Windows)
+void Temperature::closeEvent(QCloseEvent *)
+{
+    appActiveWindows &ref = appActiveWindows::getInstance();
+    ref.removeActiveWindow(windowName);
+}
+void Temperature::showEvent(QShowEvent *)
+{
+    appActiveWindows &ref = appActiveWindows::getInstance();
+    ref.addActiveWindowName(windowName);
+}
+// End
 
 //----------Begin(Font_settings)
 //void Temperature::setTemperatureFont(QFont &font)
