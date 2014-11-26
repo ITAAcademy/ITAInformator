@@ -1,10 +1,15 @@
+#include "distanceandlength.h"
+#include "mainwindow.h"
+#include "qmessagebox.h"
+
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-#include "area.h"
 #include "distanceandlength.h"
-#include "volumecapacity.h"
+
 #include "weight.h"
+#include "ui_mainwindow.h"
+#include "qmainwindow.h"
 
 #include "AdditionalFiles/modal_window.h"
 
@@ -12,18 +17,48 @@
 #include "Charts/rubleinterbank.h"
 
 #include "Units/Temperature/temperature.h"
+#include "AdditionalFiles/listopenedwindows.h"
 
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
+    appDefaultLang = ("EN");
     ui->setupUi(this);
+
+    if(mSettings.FirstRun())
+    {
+        QMessageBox::information(this, "First run", "This is the first run of the program. \n Thank you for your choice");
+        setWindowTitle("Some name");
+        setGeometry(QRect(355,100,760,558));
+        setFont(QFont("Times",10,1,false));
+        pLang = appDefaultLang;
+
+        mSettings.setMainWindowRect(geometry());
+        mSettings.setMainWindowTitle(windowTitle());
+        mSettings.setMainWindowFont(font());
+        mSettings.setAppLang(appDefaultLang);
+    }
+    else
+    {
+        setWindowTitle(mSettings.getMainWindowTitle());
+        setGeometry(mSettings.getMainWindowRect());
+        setFont(mSettings.getMainWindowFont());
+        pLang = (mSettings.getAppLang());
+    }
+
+    ui->menuBar->setFont(QFont("Times",10,1,false));
+
    // ui->menuBar->setNativeMenuBar(true);
 }
 
 MainWindow::~MainWindow()
 {
+
+    mSettings.setAppLang(pLang);
+    mSettings.setMainWindowRect(geometry());
+    mSettings.setMainWindowFont(font());
     delete ui;
 }
 
@@ -42,6 +77,7 @@ void MainWindow::on_action_Widget_you_2_triggered()
 void MainWindow::on_actionTemperature_triggered()
 {
     //formTemperature = new Temperature (this);
+    //wow
     formTemperature.show();
 }
 
@@ -56,30 +92,6 @@ void MainWindow::on_action_Currency_triggered()
     //formrubleInterbank = new rubleInterbank(this);
     formrubleInterbank.show();
 }
-//-----------------------------Begin(Font_settings)
-void MainWindow::on_action_Font_settings_triggered()
-{
-    bool ok;
-    QFont font = QFontDialog::getFont(&ok, QFont( "Helvetica [Cronyx]", 10 ), this );
-    if (!ok)
-        return;
-//    ui->l_main_window->setFont(font);
-//    formOilPrices.setOilpricesFont(font);
-//    formrubleInterbank.setRubleInterbankFont(font);
-//    formTemperature.setTemperatureFont(font);
-}
-//-----------------------------End
-void MainWindow::on_actionArea_triggered()
-{
-    formArea = new Area (this);
-    formArea -> show();
-}
-
-void MainWindow::on_actionVolume_capacity_triggered()
-{
-    formVolumeCapacity = new VolumeCapacity (this);
-    formVolumeCapacity -> show();
-}
 
 void MainWindow::on_actionDistance_and_Length_triggered()
 {
@@ -93,4 +105,28 @@ void MainWindow::on_actionWeight_weight_triggered()
     formWeight -> show();
 }
 
+void MainWindow::on_action_Font_settings_triggered()
+{
+    bool ok;
+    QFont font;
+    font = QFontDialog::getFont(&ok, QFont( "Times", 10 ), this);
+    if (!ok)
+        return;
+    setFont(font);
+}
+
+// Begin(List_Opened_Windows)
+void MainWindow::on_actionList_opened_windows_triggered()
+{
+    formListOpenedWindows = new ListOpenedWindows (this);
+    formListOpenedWindows->show();
+}
+// End
+void MainWindow::on_action_Default_settings_triggered()
+{
+    setWindowTitle("Some name");
+    setGeometry(QRect(355,100,760,558));
+    setFont(QFont("Times",10,1,false));
+    pLang = appDefaultLang;
+}
 
