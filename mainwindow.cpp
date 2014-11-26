@@ -62,10 +62,6 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_action_Widget_you_triggered()
-{
-
-}
 
 void MainWindow::on_action_Widget_you_2_triggered()
 {
