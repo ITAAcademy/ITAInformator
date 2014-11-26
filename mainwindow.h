@@ -55,6 +55,7 @@ private slots:
     void on_action_Font_settings_triggered();
 
     void on_actionList_opened_windows_triggered();
+
     void on_action_Default_settings_triggered();
 
 private:
