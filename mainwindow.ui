@@ -92,6 +92,7 @@
       <string>&amp;Settings</string>
      </property>
      <addaction name="action_Font_settings"/>
+     <addaction name="action_Default_settings"/>
     </widget>
     <addaction name="menuLengvich"/>
     <addaction name="menu_Settings"/>
@@ -223,6 +224,9 @@
   <action name="actionList_opened_windows">
    <property name="text">
     <string>List opened windows</string>
+  <action name="action_Default_settings">
+   <property name="text">
+    <string>Default settings</string>
    </property>
   </action>
  </widget>
