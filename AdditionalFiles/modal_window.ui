@@ -57,14 +57,14 @@ p, li { white-space: pre-wrap; }
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>140</x>
       <y>60</y>
       <width>171</width>
       <height>20</height>
      </rect>
     </property>
     <property name="text">
-     <string>A head is a project:</string>
+     <string>Project manager:</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
@@ -116,7 +116,7 @@ p, li { white-space: pre-wrap; }
      </rect>
     </property>
     <property name="text">
-     <string>Pirus Ivan</string>
+     <string>Ivan Pirus     </string>
     </property>
    </widget>
    <widget class="QLabel" name="label_6">
@@ -142,7 +142,7 @@ p, li { white-space: pre-wrap; }
      </rect>
     </property>
     <property name="text">
-     <string>Andrey Nizincovsciy</string>
+     <string>Andrey Nizinkovskiy</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_8">
@@ -155,7 +155,7 @@ p, li { white-space: pre-wrap; }
      </rect>
     </property>
     <property name="text">
-     <string>Helen Dogteva</string>
+     <string>Helen Dyogtyeva</string>
     </property>
    </widget>
   </widget>
