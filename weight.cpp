@@ -6,6 +6,12 @@ Weight::Weight(QWidget *parent) :
     ui(new Ui::Weight)
 {
     ui->setupUi(this);
+
+    ui->comboBox_Weight->addItem("Gram");
+    ui->comboBox_Weight->addItem("Kg");
+
+    ui->comboBox_Weight_2->addItem("Gram");
+    ui->comboBox_Weight_2->addItem("Kg");
 }
 
 Weight::~Weight()

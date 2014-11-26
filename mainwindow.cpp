@@ -25,7 +25,6 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     appDefaultLang = ("EN");
     ui->setupUi(this);
-
     if(mSettings.FirstRun())
     {
         QMessageBox::information(this, "First run", "This is the first run of the program. \n Thank you for your choice");
@@ -48,7 +47,6 @@ MainWindow::MainWindow(QWidget *parent) :
     }
 
     ui->menuBar->setFont(QFont("Times",10,1,false));
-
    // ui->menuBar->setNativeMenuBar(true);
 }
 
