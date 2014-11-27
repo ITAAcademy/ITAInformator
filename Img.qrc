@@ -1,5 +1,15 @@
 <RCC>
     <qresource prefix="/imagin">
         <file>no-internet.png</file>
+        <file>fon.jpg</file>
+        <file>area.png</file>
+        <file>data.png</file>
+        <file>length.png</file>
+        <file>mass.png</file>
+        <file>power.png</file>
+        <file>speed.png</file>
+        <file>temperature.png</file>
+        <file>time.png</file>
+        <file>volume.png</file>
     </qresource>
 </RCC>

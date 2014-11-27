@@ -50,6 +50,36 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->menuBar->setFont(QFont("Times",10,1,false));
 
+     //beginning conclusion of pictures
+
+    QPixmap pic_distance(":/imagin/length.png");
+    ui->pic_distance->setPixmap(pic_distance);
+
+    QPixmap pic_weight(":/imagin/mass.png");
+    ui->pic_weight->setPixmap(pic_weight);
+
+    QPixmap pic_volume(":/imagin/volume.png");
+    ui->pic_volume->setPixmap(pic_volume);
+    //
+    QPixmap pic_area(":/imagin/area.png");
+    ui->pic_area->setPixmap(pic_area);
+
+    QPixmap pic_temperature(":/imagin/temperature.png");
+    ui->pic_temperature->setPixmap(pic_temperature);
+
+    QPixmap pic_data(":/imagin/data.png");
+    ui->pic_data->setPixmap(pic_data);
+    //
+    QPixmap pic_time(":/imagin/time.png");
+    ui->pic_time->setPixmap(pic_time);
+
+    QPixmap pic_speed(":/imagin/speed.png");
+    ui->pic_speed->setPixmap(pic_speed);
+
+    QPixmap pic_power(":/imagin/power.png");
+    ui->pic_power->setPixmap(pic_power);
+    //end conclusion of pictures
+
    // ui->menuBar->setNativeMenuBar(true);
 }
 
@@ -126,3 +156,56 @@ void MainWindow::on_action_Default_settings_triggered()
     pLang = appDefaultLang;
 }
 
+void MainWindow::paintEvent(QPaintEvent *)
+{
+    QImage img(":/imagin/fon.jpg");
+    QPainter painter(this);
+    painter.drawImage(0, 0, img.scaled(this->size()));
+}
+
+
+
+void MainWindow::on_pic_distance_linkActivated(const QString &link)
+{
+
+}
+
+void MainWindow::on_pic_weight_linkActivated(const QString &link)
+{
+
+}
+
+void MainWindow::on_pic_volume_linkActivated(const QString &link)
+{
+
+}
+
+void MainWindow::on_pic_area_linkActivated(const QString &link)
+{
+
+}
+
+void MainWindow::on_pic_temperature_linkActivated(const QString &link)
+{
+
+}
+
+void MainWindow::on_pic_data_linkActivated(const QString &link)
+{
+
+}
+
+void MainWindow::on_pic_time_linkActivated(const QString &link)
+{
+
+}
+
+void MainWindow::on_pic_speed_linkActivated(const QString &link)
+{
+
+}
+
+void MainWindow::on_pic_power_linkActivated(const QString &link)
+{
+
+}
