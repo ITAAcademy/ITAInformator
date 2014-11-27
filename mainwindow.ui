@@ -10,6 +10,12 @@
     <height>470</height>
    </rect>
   </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
@@ -27,7 +33,7 @@
      <string>detete it lable</string>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -47,7 +53,16 @@
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_2">
+        <widget class="QLabel" name="label_Distance">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="text">
           <string>Distance</string>
          </property>
@@ -65,7 +80,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_4">
+        <widget class="QLabel" name="label_Weight">
          <property name="text">
           <string>Weight</string>
          </property>
@@ -83,7 +98,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_6">
+        <widget class="QLabel" name="label_Volume">
          <property name="text">
           <string>Volume</string>
          </property>
@@ -101,7 +116,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_8">
+        <widget class="QLabel" name="label_Area">
          <property name="text">
           <string>Area</string>
          </property>
@@ -119,7 +134,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_10">
+        <widget class="QLabel" name="label_Temperature">
          <property name="text">
           <string>Temperature</string>
          </property>
@@ -137,7 +152,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_12">
+        <widget class="QLabel" name="label_Data">
          <property name="text">
           <string>Data</string>
          </property>
@@ -155,7 +170,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_14">
+        <widget class="QLabel" name="label_Time">
          <property name="text">
           <string>Time</string>
          </property>
@@ -173,7 +188,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_16">
+        <widget class="QLabel" name="label_Speed">
          <property name="text">
           <string>Speed</string>
          </property>
@@ -191,7 +206,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_18">
+        <widget class="QLabel" name="label_Power">
          <property name="text">
           <string>Power</string>
          </property>
