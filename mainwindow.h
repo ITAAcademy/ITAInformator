@@ -49,7 +49,7 @@ private slots:
     void on_action_Font_settings_triggered();
     void on_actionList_opened_windows_triggered();
     void on_action_Default_settings_triggered();
-
+    // coment
     void on_pic_distance_linkActivated(const QString &link);
     void on_pic_weight_linkActivated(const QString &link);
     void on_pic_volume_linkActivated(const QString &link);
