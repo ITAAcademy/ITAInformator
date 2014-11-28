@@ -1,8 +1,8 @@
 #include "temperature.h"
 #include "ui_temperature.h"
 #include <QLineEdit>
-#include <QTextBrowser>
-#include <QPushButton>
+#include <fstream>
+#include <QString>
 
 // Begin(List_Opened_Windows)
 #include "QLabel"
@@ -17,11 +17,6 @@ Temperature::Temperature(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    ui->comboBox_Temperature->addItem("Cel");
-    ui->comboBox_Temperature->addItem("Fare");
-
-    ui->comboBox_Temperature_2->addItem("Cel");
-    ui->comboBox_Temperature_2->addItem("Fare");
 
 }
 
@@ -51,10 +46,27 @@ void Temperature::showEvent(QShowEvent *)
 
 
 
-void Temperature::on_pushButton_Temperature_clicked()
+
+void Temperature::on_lineEdit_Temperature_textChanged(const QString &arg1)
 {
-
-
-
+    double Farengate = ui->lineEdit_Temperature->text().toDouble();
+    ui->lineEdit_Temperature_2->setText(QString::number(Farengate * 1.8 + 32));
 }
 
+void Temperature::on_lineEdit_Temperature_2_textChanged(const QString &arg1)
+{
+    double Celsius = ui->lineEdit_Temperature_2->text().toDouble();
+    ui->lineEdit_Temperature->setText(QString::number((Celsius - 32) / 1.8 ));
+}
+
+void Temperature::on_lineEdit_Temperature_3_textChanged(const QString &arg1)
+{
+    double Celsius = ui->lineEdit_Temperature_3->text().toDouble();
+    ui->lineEdit_Temperature_4->setText(QString::number(Celsius+273));
+}
+
+void Temperature::on_lineEdit_Temperature_4_textChanged(const QString &arg1)
+{
+    double Kelvin = ui->lineEdit_Temperature_4->text().toDouble();
+    ui->lineEdit_Temperature_3->setText(QString::number(Kelvin-273));
+}

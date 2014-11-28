@@ -25,11 +25,16 @@ public:
 //----------End
 
 private slots:
-    void on_comboBox_Temperature_activated(const QString &arg1);
 
-    void on_pushButton_Temperature_clicked();
 
-    void on_textBrowser_objectNameChanged(const QString &objectName);
+
+        void on_lineEdit_Temperature_textChanged(const QString &arg1);
+
+        void on_lineEdit_Temperature_2_textChanged(const QString &arg1);
+
+        void on_lineEdit_Temperature_3_textChanged(const QString &arg1);
+
+        void on_lineEdit_Temperature_4_textChanged(const QString &arg1);
 
 private:
     Ui::Temperature *ui;

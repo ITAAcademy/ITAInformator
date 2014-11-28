@@ -13,44 +13,11 @@
   <property name="windowTitle">
    <string>Temperature</string>
   </property>
-  <widget class="QComboBox" name="comboBox_Temperature">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>80</y>
-     <width>51</width>
-     <height>21</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="comboBox_Temperature_2">
-   <property name="geometry">
-    <rect>
-     <x>340</x>
-     <y>80</y>
-     <width>51</width>
-     <height>21</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_Temperature">
-   <property name="geometry">
-    <rect>
-     <x>160</x>
-     <y>180</y>
-     <width>75</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Convert</string>
-   </property>
-  </widget>
   <widget class="QLineEdit" name="lineEdit_Temperature">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>80</y>
+     <x>20</x>
+     <y>50</y>
      <width>113</width>
      <height>20</height>
     </rect>
@@ -59,8 +26,8 @@
   <widget class="QLineEdit" name="lineEdit_Temperature_2">
    <property name="geometry">
     <rect>
-     <x>220</x>
-     <y>80</y>
+     <x>200</x>
+     <y>50</y>
      <width>113</width>
      <height>20</height>
     </rect>
@@ -69,31 +36,47 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>80</y>
-     <width>16</width>
+     <x>150</x>
+     <y>50</y>
+     <width>41</width>
      <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>to</string>
+    <string>F to C</string>
    </property>
   </widget>
-  <widget class="QTextBrowser" name="textBrowser_Temperature">
+  <widget class="QLineEdit" name="lineEdit_Temperature_3">
    <property name="geometry">
     <rect>
-     <x>120</x>
-     <y>140</y>
-     <width>161</width>
-     <height>31</height>
+     <x>20</x>
+     <y>90</y>
+     <width>113</width>
+     <height>20</height>
     </rect>
    </property>
-   <property name="html">
-    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;=&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_Temperature_4">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>90</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>90</y>
+     <width>41</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>C to K</string>
    </property>
   </widget>
  </widget>
