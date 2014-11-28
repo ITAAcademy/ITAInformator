@@ -13,11 +13,7 @@ Weight::Weight(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    ui->comboBox_Weight->addItem("Gram");
-    ui->comboBox_Weight->addItem("Kg");
 
-    ui->comboBox_Weight_2->addItem("Gram");
-    ui->comboBox_Weight_2->addItem("Kg");
 }
 
 Weight::~Weight()
@@ -36,3 +32,15 @@ void Weight::showEvent(QShowEvent *)
     ref.addActiveWindowName(windowName);
 }
 // End
+
+void Weight::on_lineEdit_Weight_textChanged(const QString &arg1)
+{
+    double Kg = ui->lineEdit_Weight->text().toDouble();
+    ui->lineEdit_Weight_2->setText(QString::number(Kg * 2.2));
+}
+
+void Weight::on_lineEdit_Weight_2_textChanged(const QString &arg1)
+{
+    double Funt = ui->lineEdit_Weight->text().toDouble();
+    ui->lineEdit_Weight_2->setText(QString::number(Funt / 2.2));
+}

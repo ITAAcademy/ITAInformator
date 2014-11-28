@@ -20,6 +20,15 @@ protected:
    void showEvent(QShowEvent *);
 // End
 
+private slots:
+   void on_lineEdit_Distanceandlenght_textChanged(const QString &arg1);
+
+   void on_lineEdit_Distanceandlenght_2_textChanged(const QString &arg1);
+
+   void on_lineEdit_Distanceandlenght_3_textChanged(const QString &arg1);
+
+   void on_lineEdit_Distanceandlenght_4_textChanged(const QString &arg1);
+
 private:
     Ui::DistanceAndLength *ui;
 };
