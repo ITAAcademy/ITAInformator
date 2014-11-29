@@ -26,7 +26,7 @@
     <property name="title">
      <string>Temperature conversion</string>
     </property>
-    <widget class="QTextEdit" name="textEdit">
+    <widget class="QTextEdit" name="LeftTTE">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -36,7 +36,7 @@
       </rect>
      </property>
     </widget>
-    <widget class="QTextEdit" name="textEdit_2">
+    <widget class="QTextEdit" name="RightTTE">
      <property name="geometry">
       <rect>
        <x>210</x>
@@ -46,7 +46,7 @@
       </rect>
      </property>
     </widget>
-    <widget class="QComboBox" name="comboBox">
+    <widget class="QComboBox" name="TaCB">
      <property name="geometry">
       <rect>
        <x>110</x>
@@ -69,7 +69,7 @@
     <property name="title">
      <string>Lenght conversion</string>
     </property>
-    <widget class="QTextEdit" name="textEdit_3">
+    <widget class="QTextEdit" name="LeftLTE">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -79,7 +79,7 @@
       </rect>
      </property>
     </widget>
-    <widget class="QTextEdit" name="textEdit_4">
+    <widget class="QTextEdit" name="RightLTE">
      <property name="geometry">
       <rect>
        <x>210</x>
@@ -89,7 +89,7 @@
       </rect>
      </property>
     </widget>
-    <widget class="QComboBox" name="comboBox_2">
+    <widget class="QComboBox" name="LaCB">
      <property name="geometry">
       <rect>
        <x>110</x>
@@ -112,7 +112,7 @@
     <property name="title">
      <string>Weight conversion</string>
     </property>
-    <widget class="QTextEdit" name="textEdit_5">
+    <widget class="QTextEdit" name="LeftWTE">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -122,7 +122,7 @@
       </rect>
      </property>
     </widget>
-    <widget class="QTextEdit" name="textEdit_6">
+    <widget class="QTextEdit" name="RightWTE">
      <property name="geometry">
       <rect>
        <x>210</x>
@@ -132,7 +132,7 @@
       </rect>
      </property>
     </widget>
-    <widget class="QComboBox" name="comboBox_3">
+    <widget class="QComboBox" name="WaCB">
      <property name="geometry">
       <rect>
        <x>110</x>
@@ -170,7 +170,7 @@
       </url>
      </property>
     </widget>
-    <widget class="QComboBox" name="comboBox_4">
+    <widget class="QComboBox" name="IchCB">
      <property name="geometry">
       <rect>
        <x>120</x>
@@ -192,7 +192,7 @@
      <property name="title">
       <string>Informer conversion</string>
      </property>
-     <widget class="QTextEdit" name="textEdit_7">
+     <widget class="QTextEdit" name="LeftITE">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -202,7 +202,7 @@
        </rect>
       </property>
      </widget>
-     <widget class="QTextEdit" name="textEdit_8">
+     <widget class="QTextEdit" name="RightITE">
       <property name="geometry">
        <rect>
         <x>210</x>
@@ -212,7 +212,7 @@
        </rect>
       </property>
      </widget>
-     <widget class="QComboBox" name="comboBox_5">
+     <widget class="QComboBox" name="IaCB">
       <property name="geometry">
        <rect>
         <x>110</x>

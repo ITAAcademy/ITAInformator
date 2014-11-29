@@ -30,7 +30,8 @@ SOURCES += main.cpp\
     weight.cpp \
     AdditionalFiles/settings.cpp \
     AdditionalFiles/listopenedwindows.cpp \
-    AdditionalFiles/appsettings.cpp
+    AdditionalFiles/appsettings.cpp \
+    conv_tools.cpp
 
 
 HEADERS  += mainwindow.h \
@@ -48,7 +49,8 @@ HEADERS  += mainwindow.h \
     weight.h \
     AdditionalFiles/settings.h \
     AdditionalFiles/listopenedwindows.h \
-    AdditionalFiles/appsettings.h
+    AdditionalFiles/appsettings.h \
+    conv_tools.h
 
 
 CONFIG   += c++11

@@ -5,6 +5,7 @@
 
 #include "distanceandlength.h"
 #include "weight.h"
+#include "conv_tools.h"
 
 #include "AdditionalFiles/modal_window.h"
 #include "AdditionalFiles/settings.h"
@@ -38,8 +39,6 @@ public:
 
 private slots:
 
-
-
     void on_action_Widget_you_2_triggered();
 
     void on_actionTemperature_triggered();
@@ -59,13 +58,20 @@ private slots:
     void on_action_Default_settings_triggered();
 
 private:
+    void fillTaCB();
+    void fillLaCB();
+    void fillWaCB();
+    void fillIchCB();
+    void fillIaCB();
+
+private:
 
     Ui::MainWindow      *ui;
     QMdiArea            *mdiArea;
     QMenuBar            *menuBar;
     QString             appDefaultLang;
     QString             pLang;
-
+    convTools           mConvTool;
 
     DistanceAndLength   *formDistanceAndLength;
     Weight              *formWeight;
