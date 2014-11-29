@@ -165,15 +165,15 @@ void MainWindow::paintEvent(QPaintEvent *)
 
 
 
-void MainWindow::on_pic_distance_linkActivated(const QString &link)
-{
+//void MainWindow::on_pic_distance_linkActivated(const QString &link)
+//{
 
-}
+//}
 
-void MainWindow::on_pic_weight_linkActivated(const QString &link)
-{
+//void MainWindow::on_pic_weight_linkActivated(const QString &link)
+//{
 
-}
+//}
 
 void MainWindow::on_pic_volume_linkActivated(const QString &link)
 {

@@ -67,4 +67,5 @@ FORMS += \
 win32:RC_FILE = IcoConvert.rc
 
 RESOURCES += \
-    Img.qrc
+    Img.qrc \
+    trranslite.qrc
