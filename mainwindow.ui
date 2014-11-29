@@ -381,7 +381,7 @@
   </action>
   <action name="actionWeight_weight">
    <property name="text">
-    <string>Weight, weight</string>
+    <string>Weight</string>
    </property>
   </action>
   <action name="action_Oil_Charts">
