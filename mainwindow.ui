@@ -192,26 +192,6 @@
      <property name="title">
       <string>Informer conversion</string>
      </property>
-     <widget class="QTextEdit" name="LeftITE">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>20</y>
-        <width>100</width>
-        <height>30</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QTextEdit" name="RightITE">
-      <property name="geometry">
-       <rect>
-        <x>210</x>
-        <y>20</y>
-        <width>100</width>
-        <height>30</height>
-       </rect>
-      </property>
-     </widget>
      <widget class="QComboBox" name="IaCB">
       <property name="geometry">
        <rect>
@@ -219,6 +199,26 @@
         <y>20</y>
         <width>100</width>
         <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LeftITE">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="RightITE">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>101</width>
+        <height>31</height>
        </rect>
       </property>
      </widget>

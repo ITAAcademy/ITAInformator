@@ -34,12 +34,16 @@ void convTools::fillIchCB()
 {
     mIchCB.push_back("Oil Charts");
     mIchCB.push_back("Rubel Info");
+    mIchCB.push_back("Oil graphics");
+    mIchCB.push_back("Precious metals");
 }
 
 void convTools::fillIaCB()
 {
     mIaCB.push_back("Oil Charts");
     mIaCB.push_back("Rubel Info");
+    mIaCB.push_back("Precious metals");
+
 }
 
 const QList<QString> &convTools::TaCB() const

@@ -57,6 +57,10 @@ private slots:
 
     void on_action_Default_settings_triggered();
 
+    void on_webView_loadFinished(bool );
+    void on_LeftITE_textChanged(const QString );
+    void on_RightITE_textChanged(const QString );
+
 private:
     void fillTaCB();
     void fillLaCB();
@@ -83,6 +87,8 @@ private:
     // Begin(List_Opened_Windows)
     ListOpenedWindows   *formListOpenedWindows;
     // End
+
+    double mCoofRubToUsd;
 };
 
 #endif // MAINWINDOW_H
