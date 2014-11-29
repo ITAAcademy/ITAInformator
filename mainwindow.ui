@@ -283,6 +283,7 @@
      <addaction name="actionEn"/>
      <addaction name="actionUk"/>
      <addaction name="actionPol"/>
+     <addaction name="actionRu"/>
     </widget>
     <widget class="QMenu" name="menu_Settings">
      <property name="title">
@@ -418,6 +419,11 @@
   <action name="action_Default_settings">
    <property name="text">
     <string>Default settings</string>
+   </property>
+  </action>
+  <action name="actionRu">
+   <property name="text">
+    <string>Ru</string>
    </property>
   </action>
  </widget>
