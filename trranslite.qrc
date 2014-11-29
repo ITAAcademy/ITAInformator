@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/leng">
+        <file>ln_en.qm</file>
+        <file>ln_en.ts</file>
+        <file>ln_ru.qm</file>
+        <file>ln_ru.ts</file>
+    </qresource>
+</RCC>
