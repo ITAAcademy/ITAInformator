@@ -20,6 +20,11 @@ protected:
         void showEvent(QShowEvent *);
 // End
 
+private slots:
+        void on_lineEdit_W_Left_textChanged(const QString &arg1);
+
+        void on_lineEdit_W_right_textChanged(const QString &arg1);
+
 private:
     Ui::Weight *ui;
 };

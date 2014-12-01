@@ -12,6 +12,9 @@ DistanceAndLength::DistanceAndLength(QWidget *parent) :
     ui(new Ui::DistanceAndLength)
 {
     ui->setupUi(this);
+    ui->comboBoxDistance->addItem("Mm to Cm");
+    ui->comboBoxDistance->addItem("Cm to M");
+    ui->comboBoxDistance->addItem("M to Km");
 }
 
 DistanceAndLength::~DistanceAndLength()
@@ -30,3 +33,41 @@ void DistanceAndLength::showEvent(QShowEvent *)
     ref.addActiveWindowName(windowName);
 }
 // End
+
+void DistanceAndLength::on_lineEdit_D_Left_textChanged(const QString &arg1)
+{
+    if(ui->comboBoxDistance->currentText() == "Mm to Cm")
+        {
+        double Mm = ui->lineEdit_D_Left->text().toDouble();
+        ui->lineEdit_D_down->setText(QString::number(Mm /10 ));;
+        }
+    if(ui->comboBoxDistance->currentText() == "Cm to M")
+        {
+        double Cm = ui->lineEdit_D_Left->text().toDouble();
+        ui->lineEdit_D_down->setText(QString::number(Cm /100 ));;
+        }
+    if(ui->comboBoxDistance->currentText() == "M to Km")
+        {
+        double M = ui->lineEdit_D_Left->text().toDouble();
+        ui->lineEdit_D_down->setText(QString::number(M /1000 ));;
+        }
+}
+
+void DistanceAndLength::on_lineEdit_D_right_textChanged(const QString &arg1)
+{
+    if(ui->comboBoxDistance->currentText() == "Mm to Cm")
+        {
+        double Cm = ui->lineEdit_D_right->text().toDouble();
+        ui->lineEdit_D_down->setText(QString::number(Cm * 10));;
+        }
+    if(ui->comboBoxDistance->currentText() == "Cm to M")
+        {
+        double M = ui->lineEdit_D_right->text().toDouble();
+        ui->lineEdit_D_down->setText(QString::number(M * 100 ));;
+        }
+    if(ui->comboBoxDistance->currentText() == "M to Km")
+        {
+        double Km = ui->lineEdit_D_right->text().toDouble();
+        ui->lineEdit_D_down->setText(QString::number(Km *1000 ));;
+        }
+}

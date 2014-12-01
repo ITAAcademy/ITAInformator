@@ -24,6 +24,11 @@ public:
 //    void setTemperatureFont(QFont &font);
 //----------End
 
+private slots:
+        void on_lineEdit_T_Left_textChanged(const QString &arg1);
+
+        void on_lineEdit_T_right_textChanged(const QString &arg1);
+
 private:
     Ui::Temperature *ui;
 };
