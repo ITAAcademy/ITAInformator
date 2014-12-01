@@ -21,9 +21,11 @@ protected:
 // End
 
 private slots:
-   void on_lineEdit_D_Left_textChanged(const QString &arg1);
+   void on_lineEdit_D_Left_textChanged(const QString );
 
-   void on_lineEdit_D_right_textChanged(const QString &arg1);
+   void on_lineEdit_D_right_textChanged(const QString );
+
+   void on_comboBoxDistance_activated(const QString );
 
 private:
     Ui::DistanceAndLength *ui;

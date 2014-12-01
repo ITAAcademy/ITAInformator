@@ -57,17 +57,17 @@ private slots:
 
     void on_action_Default_settings_triggered();
 
-    void on_lineEdit_TempRight_textChanged(const QString &arg1);
+    void on_lineEdit_TempRight_textChanged(const QString );
 
-    void on_lineEdit_TempLeft_textChanged(const QString &arg1);
+    void on_lineEdit_TempLeft_textChanged(const QString );
 
-    void on_lineEdit_LenghtLeft_textChanged(const QString &arg1);
+    void on_lineEdit_LenghtLeft_textChanged(const QString );
 
-    void on_lineEdit_LenghtRight_textChanged(const QString &arg1);
+    void on_lineEdit_LenghtRight_textChanged(const QString );
 
-    void on_lineEdit_WeightLeft_textChanged(const QString &arg1);
+    void on_lineEdit_WeightLeft_textChanged(const QString );
 
-    void on_lineEdit_WeightRight_textChanged(const QString &arg1);
+    void on_lineEdit_WeightRight_textChanged(const QString );
 
 
 private:

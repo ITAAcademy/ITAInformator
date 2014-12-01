@@ -21,9 +21,13 @@ protected:
 // End
 
 private slots:
-        void on_lineEdit_W_Left_textChanged(const QString &arg1);
 
-        void on_lineEdit_W_right_textChanged(const QString &arg1);
+
+        void on_lineEdit_W_Left_textChanged(const QString );
+
+        void on_lineEdit_W_right_textChanged(const QString );
+
+        void on_comboBoxWeight_activated(const QString );
 
 private:
     Ui::Weight *ui;

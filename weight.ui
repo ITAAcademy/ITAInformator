@@ -66,6 +66,32 @@
     </rect>
    </property>
   </widget>
+  <widget class="QLabel" name="label_Left">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>40</y>
+     <width>51</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Grams</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Right">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>40</y>
+     <width>51</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Kilograms</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

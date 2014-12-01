@@ -43,7 +43,7 @@ void Temperature::showEvent(QShowEvent *)
 //}
 //----------End
 
-void Temperature::on_lineEdit_T_Left_textChanged(const QString &arg1)
+void Temperature::on_lineEdit_T_Left_textChanged(const QString)
 {
     if(ui->comboBoxTemperature->currentText() == "F to C")
         {
@@ -63,7 +63,7 @@ void Temperature::on_lineEdit_T_Left_textChanged(const QString &arg1)
 
 }
 
-void Temperature::on_lineEdit_T_right_textChanged(const QString &arg1)
+void Temperature::on_lineEdit_T_right_textChanged(const QString)
 {
     if(ui->comboBoxTemperature->currentText() == "F to C")
         {
@@ -82,3 +82,22 @@ void Temperature::on_lineEdit_T_right_textChanged(const QString &arg1)
         }
 }
 
+
+void Temperature::on_comboBoxTemperature_activated(const QString )
+{
+    if(ui->comboBoxTemperature->currentText() == "F to C")
+        {
+        ui->label_Left->setText("Fahrenheit");
+        ui->label_Right->setText("Celsius");
+        }
+    if(ui->comboBoxTemperature->currentText() == "K to C")
+        {
+        ui->label_Left->setText("Kelvin");
+        ui->label_Right->setText("Celsius");
+        }
+    if(ui->comboBoxTemperature->currentText() == "K to F")
+        {
+        ui->label_Left->setText("Kelvin");
+        ui->label_Right->setText("Fahrenheit");
+        }
+}
