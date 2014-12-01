@@ -126,3 +126,8 @@ void MainWindow::on_action_Default_settings_triggered()
     pLang = appDefaultLang;
 }
 
+
+void MainWindow::on_actionAbout_triggered()
+{
+    QApplication::closeAllWindows();
+}
