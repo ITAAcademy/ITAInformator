@@ -1,32 +1,33 @@
-#include "distanceandlength.h"
 #include "mainwindow.h"
 #include "qmessagebox.h"
 
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-#include "distanceandlength.h"
-
-#include "weight.h"
-#include "ui_mainwindow.h"
 #include "qmainwindow.h"
+#include "QTranslator"
+#include "QLocale"
+#include "QEvent"
+#include "QDebug"
+#include "QtGui"
 
 #include "AdditionalFiles/modal_window.h"
+#include "AdditionalFiles/listopenedwindows.h"
 
 #include "Charts/oilprices.h"
 #include "Charts/rubleinterbank.h"
-
-#include "Units/Temperature/temperature.h"
-#include "AdditionalFiles/listopenedwindows.h"
-
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
+    translator = new QTranslator;
+
     appDefaultLang = ("EN");
+
     ui->setupUi(this);
     this->setFixedSize(675,420);
+
     fillTaCB();
     fillLaCB();
     fillWaCB();
@@ -56,7 +57,12 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->menuBar->setFont(QFont("Times",10,1,false));
 
+
    // ui->menuBar->setNativeMenuBar(true);
+
+    connect(ui->actionEn, SIGNAL(triggered()), this, SLOT(chLangEn()));
+    connect(ui->actionUa, SIGNAL(triggered()), this, SLOT(chLangUa()));
+    connect(ui->actionPl, SIGNAL(triggered()), this, SLOT(chLangPl()));
 }
 
 MainWindow::~MainWindow()
@@ -68,18 +74,11 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_action_Widget_you_2_triggered()
+void MainWindow::on_action_About_triggered()
 {
     modal_window formmodal_window; // указываем новое имя класса
     formmodal_window.setModal(true); // говорим форме что она модальна
     formmodal_window.exec();
-}
-
-void MainWindow::on_actionTemperature_triggered()
-{
-    //formTemperature = new Temperature (this);
-    //wow
-    formTemperature.show();
 }
 
 void MainWindow::on_action_Oil_Charts_triggered()
@@ -94,18 +93,6 @@ void MainWindow::on_action_Currency_triggered()
     formrubleInterbank.show();
 }
 
-void MainWindow::on_actionDistance_and_Length_triggered()
-{
-    formDistanceAndLength = new DistanceAndLength (this);
-    formDistanceAndLength -> show();
-}
-
-void MainWindow::on_actionWeight_weight_triggered()
-{
-    formWeight = new Weight;
-    formWeight -> show();
-}
-
 void MainWindow::on_action_Font_settings_triggered()
 {
     bool ok;
@@ -117,7 +104,7 @@ void MainWindow::on_action_Font_settings_triggered()
 }
 
 // Begin(List_Opened_Windows)
-void MainWindow::on_actionList_opened_windows_triggered()
+void MainWindow::on_action_List_opened_windows_triggered()
 {
     formListOpenedWindows = new ListOpenedWindows (this);
     formListOpenedWindows->show();
@@ -169,4 +156,54 @@ void MainWindow::fillIaCB()
 
     for(int i = 0; i < ref.size(); ++i)
         ui->IaCB->addItem(ref.at(i));
+}
+
+void MainWindow::chLangEn()
+{
+    qApp->removeTranslator(translator);
+    reTranslateUi();
+    return;
+}
+
+void MainWindow::chLangUa()
+{
+    translator->load("ln_ua");
+    qApp->installTranslator(translator);
+    reTranslateUi();
+    //return;
+}
+
+void MainWindow::chLangPl()
+{
+    translator->load("ln_pl");
+    qApp->installTranslator(translator);
+    reTranslateUi();
+    return;
+}
+
+void MainWindow::reTranslateUi()
+{
+    setWindowTitle(tr("Some name"));
+    ui->menuAbout->setTitle(tr("Help"));
+        ui->action_About->setText(tr("&About"));
+    ui->menuTools->setTitle(tr("Tools"));
+        ui->menuLang->setTitle(tr("&Language"));
+            ui->actionEn->setText(tr("En"));
+            ui->actionUa->setText(tr("Ua"));
+            ui->actionPl->setText(tr("Pl"));
+        ui->menuSettings->setTitle(tr("&Settings"));
+            ui->action_Font_settings->setText(tr("&Font settings"));
+            ui->action_Default_settings->setText(tr("&Default settings"));
+    ui->menuProgram->setTitle(tr("Program"));
+        ui->action_Oil_Charts->setText(tr("&Oil Charts"));
+            formOilPrices.setWindowTitle(tr("Oil Charts"));
+        ui->action_Currency->setText(tr("&Currency"));
+            formrubleInterbank.setWindowTitle(tr("Ruble Interbank"));
+        ui->action_List_opened_windows->setText(tr("List opened windows"));
+        ui->actionExit->setText(tr("&Exit"));
+    ui->Weight->setTitle(tr("Weight conversion"));
+    ui->Lenght->setTitle(tr("Lenght conversion"));
+    ui->Temperature->setTitle(tr("Temperature conversion"));
+    ui->Informer->setTitle(tr("Informer"));
+    ui->Informer_block->setTitle(tr("Informer conversion"));
 }

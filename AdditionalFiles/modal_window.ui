@@ -159,10 +159,7 @@ p, li { white-space: pre-wrap; }
     </property>
    </widget>
   </widget>
-  <widget class="QDialogButtonBox" name="buttonBox">
-   <property name="enabled">
-    <bool>true</bool>
-   </property>
+  <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
      <x>220</x>
@@ -171,29 +168,26 @@ p, li { white-space: pre-wrap; }
      <height>23</height>
     </rect>
    </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <property name="standardButtons">
-    <set>QDialogButtonBox::Close</set>
+   <property name="text">
+    <string>Close</string>
    </property>
   </widget>
  </widget>
  <resources/>
  <connections>
   <connection>
-   <sender>buttonBox</sender>
-   <signal>clicked(QAbstractButton*)</signal>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
    <receiver>modal_window</receiver>
    <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>272</x>
-     <y>315</y>
+     <x>257</x>
+     <y>321</y>
     </hint>
     <hint type="destinationlabel">
-     <x>324</x>
-     <y>311</y>
+     <x>258</x>
+     <y>169</y>
     </hint>
    </hints>
   </connection>

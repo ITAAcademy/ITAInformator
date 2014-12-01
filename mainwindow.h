@@ -3,17 +3,14 @@
 
 #include <QMainWindow>
 
-#include "distanceandlength.h"
-#include "weight.h"
 #include "conv_tools.h"
+#include "QTranslator"
 
 #include "AdditionalFiles/modal_window.h"
 #include "AdditionalFiles/settings.h"
 
 #include "Charts/oilprices.h"
 #include "Charts/rubleinterbank.h"
-
-#include "Units/Temperature/temperature.h"
 
 // Begin(List_Opened_Windows)
 #include "AdditionalFiles/listopenedwindows.h"
@@ -37,23 +34,23 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+public slots:
+    void chLangEn();
+    void chLangUa();
+    void chLangPl();
+    void reTranslateUi();
+
 private slots:
 
-    void on_action_Widget_you_2_triggered();
-
-    void on_actionTemperature_triggered();
+    void on_action_About_triggered();
 
     void on_action_Oil_Charts_triggered();
 
     void on_action_Currency_triggered();
 
-    void on_actionDistance_and_Length_triggered();
-
-    void on_actionWeight_weight_triggered();
-
     void on_action_Font_settings_triggered();
 
-    void on_actionList_opened_windows_triggered();
+    void on_action_List_opened_windows_triggered();
 
     void on_action_Default_settings_triggered();
 
@@ -63,6 +60,7 @@ private:
     void fillWaCB();
     void fillIchCB();
     void fillIaCB();
+    void converterfunc(int);
 
 private:
 
@@ -73,9 +71,8 @@ private:
     QString             pLang;
     convTools           mConvTool;
 
-    DistanceAndLength   *formDistanceAndLength;
-    Weight              *formWeight;
-    Temperature         formTemperature;
+    QTranslator         *translator;
+
     OilPrices           formOilPrices;
     rubleInterbank      formrubleInterbank;
     pSettings            mSettings;

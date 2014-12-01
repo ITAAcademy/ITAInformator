@@ -7,6 +7,7 @@ modal_window::modal_window(QWidget *parent) :
 {
     ui->setupUi(this);
     setGeometry(QRect(520,250,200,600));
+    ui->pushButton->setText(tr("Close"));
 }
 
 modal_window::~modal_window()

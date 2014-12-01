@@ -252,72 +252,50 @@
    <property name="nativeMenuBar">
     <bool>true</bool>
    </property>
-   <widget class="QMenu" name="menuNew">
+   <widget class="QMenu" name="menuProgram">
     <property name="title">
      <string>Program</string>
     </property>
-    <widget class="QMenu" name="menuConversion">
-     <property name="title">
-      <string>&amp;Conversion</string>
-     </property>
-     <addaction name="actionTemperature"/>
-     <addaction name="actionDistance_and_Length"/>
-     <addaction name="actionWeight_weight"/>
-    </widget>
-    <addaction name="menuConversion"/>
     <addaction name="action_Oil_Charts"/>
     <addaction name="action_Currency"/>
-    <addaction name="action_2"/>
-    <addaction name="actionList_opened_windows"/>
+    <addaction name="action_List_opened_windows"/>
     <addaction name="separator"/>
-    <addaction name="actionAbout"/>
+    <addaction name="actionExit"/>
    </widget>
-   <widget class="QMenu" name="menuAbout">
+   <widget class="QMenu" name="menuTools">
     <property name="title">
      <string>Tools</string>
     </property>
-    <widget class="QMenu" name="menuLengvich">
+    <widget class="QMenu" name="menuLang">
      <property name="title">
       <string>&amp;Language</string>
      </property>
      <addaction name="actionEn"/>
-     <addaction name="actionUk"/>
-     <addaction name="actionPol"/>
+     <addaction name="actionUa"/>
+     <addaction name="actionPl"/>
     </widget>
-    <widget class="QMenu" name="menu_Settings">
+    <widget class="QMenu" name="menuSettings">
      <property name="title">
       <string>&amp;Settings</string>
      </property>
      <addaction name="action_Font_settings"/>
      <addaction name="action_Default_settings"/>
     </widget>
-    <addaction name="menuLengvich"/>
-    <addaction name="menu_Settings"/>
+    <addaction name="menuLang"/>
+    <addaction name="menuSettings"/>
    </widget>
-   <widget class="QMenu" name="menu">
+   <widget class="QMenu" name="menuAbout">
     <property name="title">
      <string>Help</string>
     </property>
-    <addaction name="separator"/>
-    <addaction name="separator"/>
-    <addaction name="action_Widget_you_2"/>
+    <addaction name="action_About"/>
    </widget>
-   <addaction name="menuNew"/>
+   <addaction name="menuProgram"/>
+   <addaction name="menuTools"/>
    <addaction name="menuAbout"/>
-   <addaction name="menu"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
-  <action name="action">
-   <property name="text">
-    <string>Личные даные</string>
-   </property>
-  </action>
-  <action name="action_2">
-   <property name="text">
-    <string>&amp;Personal data</string>
-   </property>
-  </action>
-  <action name="actionAbout">
+  <action name="actionExit">
    <property name="checkable">
     <bool>false</bool>
    </property>
@@ -333,54 +311,25 @@
     <string>En</string>
    </property>
   </action>
-  <action name="actionUk">
+  <action name="actionUa">
    <property name="text">
-    <string>Uk</string>
+    <string>Ua</string>
+   </property>
+   <property name="toolTip">
+    <string>Ua</string>
    </property>
   </action>
-  <action name="actionPol">
+  <action name="actionPl">
    <property name="text">
-    <string>Pol</string>
+    <string>Pl</string>
+   </property>
+   <property name="toolTip">
+    <string>Pl</string>
    </property>
   </action>
-  <action name="action_5">
-   <property name="text">
-    <string>&amp;Support service</string>
-   </property>
-  </action>
-  <action name="action_7">
-   <property name="text">
-    <string>&amp;Check for updates</string>
-   </property>
-  </action>
-  <action name="action_Widget_you_2">
+  <action name="action_About">
    <property name="text">
     <string>&amp;About</string>
-   </property>
-  </action>
-  <action name="actionTemperature">
-   <property name="text">
-    <string>Temperature</string>
-   </property>
-  </action>
-  <action name="actionArea">
-   <property name="text">
-    <string>Area</string>
-   </property>
-  </action>
-  <action name="actionVolume_capacity">
-   <property name="text">
-    <string>Volume, capacity</string>
-   </property>
-  </action>
-  <action name="actionDistance_and_Length">
-   <property name="text">
-    <string>Distance and Length</string>
-   </property>
-  </action>
-  <action name="actionWeight_weight">
-   <property name="text">
-    <string>Weight, weight</string>
    </property>
   </action>
   <action name="action_Oil_Charts">
@@ -410,13 +359,19 @@
     <string>&amp;Font settings</string>
    </property>
   </action>
-  <action name="actionList_opened_windows">
+  <action name="action_List_opened_windows">
    <property name="text">
+    <string>&amp;List opened windows</string>
+   </property>
+   <property name="toolTip">
     <string>List opened windows</string>
    </property>
   </action>
   <action name="action_Default_settings">
    <property name="text">
+    <string>&amp;Default settings</string>
+   </property>
+   <property name="toolTip">
     <string>Default settings</string>
    </property>
   </action>
@@ -432,7 +387,7 @@
  <resources/>
  <connections>
   <connection>
-   <sender>actionAbout</sender>
+   <sender>actionExit</sender>
    <signal>triggered()</signal>
    <receiver>MainWindow</receiver>
    <slot>close()</slot>

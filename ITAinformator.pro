@@ -17,17 +17,9 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    Units/formula.cpp \
-    Units/unit.cpp \
-    Units/Temperature/temperature.cpp \
-    Units/feetstometer.cpp \
     Charts/oilprices.cpp \
     Charts/rubleinterbank.cpp \
     AdditionalFiles/modal_window.cpp \
-    Units/Temperature/farengtocel.cpp \
-    Units/conversion.cpp \
-    distanceandlength.cpp \
-    weight.cpp \
     AdditionalFiles/settings.cpp \
     AdditionalFiles/listopenedwindows.cpp \
     AdditionalFiles/appsettings.cpp \
@@ -35,18 +27,10 @@ SOURCES += main.cpp\
 
 
 HEADERS  += mainwindow.h \
-    Units/formula.h \
-    Units/unit.h \
-    Units/Temperature/temperature.h \
-    Units/feetstometer.h \
     modal_window.h \
     Charts/oilprices.h \
     Charts/rubleinterbank.h \
     AdditionalFiles/modal_window.h \
-    Units/Temperature/farengtocel.h \
-    Units/conversion.h \
-    distanceandlength.h \
-    weight.h \
     AdditionalFiles/settings.h \
     AdditionalFiles/listopenedwindows.h \
     AdditionalFiles/appsettings.h \
@@ -57,16 +41,22 @@ CONFIG   += c++11
 
 FORMS += \
     mainwindow.ui \
-    Units/Temperature/temperature.ui \
     Charts/oilprices.ui \
     Charts/rubleinterbank.ui \
     AdditionalFiles/modal_window.ui \
-    distanceandlength.ui \
-    weight.ui \
     AdditionalFiles/listopenedwindows.ui
+
+TRANSLATIONS += \
+    ln_ua.ts \
+    ln_pl.ts
 
 
 win32:RC_FILE = IcoConvert.rc
 
 RESOURCES += \
     Img.qrc
+
+OTHER_FILES += \
+    ln_pl.ts \
+    ln_ua.ts
+
