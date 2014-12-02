@@ -6,6 +6,7 @@ modal_window::modal_window(QWidget *parent) :
     ui(new Ui::modal_window)
 {
     ui->setupUi(this);
+    setGeometry(QRect(520,250,200,600));
 }
 
 modal_window::~modal_window()
