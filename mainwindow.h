@@ -57,6 +57,8 @@ private slots:
 
     void on_action_Default_settings_triggered();
 
+    void on_actionAbout_triggered();
+
 private:
     void fillTaCB();
     void fillLaCB();

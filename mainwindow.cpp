@@ -170,3 +170,8 @@ void MainWindow::fillIaCB()
     for(int i = 0; i < ref.size(); ++i)
         ui->IaCB->addItem(ref.at(i));
 }
+
+void MainWindow::on_actionAbout_triggered()
+{
+    QApplication::closeAllWindows();
+}
