@@ -17,7 +17,6 @@ public:
     pSettings();
     ~pSettings();
 
-
     const bool &FirstRun()const;
 
     void setMainWindowTitle(const QString &aTitle);

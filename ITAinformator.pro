@@ -58,5 +58,7 @@ RESOURCES += \
 
 OTHER_FILES += \
     ln_pl.ts \
-    ln_ua.ts
+    ln_ua.ts \
+    qt_uk.ts \
+    qt_pl.ts
 

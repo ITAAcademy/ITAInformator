@@ -39,6 +39,7 @@ public slots:
     void chLangUa();
     void chLangPl();
     void reTranslateUi();
+    void appChangeLanguage();
 
 private slots:
 
@@ -67,11 +68,12 @@ private:
     Ui::MainWindow      *ui;
     QMdiArea            *mdiArea;
     QMenuBar            *menuBar;
-    QString             appDefaultLang;
     QString             pLang;
     convTools           mConvTool;
 
     QTranslator         *translator;
+    QTranslator         *qAppTranslator;
+    QFontDialog         mFontDialog;
 
     OilPrices           formOilPrices;
     rubleInterbank      formrubleInterbank;

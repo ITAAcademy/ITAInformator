@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="ru_RU">
+<TS version="2.1" language="ua">
 <context>
     <name>ListOpenedWindows</name>
     <message>
@@ -205,24 +205,12 @@
         <translation>ОК</translation>
     </message>
     <message>
-        <source>&amp;OK</source>
-        <translation>&amp;Добре</translation>
-    </message>
-    <message>
         <source>Cancel</source>
         <translation>Відміна</translation>
     </message>
     <message>
-        <source>&amp;Cancel</source>
-        <translation>В&amp;ідміна</translation>
-    </message>
-    <message>
         <source>Close</source>
         <translation>Закрити</translation>
-    </message>
-    <message>
-        <source>&amp;Close</source>
-        <translation>&amp;Закрити</translation>
     </message>
 </context>
 <context>
@@ -298,7 +286,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="AdditionalFiles/modal_window.ui" line="106"/>
         <source>Dmitro Vyakhk</source>
-        <translation>Дмитро Вякх</translation>
+        <translation>Дмитро Вяхк</translation>
     </message>
     <message>
         <location filename="AdditionalFiles/modal_window.ui" line="119"/>
@@ -333,6 +321,177 @@ p, li { white-space: pre-wrap; }
         <location filename="Charts/rubleinterbank.ui" line="35"/>
         <source>Ruble Interbank</source>
         <translation>Курс рубля</translation>
+    </message>
+</context>
+<context>
+    <name>QFontDatabase</name>
+    <message>
+        <source>Normal</source>
+        <translation>Звичайний</translation>
+    </message>
+    <message>
+        <source>Bold</source>
+        <translation>Жирний</translation>
+    </message>
+    <message>
+        <source>Demi Bold</source>
+        <translation>Напівжирний</translation>
+    </message>
+    <message>
+        <source>Black</source>
+        <translation>Чорний</translation>
+    </message>
+    <message>
+        <source>Demi</source>
+        <translation>Середній</translation>
+    </message>
+    <message>
+        <source>Light</source>
+        <translation>Світлий</translation>
+    </message>
+    <message>
+        <source>Italic</source>
+        <translation>Курсив</translation>
+    </message>
+    <message>
+        <source>Oblique</source>
+        <translation>Похилий</translation>
+    </message>
+    <message>
+        <source>Any</source>
+        <translation>Будь-яка</translation>
+    </message>
+    <message>
+        <source>Latin</source>
+        <translation>Латиниця</translation>
+    </message>
+    <message>
+        <source>Greek</source>
+        <translation>Грецька</translation>
+    </message>
+    <message>
+        <source>Cyrillic</source>
+        <translation>Кирилиця</translation>
+    </message>
+    <message>
+        <source>Armenian</source>
+        <translation>Вірменська</translation>
+    </message>
+    <message>
+        <source>Hebrew</source>
+        <translation>Іврит</translation>
+    </message>
+    <message>
+        <source>Arabic</source>
+        <translation>Арабська</translation>
+    </message>
+    <message>
+        <source>Syriac</source>
+        <translation>Сирійська</translation>
+    </message>
+    <message>
+        <source>Thaana</source>
+        <translation>Таана</translation>
+    </message>
+    <message>
+        <source>Devanagari</source>
+        <translation>Деванагірі</translation>
+    </message>
+    <message>
+        <source>Bengali</source>
+        <translation>Бенгальська</translation>
+    </message>
+    <message>
+        <source>Gurmukhi</source>
+        <translation>Гурмукхи</translation>
+    </message>
+    <message>
+        <source>Gujarati</source>
+        <translation>Гуджараті</translation>
+    </message>
+    <message>
+        <source>Oriya</source>
+        <translation>Орія</translation>
+    </message>
+    <message>
+        <source>Tamil</source>
+        <translation>Тамільська</translation>
+    </message>
+    <message>
+        <source>Telugu</source>
+        <translation>Телугу</translation>
+    </message>
+    <message>
+        <source>Kannada</source>
+        <translation>Каннада</translation>
+    </message>
+    <message>
+        <source>Malayalam</source>
+        <translation>Малаялам</translation>
+    </message>
+    <message>
+        <source>Sinhala</source>
+        <translation>Сингальська</translation>
+    </message>
+    <message>
+        <source>Thai</source>
+        <translation>Тайська</translation>
+    </message>
+    <message>
+        <source>Lao</source>
+        <translation>Лаоська</translation>
+    </message>
+    <message>
+        <source>Tibetan</source>
+        <translation>Тибетська</translation>
+    </message>
+    <message>
+        <source>Myanmar</source>
+        <translation>М&apos;янма</translation>
+    </message>
+    <message>
+        <source>Georgian</source>
+        <translation>Грузинська</translation>
+    </message>
+    <message>
+        <source>Khmer</source>
+        <translation>Кхмерська</translation>
+    </message>
+    <message>
+        <source>Simplified Chinese</source>
+        <translation>Китайська спрощена</translation>
+    </message>
+    <message>
+        <source>Traditional Chinese</source>
+        <translation>Китайська традиційна</translation>
+    </message>
+    <message>
+        <source>Japanese</source>
+        <translation>Японська</translation>
+    </message>
+    <message>
+        <source>Korean</source>
+        <translation>Корейська</translation>
+    </message>
+    <message>
+        <source>Vietnamese</source>
+        <translation>В&apos;єтнамська</translation>
+    </message>
+    <message>
+        <source>Symbol</source>
+        <translation>Символьна</translation>
+    </message>
+    <message>
+        <source>Ogham</source>
+        <translation>Огамічна</translation>
+    </message>
+    <message>
+        <source>Runic</source>
+        <translation>Рунічна</translation>
+    </message>
+    <message>
+        <source>N&apos;Ko</source>
+        <translation>Нко</translation>
     </message>
 </context>
 </TS>

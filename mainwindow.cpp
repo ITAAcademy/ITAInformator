@@ -1,15 +1,10 @@
-#include "mainwindow.h"
 #include "qmessagebox.h"
 
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
 #include "qmainwindow.h"
-#include "QTranslator"
-#include "QLocale"
-#include "QEvent"
-#include "QDebug"
-#include "QtGui"
+#include "QDialogButtonBox"
 
 #include "AdditionalFiles/modal_window.h"
 #include "AdditionalFiles/listopenedwindows.h"
@@ -22,9 +17,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     translator = new QTranslator;
-
-    appDefaultLang = ("EN");
-
+    qAppTranslator = new QTranslator;
     ui->setupUi(this);
     this->setFixedSize(675,420);
 
@@ -40,19 +33,20 @@ MainWindow::MainWindow(QWidget *parent) :
         setWindowTitle("Some name");
         setGeometry(QRect(355,100,760,558));
         setFont(QFont("Times",10,1,false));
-        pLang = appDefaultLang;
+        pLang = "en";
 
         mSettings.setMainWindowRect(geometry());
         mSettings.setMainWindowTitle(windowTitle());
         mSettings.setMainWindowFont(font());
-        mSettings.setAppLang(appDefaultLang);
+        mSettings.setAppLang(pLang);
     }
     else
     {
         setWindowTitle(mSettings.getMainWindowTitle());
         setGeometry(mSettings.getMainWindowRect());
-        setFont(mSettings.getMainWindowFont());
         pLang = (mSettings.getAppLang());
+        appChangeLanguage();
+        reTranslateUi();
     }
 
     ui->menuBar->setFont(QFont("Times",10,1,false));
@@ -72,6 +66,22 @@ MainWindow::~MainWindow()
     mSettings.setMainWindowRect(geometry());
     mSettings.setMainWindowFont(font());
     delete ui;
+}
+
+void MainWindow::appChangeLanguage()
+{
+    if(pLang == QString("en"))
+    {
+        chLangEn();
+    }
+    if(pLang == QString("ua"))
+    {
+        chLangUa();
+    }
+    if(pLang == QString("pl"))
+    {
+        chLangPl();
+    }
 }
 
 void MainWindow::on_action_About_triggered()
@@ -115,7 +125,9 @@ void MainWindow::on_action_Default_settings_triggered()
     setWindowTitle("Some name");
     setGeometry(QRect(355,100,760,558));
     setFont(QFont("Times",10,1,false));
-    pLang = appDefaultLang;
+    pLang = "en";
+    appChangeLanguage();
+    reTranslateUi();
 }
 
 void MainWindow::fillTaCB()
@@ -161,24 +173,29 @@ void MainWindow::fillIaCB()
 void MainWindow::chLangEn()
 {
     qApp->removeTranslator(translator);
+    qApp->removeTranslator(qAppTranslator);
     reTranslateUi();
-    return;
+    pLang = "en";
 }
 
 void MainWindow::chLangUa()
 {
     translator->load("ln_ua");
+    qAppTranslator->load("qt_uk");
     qApp->installTranslator(translator);
+    qApp->installTranslator(qAppTranslator);
     reTranslateUi();
-    //return;
+    pLang = "ua";
 }
 
 void MainWindow::chLangPl()
 {
     translator->load("ln_pl");
+    qAppTranslator->load("qt_pl");
     qApp->installTranslator(translator);
+    qApp->installTranslator(qAppTranslator);
     reTranslateUi();
-    return;
+    pLang = "pl";
 }
 
 void MainWindow::reTranslateUi()

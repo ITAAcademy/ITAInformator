@@ -265,7 +265,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="AdditionalFiles/modal_window.ui" line="106"/>
         <source>Dmitro Vyakhk</source>
-        <translation>Dmitry Vâkh</translation>
+        <translation>Dmitry Vähk</translation>
     </message>
     <message>
         <location filename="AdditionalFiles/modal_window.ui" line="119"/>
@@ -300,6 +300,177 @@ p, li { white-space: pre-wrap; }
         <location filename="Charts/rubleinterbank.ui" line="35"/>
         <source>Ruble Interbank</source>
         <translation>Kurs walut</translation>
+    </message>
+</context>
+<context>
+    <name>QFontDatabase</name>
+    <message>
+        <source>Normal</source>
+        <translation>Normalny</translation>
+    </message>
+    <message>
+        <source>Bold</source>
+        <translation>Śmiały</translation>
+    </message>
+    <message>
+        <source>Demi Bold</source>
+        <translation>Demi Bold</translation>
+    </message>
+    <message>
+        <source>Black</source>
+        <translation>Czarny</translation>
+    </message>
+    <message>
+        <source>Demi</source>
+        <translation>Demi</translation>
+    </message>
+    <message>
+        <source>Light</source>
+        <translation>Światło</translation>
+    </message>
+    <message>
+        <source>Italic</source>
+        <translation>Kursywa</translation>
+    </message>
+    <message>
+        <source>Oblique</source>
+        <translation>Ukośny</translation>
+    </message>
+    <message>
+        <source>Any</source>
+        <translation>Dowolny</translation>
+    </message>
+    <message>
+        <source>Latin</source>
+        <translation>Łacina</translation>
+    </message>
+    <message>
+        <source>Greek</source>
+        <translation>Grecki</translation>
+    </message>
+    <message>
+        <source>Cyrillic</source>
+        <translation>Cyrylicy</translation>
+    </message>
+    <message>
+        <source>Armenian</source>
+        <translation>Ormiański</translation>
+    </message>
+    <message>
+        <source>Hebrew</source>
+        <translation>Hebrajski</translation>
+    </message>
+    <message>
+        <source>Arabic</source>
+        <translation>Arabski</translation>
+    </message>
+    <message>
+        <source>Syriac</source>
+        <translation>Syryjczyk</translation>
+    </message>
+    <message>
+        <source>Thaana</source>
+        <translation>Taana</translation>
+    </message>
+    <message>
+        <source>Devanagari</source>
+        <translation>Devanahiri</translation>
+    </message>
+    <message>
+        <source>Bengali</source>
+        <translation>Bengalski</translation>
+    </message>
+    <message>
+        <source>Gurmukhi</source>
+        <translation>Hurmukhy</translation>
+    </message>
+    <message>
+        <source>Gujarati</source>
+        <translation>Gujarat</translation>
+    </message>
+    <message>
+        <source>Oriya</source>
+        <translation>Orija</translation>
+    </message>
+    <message>
+        <source>Tamil</source>
+        <translation>Tamil</translation>
+    </message>
+    <message>
+        <source>Telugu</source>
+        <translation>Telugu</translation>
+    </message>
+    <message>
+        <source>Kannada</source>
+        <translation>Kannada</translation>
+    </message>
+    <message>
+        <source>Malayalam</source>
+        <translation>Malajalam</translation>
+    </message>
+    <message>
+        <source>Sinhala</source>
+        <translation>Cejlończyk</translation>
+    </message>
+    <message>
+        <source>Thai</source>
+        <translation>Tajski</translation>
+    </message>
+    <message>
+        <source>Lao</source>
+        <translation>Lao</translation>
+    </message>
+    <message>
+        <source>Tibetan</source>
+        <translation>Tybetańska</translation>
+    </message>
+    <message>
+        <source>Myanmar</source>
+        <translation>Myanmar</translation>
+    </message>
+    <message>
+        <source>Georgian</source>
+        <translation>Gruziński</translation>
+    </message>
+    <message>
+        <source>Khmer</source>
+        <translation>Khmer</translation>
+    </message>
+    <message>
+        <source>Simplified Chinese</source>
+        <translation>Chiński uproszczony</translation>
+    </message>
+    <message>
+        <source>Traditional Chinese</source>
+        <translation>Chiński tradycyjny</translation>
+    </message>
+    <message>
+        <source>Japanese</source>
+        <translation>Japoński</translation>
+    </message>
+    <message>
+        <source>Korean</source>
+        <translation>Koreański</translation>
+    </message>
+    <message>
+        <source>Vietnamese</source>
+        <translation>Wietnamski</translation>
+    </message>
+    <message>
+        <source>Symbol</source>
+        <translation>Charakter</translation>
+    </message>
+    <message>
+        <source>Ogham</source>
+        <translation>Ohamichna</translation>
+    </message>
+    <message>
+        <source>Runic</source>
+        <translation>Runiczny</translation>
+    </message>
+    <message>
+        <source>N&apos;Ko</source>
+        <translation>NKo</translation>
     </message>
 </context>
 </TS>
