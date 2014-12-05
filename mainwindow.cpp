@@ -92,6 +92,10 @@ void MainWindow::on_action_About_triggered()
     modal_window formmodal_window; // указываем новое имя класса
     formmodal_window.setModal(true); // говорим форме что она модальна
     formmodal_window.exec();
+}
+
+void MainWindow::on_actionTemperature_triggered()
+{
     formTemperature = new Temperature (this);
     formTemperature->show();
 }

@@ -25,7 +25,8 @@ SOURCES += main.cpp\
     AdditionalFiles/appsettings.cpp \
     conv_tools.cpp \
     distanceandlength.cpp \
-    weight.cpp
+    weight.cpp \
+    Units/Temperature/temperature.cpp
 
 
 HEADERS  += mainwindow.h \
@@ -38,7 +39,8 @@ HEADERS  += mainwindow.h \
     AdditionalFiles/appsettings.h \
     conv_tools.h \
     distanceandlength.h \
-    weight.h
+    weight.h \
+    Units/Temperature/temperature.h
 
 
 CONFIG   += c++11
@@ -50,7 +52,8 @@ FORMS += \
     AdditionalFiles/modal_window.ui \
     AdditionalFiles/listopenedwindows.ui \
     distanceandlength.ui \
-    weight.ui
+    weight.ui \
+    Units/Temperature/temperature.ui
 
 TRANSLATIONS += \
     ln_ua.ts \

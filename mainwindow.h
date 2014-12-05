@@ -49,6 +49,8 @@ private slots:
 
     void on_action_About_triggered();
 
+    void on_actionTemperature_triggered();
+
     void on_action_Oil_Charts_triggered();
 
     void on_action_Currency_triggered();
