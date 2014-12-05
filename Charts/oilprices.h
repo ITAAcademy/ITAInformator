@@ -16,6 +16,11 @@ class OilPrices : public QDialog
 public:
     explicit OilPrices(QWidget *parent = 0);
     ~OilPrices();
+    // Begin(List_Opened_Windows)
+    protected:
+        void closeEvent(QCloseEvent *);
+        void showEvent(QShowEvent *);
+    // End
 
 //----------Begin(Font_settings)
 //    void setOilpricesFont(QFont &font);

@@ -6,20 +6,249 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>682</width>
-    <height>470</height>
+    <width>675</width>
+    <height>420</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="Temperature">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>5</y>
+      <width>320</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Temperature conversion</string>
+    </property>
+    <widget class="QComboBox" name="TaCB">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>20</y>
+       <width>100</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_TempRight">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>20</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_TempLeft">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="Lenght">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>130</y>
+      <width>320</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Lenght conversion</string>
+    </property>
+    <widget class="QComboBox" name="LaCB">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>20</y>
+       <width>100</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_LenghtRight">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>20</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_LenghtLeft">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="Weight">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>260</y>
+      <width>320</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Weight conversion</string>
+    </property>
+    <widget class="QComboBox" name="WaCB">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>20</y>
+       <width>100</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_WeightRight">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>20</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_WeightLeft">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="Informer">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>5</y>
+      <width>341</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Informer</string>
+    </property>
+    <widget class="QWebView" name="webView">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>321</width>
+       <height>200</height>
+      </rect>
+     </property>
+     <property name="url">
+      <url>
+       <string>about:blank</string>
+      </url>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="IchCB">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>20</y>
+       <width>100</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="Informer_block">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>280</y>
+       <width>320</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Informer conversion</string>
+     </property>
+     <widget class="QComboBox" name="IaCB">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>20</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>682</width>
+     <width>675</width>
      <height>21</height>
     </rect>
    </property>
@@ -43,15 +272,13 @@
    </property>
    <widget class="QMenu" name="menuNew">
     <property name="title">
-     <string>Widget you</string>
+     <string>Program</string>
     </property>
     <widget class="QMenu" name="menuConversion">
      <property name="title">
       <string>&amp;Conversion</string>
      </property>
      <addaction name="actionTemperature"/>
-     <addaction name="actionArea"/>
-     <addaction name="actionVolume_capacity"/>
      <addaction name="actionDistance_and_Length"/>
      <addaction name="actionWeight_weight"/>
     </widget>
@@ -59,6 +286,7 @@
     <addaction name="action_Oil_Charts"/>
     <addaction name="action_Currency"/>
     <addaction name="action_2"/>
+    <addaction name="actionList_opened_windows"/>
     <addaction name="separator"/>
     <addaction name="actionAbout"/>
    </widget>
@@ -79,18 +307,16 @@
       <string>&amp;Settings</string>
      </property>
      <addaction name="action_Font_settings"/>
+     <addaction name="action_Default_settings"/>
     </widget>
     <addaction name="menuLengvich"/>
     <addaction name="menu_Settings"/>
    </widget>
    <widget class="QMenu" name="menu">
     <property name="title">
-     <string>Assistance</string>
+     <string>Help</string>
     </property>
-    <addaction name="action_Widget_you"/>
-    <addaction name="action_5"/>
     <addaction name="separator"/>
-    <addaction name="action_7"/>
     <addaction name="separator"/>
     <addaction name="action_Widget_you_2"/>
    </widget>
@@ -135,11 +361,6 @@
     <string>Pol</string>
    </property>
   </action>
-  <action name="action_Widget_you">
-   <property name="text">
-    <string>&amp;Details on Widget_you</string>
-   </property>
-  </action>
   <action name="action_5">
    <property name="text">
     <string>&amp;Support service</string>
@@ -152,7 +373,7 @@
   </action>
   <action name="action_Widget_you_2">
    <property name="text">
-    <string>&amp;About Widget_you</string>
+    <string>&amp;About</string>
    </property>
   </action>
   <action name="actionTemperature">
@@ -207,8 +428,25 @@
     <string>&amp;Font settings</string>
    </property>
   </action>
+  <action name="actionList_opened_windows">
+   <property name="text">
+    <string>List opened windows</string>
+   </property>
+  </action>
+  <action name="action_Default_settings">
+   <property name="text">
+    <string>Default settings</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QWebView</class>
+   <extends>QWidget</extends>
+   <header>QtWebKitWidgets/QWebView</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections>
   <connection>
