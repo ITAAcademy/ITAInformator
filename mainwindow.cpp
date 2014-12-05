@@ -232,6 +232,7 @@ void MainWindow::reTranslateUi()
 void MainWindow::on_actionAbout_triggered()
 {
     QApplication::closeAllWindows();
+}
 void MainWindow::on_lineEdit_TempLeft_textChanged(const QString)
 {
     if(ui->lineEdit_TempLeft->hasFocus())
