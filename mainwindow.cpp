@@ -173,120 +173,133 @@ void MainWindow::fillIaCB()
 
 void MainWindow::on_lineEdit_TempLeft_textChanged(const QString)
 {
+    if(ui->lineEdit_LenghtLeft->hasFocus())
+    {
     if(ui->TaCB->currentText() == "F/C")
         {
         double Farengate = ui->lineEdit_TempLeft->text().toDouble();
-        ui->lineEdit_TempDown->setText(QString::number((Farengate - 32)*5/9));;
+        ui->lineEdit_TempLeft->setText(QString::number((Farengate - 32)*5/9));;
         }
     if(ui->TaCB->currentText() == "K/C")
         {
         double Kelvin = ui->lineEdit_TempLeft->text().toDouble();
-        ui->lineEdit_TempDown->setText(QString::number(Kelvin - 273.15 ));;
+        ui->lineEdit_TempLeft->setText(QString::number(Kelvin - 273.15 ));;
         }
     if(ui->TaCB->currentText() == "K/F")
         {
         double Kelvin = ui->lineEdit_TempLeft->text().toDouble();
-        ui->lineEdit_TempDown->setText(QString::number(Kelvin *9/5-459.67 ));;
+        ui->lineEdit_TempLeft->setText(QString::number(Kelvin *9/5-459.67 ));;
         }
+    }
 }
 
 void MainWindow::on_lineEdit_TempRight_textChanged(const QString)
 {
+   if(ui->lineEdit_TempRight->hasFocus())
+   {
     if(ui->TaCB->currentText() == "F/C")
         {
         double Celsius = ui->lineEdit_TempRight->text().toDouble();
-        ui->lineEdit_TempDown->setText(QString::number((Celsius *9/5)+32 ));
+        ui->lineEdit_TempLeft->setText(QString::number((Celsius *9/5)+32 ));
         }
     if(ui->TaCB->currentText() == "K/C")
         {
         double Celsius = ui->lineEdit_TempRight->text().toDouble();
-        ui->lineEdit_TempDown->setText(QString::number(Celsius + 273.15 ));
+        ui->lineEdit_TempLeft->setText(QString::number(Celsius + 273.15 ));
         }
     if(ui->TaCB->currentText() == "K/F")
         {
         double Farengate = ui->lineEdit_TempRight->text().toDouble();
-        ui->lineEdit_TempDown->setText(QString::number((Farengate +459.67)*5/9 ));
+        ui->lineEdit_TempLeft->setText(QString::number((Farengate +459.67)*5/9 ));
         }
-
+   }
 
 }
 
 
 
 void MainWindow::on_lineEdit_LenghtLeft_textChanged(const QString)
-{
+{  if(ui->lineEdit_LenghtLeft->hasFocus())
+    {
     if(ui->LaCB->currentText() == "mm/cm")
         {
         double Mm = ui->lineEdit_LenghtLeft->text().toDouble();
-        ui->lineEdit_LenghtDown->setText(QString::number(Mm /10 ));;
+        ui->lineEdit_LenghtRight->setText(QString::number(Mm /10 ));;
         }
     if(ui->LaCB->currentText() == "cm/m")
         {
         double Cm = ui->lineEdit_LenghtLeft->text().toDouble();
-        ui->lineEdit_LenghtDown->setText(QString::number(Cm /100 ));;
+        ui->lineEdit_LenghtRight->setText(QString::number(Cm /100 ));;
         }
     if(ui->LaCB->currentText() == "m/km")
         {
         double M = ui->lineEdit_LenghtLeft->text().toDouble();
-        ui->lineEdit_LenghtDown->setText(QString::number(M /1000 ));;
+        ui->lineEdit_LenghtRight->setText(QString::number(M /1000 ));;
         }
+    }
 }
 
 void MainWindow::on_lineEdit_LenghtRight_textChanged(const QString)
-{
+{  if(ui->lineEdit_LenghtRight->hasFocus())
+    {
     if(ui->LaCB->currentText() == "mm/cm")
         {
         double Cm = ui->lineEdit_LenghtRight->text().toDouble();
-        ui->lineEdit_LenghtDown->setText(QString::number(Cm * 10));;
+        ui->lineEdit_LenghtLeft->setText(QString::number(Cm * 10));;
         }
     if(ui->LaCB->currentText() == "cm/m")
         {
         double M = ui->lineEdit_LenghtRight->text().toDouble();
-        ui->lineEdit_LenghtDown->setText(QString::number(M * 100 ));;
+        ui->lineEdit_LenghtLeft->setText(QString::number(M * 100 ));;
         }
     if(ui->LaCB->currentText() == "m/km")
         {
         double Km = ui->lineEdit_LenghtRight->text().toDouble();
-        ui->lineEdit_LenghtDown->setText(QString::number(Km *1000 ));;
+        ui->lineEdit_LenghtLeft->setText(QString::number(Km *1000 ));;
         }
+    }
 }
 
 void MainWindow::on_lineEdit_WeightLeft_textChanged(const QString)
-{
+{  if(ui->lineEdit_WeightLeft->hasFocus())
+    {
     if(ui->WaCB->currentText() == "g/kg")
         {
         double G = ui->lineEdit_WeightLeft->text().toDouble();
-        ui->lineEdit_WeightDown->setText(QString::number(G /1000));;
+        ui->lineEdit_WeightRight->setText(QString::number(G /1000));;
         }
     if(ui->WaCB->currentText() == "kg/p")
         {
         double Kg = ui->lineEdit_WeightLeft->text().toDouble();
-        ui->lineEdit_WeightDown->setText(QString::number(Kg * 2.205 ));;
+        ui->lineEdit_WeightRight->setText(QString::number(Kg * 2.205 ));;
         }
     if(ui->WaCB->currentText() == "p/g")
         {
         double F = ui->lineEdit_WeightLeft->text().toDouble();
-        ui->lineEdit_WeightDown->setText(QString::number((F *1000)/2.205 ));;
+        ui->lineEdit_WeightRight->setText(QString::number((F *1000)/2.205 ));;
         }
+    }
 }
 
 void MainWindow::on_lineEdit_WeightRight_textChanged(const QString)
-{
+{  if(ui->lineEdit_LenghtRight->hasFocus())
+    {
     if(ui->WaCB->currentText() == "g/kg")
         {
         double Kg = ui->lineEdit_WeightRight->text().toDouble();
-        ui->lineEdit_WeightDown->setText(QString::number(Kg * 1000));;
+        ui->lineEdit_WeightLeft->setText(QString::number(Kg * 1000));;
         }
     if(ui->WaCB->currentText() == "kg/p")
         {
         double F = ui->lineEdit_WeightRight->text().toDouble();
-        ui->lineEdit_WeightDown->setText(QString::number(F /2.205 ));;
+        ui->lineEdit_WeightLeft->setText(QString::number(F /2.205 ));;
         }
     if(ui->WaCB->currentText() == "p/g")
         {
         double G = ui->lineEdit_WeightRight->text().toDouble();
-        ui->lineEdit_WeightDown->setText(QString::number((G *2.205) /1000 ));;
+        ui->lineEdit_WeightLeft->setText(QString::number((G *2.205) /1000 ));;
         }
+    }
 }
 
 
