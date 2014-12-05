@@ -73,14 +73,17 @@ void MainWindow::appChangeLanguage()
     if(pLang == QString("en"))
     {
         chLangEn();
+        return;
     }
     if(pLang == QString("ua"))
     {
         chLangUa();
+        return;
     }
     if(pLang == QString("pl"))
     {
         chLangPl();
+        return;
     }
 }
 
