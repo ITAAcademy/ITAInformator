@@ -273,6 +273,9 @@
      <addaction name="actionEn"/>
      <addaction name="actionUa"/>
      <addaction name="actionPl"/>
+     <addaction name="actionUk"/>
+     <addaction name="actionPol"/>
+     <addaction name="actionRu"/>
     </widget>
     <widget class="QMenu" name="menuSettings">
      <property name="title">
@@ -332,6 +335,31 @@
     <string>&amp;About</string>
    </property>
   </action>
+  <action name="actionTemperature">
+   <property name="text">
+    <string>Temperature</string>
+   </property>
+  </action>
+  <action name="actionArea">
+   <property name="text">
+    <string>Area</string>
+   </property>
+  </action>
+  <action name="actionVolume_capacity">
+   <property name="text">
+    <string>Volume, capacity</string>
+   </property>
+  </action>
+  <action name="actionDistance_and_Length">
+   <property name="text">
+    <string>Distance and Length</string>
+   </property>
+  </action>
+  <action name="actionWeight_weight">
+   <property name="text">
+    <string>Weight</string>
+   </property>
+  </action>
   <action name="action_Oil_Charts">
    <property name="checkable">
     <bool>false</bool>
@@ -373,6 +401,11 @@
    </property>
    <property name="toolTip">
     <string>Default settings</string>
+   </property>
+  </action>
+  <action name="actionRu">
+   <property name="text">
+    <string>Ru</string>
    </property>
   </action>
  </widget>
