@@ -56,6 +56,22 @@ private slots:
     void on_action_Default_settings_triggered();
 
     void on_actionAbout_triggered();
+    void on_lineEdit_TempRight_textChanged(const QString );
+
+    void on_lineEdit_TempLeft_textChanged(const QString );
+
+    void on_lineEdit_LenghtLeft_textChanged(const QString );
+
+    void on_lineEdit_LenghtRight_textChanged(const QString );
+
+    void on_lineEdit_WeightLeft_textChanged(const QString );
+
+    void on_lineEdit_WeightRight_textChanged(const QString );
+
+
+    void on_lineEdit_textChanged(const QString);
+
+    void on_lineEdit_2_textChanged(const QString );
 
 private:
     void fillTaCB();
@@ -77,6 +93,9 @@ private:
     QTranslator         *qAppTranslator;
     QFontDialog         mFontDialog;
 
+    DistanceAndLength   *formDistanceAndLength;
+    Weight              *formWeight;
+    Temperature         *formTemperature;
     OilPrices           formOilPrices;
     rubleInterbank      formrubleInterbank;
     pSettings            mSettings;

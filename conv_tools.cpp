@@ -14,6 +14,7 @@ void convTools::fillTaCB()
     mTaCB.push_back("F/C");
     mTaCB.push_back("K/C");
     mTaCB.push_back("K/F");
+
 }
 
 void convTools::fillLaCB()
@@ -25,9 +26,9 @@ void convTools::fillLaCB()
 
 void convTools::fillWaCB()
 {
-    mWaCB.push_back("gr/kg");
-    mWaCB.push_back("kg/f");
-    mWaCB.push_back("f/gr");
+    mWaCB.push_back("g/kg");
+    mWaCB.push_back("kg/p");
+    mWaCB.push_back("p/g");
 }
 
 void convTools::fillIchCB()

@@ -20,32 +20,12 @@
       <x>5</x>
       <y>5</y>
       <width>320</width>
-      <height>60</height>
+      <height>121</height>
      </rect>
     </property>
     <property name="title">
      <string>Temperature conversion</string>
     </property>
-    <widget class="QTextEdit" name="LeftTTE">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>20</y>
-       <width>100</width>
-       <height>30</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QTextEdit" name="RightTTE">
-     <property name="geometry">
-      <rect>
-       <x>210</x>
-       <y>20</y>
-       <width>100</width>
-       <height>30</height>
-      </rect>
-     </property>
-    </widget>
     <widget class="QComboBox" name="TaCB">
      <property name="geometry">
       <rect>
@@ -56,39 +36,45 @@
       </rect>
      </property>
     </widget>
+    <widget class="QLineEdit" name="lineEdit_TempRight">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>20</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_TempLeft">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
    </widget>
    <widget class="QGroupBox" name="Lenght">
     <property name="geometry">
      <rect>
       <x>5</x>
-      <y>75</y>
+      <y>130</y>
       <width>320</width>
-      <height>60</height>
+      <height>121</height>
      </rect>
     </property>
     <property name="title">
      <string>Lenght conversion</string>
     </property>
-    <widget class="QTextEdit" name="LeftLTE">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>20</y>
-       <width>100</width>
-       <height>30</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QTextEdit" name="RightLTE">
-     <property name="geometry">
-      <rect>
-       <x>210</x>
-       <y>20</y>
-       <width>100</width>
-       <height>30</height>
-      </rect>
-     </property>
-    </widget>
     <widget class="QComboBox" name="LaCB">
      <property name="geometry">
       <rect>
@@ -99,39 +85,45 @@
       </rect>
      </property>
     </widget>
+    <widget class="QLineEdit" name="lineEdit_LenghtRight">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>20</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_LenghtLeft">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
    </widget>
    <widget class="QGroupBox" name="Weight">
     <property name="geometry">
      <rect>
       <x>5</x>
-      <y>145</y>
+      <y>260</y>
       <width>320</width>
-      <height>60</height>
+      <height>121</height>
      </rect>
     </property>
     <property name="title">
      <string>Weight conversion</string>
     </property>
-    <widget class="QTextEdit" name="LeftWTE">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>20</y>
-       <width>100</width>
-       <height>30</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QTextEdit" name="RightWTE">
-     <property name="geometry">
-      <rect>
-       <x>210</x>
-       <y>20</y>
-       <width>100</width>
-       <height>30</height>
-      </rect>
-     </property>
-    </widget>
     <widget class="QComboBox" name="WaCB">
      <property name="geometry">
       <rect>
@@ -140,6 +132,32 @@
        <width>100</width>
        <height>30</height>
       </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_WeightRight">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>20</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_WeightLeft">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
      </property>
     </widget>
    </widget>
@@ -192,26 +210,6 @@
      <property name="title">
       <string>Informer conversion</string>
      </property>
-     <widget class="QTextEdit" name="LeftITE">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>20</y>
-        <width>100</width>
-        <height>30</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QTextEdit" name="RightITE">
-      <property name="geometry">
-       <rect>
-        <x>210</x>
-        <y>20</y>
-        <width>100</width>
-        <height>30</height>
-       </rect>
-      </property>
-     </widget>
      <widget class="QComboBox" name="IaCB">
       <property name="geometry">
        <rect>
@@ -219,6 +217,26 @@
         <y>20</y>
         <width>100</width>
         <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>101</width>
+        <height>31</height>
        </rect>
       </property>
      </widget>
