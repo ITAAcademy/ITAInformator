@@ -23,7 +23,9 @@ SOURCES += main.cpp\
     AdditionalFiles/settings.cpp \
     AdditionalFiles/listopenedwindows.cpp \
     AdditionalFiles/appsettings.cpp \
-    conv_tools.cpp
+    conv_tools.cpp \
+    distanceandlength.cpp \
+    weight.cpp
 
 
 HEADERS  += mainwindow.h \
@@ -34,7 +36,9 @@ HEADERS  += mainwindow.h \
     AdditionalFiles/settings.h \
     AdditionalFiles/listopenedwindows.h \
     AdditionalFiles/appsettings.h \
-    conv_tools.h
+    conv_tools.h \
+    distanceandlength.h \
+    weight.h
 
 
 CONFIG   += c++11
@@ -44,7 +48,9 @@ FORMS += \
     Charts/oilprices.ui \
     Charts/rubleinterbank.ui \
     AdditionalFiles/modal_window.ui \
-    AdditionalFiles/listopenedwindows.ui
+    AdditionalFiles/listopenedwindows.ui \
+    distanceandlength.ui \
+    weight.ui
 
 TRANSLATIONS += \
     ln_ua.ts \
