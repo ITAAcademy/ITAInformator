@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 
+#include "distanceandlength.h"
+#include "weight.h"
 #include "conv_tools.h"
 #include "QTranslator"
 
@@ -11,6 +13,8 @@
 
 #include "Charts/oilprices.h"
 #include "Charts/rubleinterbank.h"
+
+#include "Units/Temperature/temperature.h"
 
 // Begin(List_Opened_Windows)
 #include "AdditionalFiles/listopenedwindows.h"
