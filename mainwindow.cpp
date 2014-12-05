@@ -233,7 +233,7 @@ void MainWindow::reTranslateUi()
     ui->Informer->setTitle(tr("Informer"));
     ui->Informer_block->setTitle(tr("Informer conversion"));
 }
-void MainWindow::on_actionAbout_triggered()
+void MainWindow::on_actionExit_triggered()
 {
     QApplication::closeAllWindows();
 }
