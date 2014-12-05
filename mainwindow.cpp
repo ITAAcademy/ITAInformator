@@ -78,9 +78,8 @@ void MainWindow::on_action_Widget_you_2_triggered()
 
 void MainWindow::on_actionTemperature_triggered()
 {
-    //formTemperature = new Temperature (this);
-    //wow
-    formTemperature.show();
+    formTemperature = new Temperature (this);
+    formTemperature->show();
 }
 
 void MainWindow::on_action_Oil_Charts_triggered()
@@ -290,3 +289,13 @@ void MainWindow::on_lineEdit_WeightRight_textChanged(const QString)
         }
 }
 
+
+void MainWindow::on_lineEdit_textChanged(const QString)
+{
+
+}
+
+void MainWindow::on_lineEdit_2_textChanged(const QString)
+{
+
+}

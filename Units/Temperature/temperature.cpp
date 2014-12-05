@@ -2,7 +2,6 @@
 #include "ui_temperature.h"
 
 // Begin(List_Opened_Windows)
-#include "QLabel"
 #include "AdditionalFiles/appsettings.h"
 
 static const QString windowName = "Temperature";
@@ -45,41 +44,52 @@ void Temperature::showEvent(QShowEvent *)
 
 void Temperature::on_lineEdit_T_Left_textChanged(const QString)
 {
+   if(ui->lineEdit_T_Left->hasFocus())
+   {
     if(ui->comboBoxTemperature->currentText() == "F to C")
         {
-        double Farengate = ui->lineEdit_T_Left->text().toDouble();
-        ui->lineEdit_T_down->setText(QString::number((Farengate - 32)*5/9));;
+        double F = ui->lineEdit_T_Left->text().toDouble();
+        double C = F;
+        ui->lineEdit_T_right->setText(QString::number((C - 32)*5/9));;
         }
     if(ui->comboBoxTemperature->currentText() == "K to C")
         {
-        double Kelvin = ui->lineEdit_T_Left->text().toDouble();
-        ui->lineEdit_T_down->setText(QString::number(Kelvin - 273.15 ));;
+        double K = ui->lineEdit_T_Left->text().toDouble();
+        double C = K;
+        ui->lineEdit_T_right->setText(QString::number(C - 273.15 ));;
         }
     if(ui->comboBoxTemperature->currentText() == "K to F")
         {
-        double Kelvin = ui->lineEdit_T_Left->text().toDouble();
-        ui->lineEdit_T_down->setText(QString::number(Kelvin *9/5-459.67 ));;
+        double K = ui->lineEdit_T_Left->text().toDouble();
+        double F = K;
+        ui->lineEdit_T_right->setText(QString::number(F *9/5-459.67 ));;
         }
-
+    }
 }
 
 void Temperature::on_lineEdit_T_right_textChanged(const QString)
 {
+   if(ui->lineEdit_T_right->hasFocus())
+   {
     if(ui->comboBoxTemperature->currentText() == "F to C")
         {
-        double Celsius = ui->lineEdit_T_right->text().toDouble();
-        ui->lineEdit_T_down->setText(QString::number((Celsius *9/5)+32 ));
+        double C = ui->lineEdit_T_right->text().toDouble();
+        double F = C;
+        ui->lineEdit_T_Left->setText(QString::number((F *9/5)+32 ));
         }
     if(ui->comboBoxTemperature->currentText() == "K to C")
         {
-        double Celsius = ui->lineEdit_T_right->text().toDouble();
-        ui->lineEdit_T_down->setText(QString::number(Celsius + 273.15 ));
+        double C = ui->lineEdit_T_right->text().toDouble();
+        double K = C;
+        ui->lineEdit_T_Left->setText(QString::number(K + 273.15 ));
         }
     if(ui->comboBoxTemperature->currentText() == "K to F")
         {
-        double Farengate = ui->lineEdit_T_right->text().toDouble();
-        ui->lineEdit_T_down->setText(QString::number((Farengate +459.67)*5/9 ));
+        double F = ui->lineEdit_T_right->text().toDouble();
+        double K = F;
+        ui->lineEdit_T_Left->setText(QString::number((K +459.67)*5/9 ));
         }
+   }
 }
 
 

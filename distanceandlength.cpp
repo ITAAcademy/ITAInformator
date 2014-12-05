@@ -35,41 +35,51 @@ void DistanceAndLength::showEvent(QShowEvent *)
 // End
 
 void DistanceAndLength::on_lineEdit_D_Left_textChanged(const QString)
-{
+{  if(ui->lineEdit_D_Left->hasFocus())
+    {
     if(ui->comboBoxDistance->currentText() == "Mm to Cm")
         {
         double Mm = ui->lineEdit_D_Left->text().toDouble();
-        ui->lineEdit_D_down->setText(QString::number(Mm /10 ));;
+        double Cm = Mm;
+        ui->lineEdit_D_right->setText(QString::number(Cm /10 ));;
         }
     if(ui->comboBoxDistance->currentText() == "Cm to M")
         {
         double Cm = ui->lineEdit_D_Left->text().toDouble();
-        ui->lineEdit_D_down->setText(QString::number(Cm /100 ));;
+        double M = Cm;
+        ui->lineEdit_D_right->setText(QString::number(M /100 ));;
         }
     if(ui->comboBoxDistance->currentText() == "M to Km")
         {
         double M = ui->lineEdit_D_Left->text().toDouble();
-        ui->lineEdit_D_down->setText(QString::number(M /1000 ));;
+        double Km = M;
+        ui->lineEdit_D_right->setText(QString::number(Km /1000 ));;
         }
+    }
 }
 
 void DistanceAndLength::on_lineEdit_D_right_textChanged(const QString)
-{
+{  if(ui->lineEdit_D_right->hasFocus())
+    {
     if(ui->comboBoxDistance->currentText() == "Mm to Cm")
         {
         double Cm = ui->lineEdit_D_right->text().toDouble();
-        ui->lineEdit_D_down->setText(QString::number(Cm * 10));;
+        double Mm = Cm;
+        ui->lineEdit_D_Left->setText(QString::number(Mm * 10));;
         }
     if(ui->comboBoxDistance->currentText() == "Cm to M")
         {
         double M = ui->lineEdit_D_right->text().toDouble();
-        ui->lineEdit_D_down->setText(QString::number(M * 100 ));;
+        double Cm = M;
+        ui->lineEdit_D_Left->setText(QString::number(Cm * 100 ));;
         }
     if(ui->comboBoxDistance->currentText() == "M to Km")
         {
         double Km = ui->lineEdit_D_right->text().toDouble();
-        ui->lineEdit_D_down->setText(QString::number(Km *1000 ));;
+        double M = Km;
+        ui->lineEdit_D_Left->setText(QString::number(M *1000 ));;
         }
+    }
 }
 
 void DistanceAndLength::on_comboBoxDistance_activated(const QString )

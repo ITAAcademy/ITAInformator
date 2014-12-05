@@ -36,45 +36,56 @@ void Weight::showEvent(QShowEvent *)
 // End
 
 void Weight::on_lineEdit_W_Left_textChanged(const QString)
-{
+{  if(ui->lineEdit_W_Left->hasFocus())
+    {
     if(ui->comboBoxWeight->currentText() == "G to Kg")
         {
         double G = ui->lineEdit_W_Left->text().toDouble();
-        ui->lineEdit_W_down->setText(QString::number(G /1000));;
+        double Kg = G;
+        ui->lineEdit_W_right->setText(QString::number(Kg /1000));;
         }
     if(ui->comboBoxWeight->currentText() == "Kg to P")
         {
         double Kg = ui->lineEdit_W_Left->text().toDouble();
-        ui->lineEdit_W_down->setText(QString::number(Kg * 2.205 ));;
+        double P = Kg;
+        ui->lineEdit_W_right->setText(QString::number(P * 2.205 ));;
         }
     if(ui->comboBoxWeight->currentText() == "P to G")
         {
-        double F = ui->lineEdit_W_Left->text().toDouble();
-        ui->lineEdit_W_down->setText(QString::number((F *1000)/2.205 ));;
+        double P = ui->lineEdit_W_Left->text().toDouble();
+        double G = P;
+        ui->lineEdit_W_right->setText(QString::number((G *1000)/2.205 ));;
         }
+    }
 }
 
 void Weight::on_lineEdit_W_right_textChanged(const QString)
-{
+{  if(ui->lineEdit_W_right->hasFocus())
+    {
     if(ui->comboBoxWeight->currentText() == "G to Kg")
         {
         double Kg = ui->lineEdit_W_right->text().toDouble();
-        ui->lineEdit_W_down->setText(QString::number(Kg * 1000));;
+        double G = Kg;
+        ui->lineEdit_W_Left->setText(QString::number(G * 1000));;
         }
     if(ui->comboBoxWeight->currentText() == "Kg to P")
         {
-        double F = ui->lineEdit_W_right->text().toDouble();
-        ui->lineEdit_W_down->setText(QString::number(F /2.205 ));;
+        double P = ui->lineEdit_W_right->text().toDouble();
+        double Kg = P;
+        ui->lineEdit_W_Left->setText(QString::number(Kg /2.205 ));;
         }
     if(ui->comboBoxWeight->currentText() == "P to G")
         {
         double G = ui->lineEdit_W_right->text().toDouble();
-        ui->lineEdit_W_down->setText(QString::number((G *2.205) /1000 ));;
+        double P = G;
+        ui->lineEdit_W_Left->setText(QString::number((P *2.205) /1000 ));;
         }
+    }
 }
 
 void Weight::on_comboBoxWeight_activated(const QString)
 {
+
     if(ui->comboBoxWeight->currentText() == "G to Kg")
         {
         ui->label_Left->setText("Gram");
@@ -90,4 +101,5 @@ void Weight::on_comboBoxWeight_activated(const QString)
         ui->label_Left->setText("Pound");
         ui->label_Right->setText("Gram");
         }
+
 }

@@ -70,6 +70,10 @@ private slots:
     void on_lineEdit_WeightRight_textChanged(const QString );
 
 
+    void on_lineEdit_textChanged(const QString);
+
+    void on_lineEdit_2_textChanged(const QString );
+
 private:
     void fillTaCB();
     void fillLaCB();
@@ -88,7 +92,7 @@ private:
 
     DistanceAndLength   *formDistanceAndLength;
     Weight              *formWeight;
-    Temperature         formTemperature;
+    Temperature         *formTemperature;
     OilPrices           formOilPrices;
     rubleInterbank      formrubleInterbank;
     pSettings            mSettings;
