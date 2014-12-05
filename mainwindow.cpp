@@ -178,17 +178,17 @@ void MainWindow::on_lineEdit_TempLeft_textChanged(const QString)
     if(ui->TaCB->currentText() == "F/C")
         {
         double Farengate = ui->lineEdit_TempLeft->text().toDouble();
-        ui->lineEdit_TempLeft->setText(QString::number((Farengate - 32)*5/9));;
+        ui->lineEdit_TempRight->setText(QString::number((Farengate - 32)*5/9));;
         }
     if(ui->TaCB->currentText() == "K/C")
         {
         double Kelvin = ui->lineEdit_TempLeft->text().toDouble();
-        ui->lineEdit_TempLeft->setText(QString::number(Kelvin - 273.15 ));;
+        ui->lineEdit_TempRight->setText(QString::number(Kelvin - 273.15 ));;
         }
     if(ui->TaCB->currentText() == "K/F")
         {
         double Kelvin = ui->lineEdit_TempLeft->text().toDouble();
-        ui->lineEdit_TempLeft->setText(QString::number(Kelvin *9/5-459.67 ));;
+        ui->lineEdit_TempRight->setText(QString::number(Kelvin *9/5-459.67 ));;
         }
     }
 }
