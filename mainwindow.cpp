@@ -112,6 +112,18 @@ void MainWindow::on_action_Currency_triggered()
     formrubleInterbank.show();
 }
 
+void MainWindow::on_actionDistance_and_Length_triggered()
+{
+    formDistanceAndLength = new DistanceAndLength (this);
+    formDistanceAndLength -> show();
+}
+
+void MainWindow::on_actionWeight_weight_triggered()
+{
+    formWeight = new Weight;
+    formWeight -> show();
+}
+
 void MainWindow::on_action_Font_settings_triggered()
 {
     bool ok;
