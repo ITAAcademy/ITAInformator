@@ -173,7 +173,7 @@ void MainWindow::fillIaCB()
 
 void MainWindow::on_lineEdit_TempLeft_textChanged(const QString)
 {
-    if(ui->lineEdit_LenghtLeft->hasFocus())
+    if(ui->lineEdit_TempLeft->hasFocus())
     {
     if(ui->TaCB->currentText() == "F/C")
         {
@@ -282,7 +282,7 @@ void MainWindow::on_lineEdit_WeightLeft_textChanged(const QString)
 }
 
 void MainWindow::on_lineEdit_WeightRight_textChanged(const QString)
-{  if(ui->lineEdit_LenghtRight->hasFocus())
+{  if(ui->lineEdit_WeightRight->hasFocus())
     {
     if(ui->WaCB->currentText() == "g/kg")
         {
