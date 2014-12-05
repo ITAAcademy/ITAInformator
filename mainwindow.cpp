@@ -226,6 +226,7 @@ void MainWindow::reTranslateUi()
     ui->Temperature->setTitle(tr("Temperature conversion"));
     ui->Informer->setTitle(tr("Informer"));
     ui->Informer_block->setTitle(tr("Informer conversion"));
+}
 void MainWindow::on_actionAbout_triggered()
 {
     QApplication::closeAllWindows();
