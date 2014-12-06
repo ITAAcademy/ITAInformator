@@ -5,13 +5,14 @@
 #include "AdditionalFiles/appsettings.h"
 
 static const QString windowName = "Temperature";
-// End
+//  End
 
 Temperature::Temperature(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Temperature)
 {
     ui->setupUi(this);
+    this->setFixedSize(375,150);
 
     ui->comboBoxTemperature->addItem("F to C");
     ui->comboBoxTemperature->addItem("K to C");
