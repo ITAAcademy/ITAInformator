@@ -12,6 +12,7 @@ Weight::Weight(QWidget *parent) :
     ui(new Ui::Weight)
 {
     ui->setupUi(this);
+    this->setFixedSize(375,150);
 
     ui->comboBoxWeight->addItem("G to Kg");
     ui->comboBoxWeight->addItem("Kg to P");

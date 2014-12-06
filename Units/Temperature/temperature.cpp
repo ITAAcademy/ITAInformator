@@ -12,6 +12,7 @@ Temperature::Temperature(QWidget *parent) :
     ui(new Ui::Temperature)
 {
     ui->setupUi(this);
+    this->setFixedSize(375,150);
 
     ui->comboBoxTemperature->addItem("F to C");
     ui->comboBoxTemperature->addItem("K to C");
