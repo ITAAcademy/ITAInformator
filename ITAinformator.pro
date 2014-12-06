@@ -57,7 +57,8 @@ FORMS += \
 
 TRANSLATIONS += \
     ln_ua.ts \
-    ln_pl.ts
+    ln_pl.ts \
+    ln_ru.ts
 
 
 win32:RC_FILE = IcoConvert.rc
@@ -69,5 +70,7 @@ OTHER_FILES += \
     ln_pl.ts \
     ln_ua.ts \
     qt_uk.ts \
-    qt_pl.ts
+    qt_pl.ts \
+    qt_ru.ts \
+    ln_ru.ts
 
