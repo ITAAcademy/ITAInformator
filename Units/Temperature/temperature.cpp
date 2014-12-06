@@ -5,7 +5,7 @@
 #include "AdditionalFiles/appsettings.h"
 
 static const QString windowName = "Temperature";
-// End
+//  End
 
 Temperature::Temperature(QWidget *parent) :
     QDialog(parent),
