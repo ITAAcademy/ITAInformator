@@ -23,7 +23,6 @@ SOURCES += main.cpp\
     AdditionalFiles/settings.cpp \
     AdditionalFiles/listopenedwindows.cpp \
     AdditionalFiles/appsettings.cpp \
-    conv_tools.cpp \
     distanceandlength.cpp \
     weight.cpp \
     Units/Temperature/temperature.cpp
@@ -37,7 +36,6 @@ HEADERS  += mainwindow.h \
     AdditionalFiles/settings.h \
     AdditionalFiles/listopenedwindows.h \
     AdditionalFiles/appsettings.h \
-    conv_tools.h \
     distanceandlength.h \
     weight.h \
     Units/Temperature/temperature.h

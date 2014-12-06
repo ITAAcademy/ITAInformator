@@ -89,16 +89,22 @@ void Weight::on_comboBoxWeight_activated(const QString)
 
     if(ui->comboBoxWeight->currentText() == "G to Kg")
         {
+        ui->lineEdit_W_Left->clear();
+        ui->lineEdit_W_right->clear();
         ui->label_Left->setText("Gram");
         ui->label_Right->setText("Kilogram");
         }
     if(ui->comboBoxWeight->currentText() == "Kg to P")
         {
-     ui->label_Left->setText("Kilogram");
-     ui->label_Right->setText("Pound");
+        ui->lineEdit_W_Left->clear();
+        ui->lineEdit_W_right->clear();
+        ui->label_Left->setText("Kilogram");
+        ui->label_Right->setText("Pound");
         }
     if(ui->comboBoxWeight->currentText() == "P to G")
         {
+        ui->lineEdit_W_Left->clear();
+        ui->lineEdit_W_right->clear();
         ui->label_Left->setText("Pound");
         ui->label_Right->setText("Gram");
         }

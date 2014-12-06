@@ -88,16 +88,22 @@ void DistanceAndLength::on_comboBoxDistance_activated(const QString )
 {
     if(ui->comboBoxDistance->currentText() == "Mm to Cm")
         {
+        ui->lineEdit_D_Left->clear();
+        ui->lineEdit_D_right->clear();
         ui->label_Left->setText("Millimetr");
         ui->label_Right->setText("Centimeter");
         }
     if(ui->comboBoxDistance->currentText() == "Cm to M")
         {
+        ui->lineEdit_D_Left->clear();
+        ui->lineEdit_D_right->clear();
         ui->label_Left->setText("Centimeter");
         ui->label_Right->setText("Meter");
         }
     if(ui->comboBoxDistance->currentText() == "M to Km")
         {
+        ui->lineEdit_D_Left->clear();
+        ui->lineEdit_D_right->clear();
         ui->label_Left->setText("Meter");
         ui->label_Right->setText("Kilometer");
         }

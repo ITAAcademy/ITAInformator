@@ -5,7 +5,6 @@
 
 #include "distanceandlength.h"
 #include "weight.h"
-#include "conv_tools.h"
 #include "QTranslator"
 
 #include "AdditionalFiles/modal_window.h"
@@ -85,6 +84,12 @@ private slots:
 
     void on_lineEdit_2_textChanged(const QString );
 
+    void on_TaCB_activated(const QString);
+
+    void on_LaCB_activated(const QString);
+
+    void on_WaCB_activated(const QString );
+
 private:
     void fillTaCB();
     void fillLaCB();
@@ -99,7 +104,7 @@ private:
     QMdiArea            *mdiArea;
     QMenuBar            *menuBar;
     QString             pLang;
-    convTools           mConvTool;
+
 
     QTranslator         *translator;
     QTranslator         *qAppTranslator;

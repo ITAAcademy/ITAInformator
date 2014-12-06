@@ -21,11 +21,25 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     this->setFixedSize(675,420);
 
-    fillTaCB();
-    fillLaCB();
-    fillWaCB();
-    fillIchCB();
-    fillIaCB();
+        ui->TaCB->addItem("F/C");
+        ui->TaCB->addItem("K/C");
+        ui->TaCB->addItem("K/F");
+
+        ui->LaCB->addItem("mm/cm");
+        ui->LaCB->addItem("cm/m");
+        ui->LaCB->addItem("m/km");
+
+        ui->WaCB->addItem("g/kg");
+        ui->WaCB->addItem("kg/p");
+        ui->WaCB->addItem("p/g");
+
+
+
+        ui->IchCB->addItem("Oil Charts");
+        ui->IchCB->addItem("Rubel Info");
+
+        ui->IaCB->addItem("Oil Charts");
+        ui->IaCB->addItem("Rubel Info");
 
     if(mSettings.FirstRun())
     {
@@ -157,45 +171,7 @@ void MainWindow::on_action_Default_settings_triggered()
     reTranslateUi();
 }
 
-void MainWindow::fillTaCB()
-{
-    const QList<QString> &ref = mConvTool.TaCB();
 
-    for(int i = 0; i < ref.size(); ++i)
-        ui->TaCB->addItem(ref.at(i));
-}
-
-void MainWindow::fillLaCB()
-{
-    const QList<QString> &ref = mConvTool.LaCB();
-
-    for(int i = 0; i < ref.size(); ++i)
-        ui->LaCB->addItem(ref.at(i));
-}
-
-void MainWindow::fillWaCB()
-{
-    const QList<QString> &ref = mConvTool.WaCB();
-
-    for(int i = 0; i < ref.size(); ++i)
-        ui->WaCB->addItem(ref.at(i));
-}
-
-void MainWindow::fillIchCB()
-{
-    const QList<QString> &ref = mConvTool.IchCB();
-
-    for(int i = 0; i < ref.size(); ++i)
-        ui->IchCB->addItem(ref.at(i));
-}
-
-void MainWindow::fillIaCB()
-{
-    const QList<QString> &ref = mConvTool.IaCB();
-
-    for(int i = 0; i < ref.size(); ++i)
-        ui->IaCB->addItem(ref.at(i));
-}
 
 void MainWindow::chLangEn()
 {
@@ -276,6 +252,7 @@ void MainWindow::on_lineEdit_TempLeft_textChanged(const QString)
     {
     if(ui->TaCB->currentText() == "F/C")
         {
+
         double Farengate = ui->lineEdit_TempLeft->text().toDouble();
         ui->lineEdit_TempRight->setText(QString::number((Farengate - 32)*5/9));;
         }
@@ -410,4 +387,61 @@ void MainWindow::on_lineEdit_textChanged(const QString)
 void MainWindow::on_lineEdit_2_textChanged(const QString)
 {
 
+}
+
+void MainWindow::on_TaCB_activated(const QString )
+{
+    if(ui->TaCB->currentText() == "F/C")
+    {
+       ui->lineEdit_TempLeft->clear();
+       ui->lineEdit_TempRight->clear();
+    }
+    if(ui->TaCB->currentText() == "K/C")
+    {
+       ui->lineEdit_TempLeft->clear();
+       ui->lineEdit_TempRight->clear();
+    }
+    if(ui->TaCB->currentText() == "K/F")
+    {
+       ui->lineEdit_TempLeft->clear();
+       ui->lineEdit_TempRight->clear();
+    }
+}
+
+void MainWindow::on_LaCB_activated(const QString )
+{
+    if(ui->LaCB->currentText() == "mm/cm")
+    {
+       ui->lineEdit_LenghtLeft->clear();
+       ui->lineEdit_LenghtRight->clear();
+    }
+    if(ui->TaCB->currentText() == "cm/m")
+    {
+       ui->lineEdit_LenghtLeft->clear();
+       ui->lineEdit_LenghtRight->clear();
+    }
+    if(ui->TaCB->currentText() == "m/km")
+    {
+       ui->lineEdit_LenghtLeft->clear();
+       ui->lineEdit_LenghtRight->clear();
+    }
+}
+
+void MainWindow::on_WaCB_activated(const QString)
+{
+    if(ui->WaCB->currentText() == "g/kg")
+    {
+       ui->lineEdit_WeightLeft->clear();
+       ui->lineEdit_WeightRight->clear();
+    }
+    if(ui->WaCB->currentText() == "kg/p")
+    {
+       ui->lineEdit_WeightLeft->clear();
+       ui->lineEdit_WeightRight->clear();
+    }
+    if(ui->WaCB->currentText() == "p/g")
+    {
+       ui->lineEdit_WeightLeft->clear();
+       ui->lineEdit_WeightRight->clear();
+    }
 }
