@@ -85,6 +85,12 @@ private slots:
 
     void on_lineEdit_2_textChanged(const QString );
 
+    void on_TaCB_activated(const QString);
+
+    void on_LaCB_activated(const QString &arg1);
+
+    void on_WaCB_activated(const QString &arg1);
+
 private:
     void fillTaCB();
     void fillLaCB();

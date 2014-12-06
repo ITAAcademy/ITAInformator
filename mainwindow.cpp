@@ -276,6 +276,7 @@ void MainWindow::on_lineEdit_TempLeft_textChanged(const QString)
     {
     if(ui->TaCB->currentText() == "F/C")
         {
+
         double Farengate = ui->lineEdit_TempLeft->text().toDouble();
         ui->lineEdit_TempRight->setText(QString::number((Farengate - 32)*5/9));;
         }
@@ -410,4 +411,61 @@ void MainWindow::on_lineEdit_textChanged(const QString)
 void MainWindow::on_lineEdit_2_textChanged(const QString)
 {
 
+}
+
+void MainWindow::on_TaCB_activated(const QString )
+{
+    if(ui->TaCB->currentText() == "F/C")
+    {
+       ui->lineEdit_TempLeft->clear();
+       ui->lineEdit_TempRight->clear();
+    }
+    if(ui->TaCB->currentText() == "K/C")
+    {
+       ui->lineEdit_TempLeft->clear();
+       ui->lineEdit_TempRight->clear();
+    }
+    if(ui->TaCB->currentText() == "K/F")
+    {
+       ui->lineEdit_TempLeft->clear();
+       ui->lineEdit_TempRight->clear();
+    }
+}
+
+void MainWindow::on_LaCB_activated(const QString &arg1)
+{
+    if(ui->LaCB->currentText() == "mm/cm")
+    {
+       ui->lineEdit_LenghtLeft->clear();
+       ui->lineEdit_LenghtRight->clear();
+    }
+    if(ui->TaCB->currentText() == "cm/m")
+    {
+       ui->lineEdit_LenghtLeft->clear();
+       ui->lineEdit_LenghtRight->clear();
+    }
+    if(ui->TaCB->currentText() == "m/km")
+    {
+       ui->lineEdit_LenghtLeft->clear();
+       ui->lineEdit_LenghtRight->clear();
+    }
+}
+
+void MainWindow::on_WaCB_activated(const QString &arg1)
+{
+    if(ui->WaCB->currentText() == "g/kg")
+    {
+       ui->lineEdit_WeightLeft->clear();
+       ui->lineEdit_WeightRight->clear();
+    }
+    if(ui->WaCB->currentText() == "kg/p")
+    {
+       ui->lineEdit_WeightLeft->clear();
+       ui->lineEdit_WeightRight->clear();
+    }
+    if(ui->WaCB->currentText() == "p/g")
+    {
+       ui->lineEdit_WeightLeft->clear();
+       ui->lineEdit_WeightRight->clear();
+    }
 }
