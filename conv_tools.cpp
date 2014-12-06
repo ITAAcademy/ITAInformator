@@ -14,7 +14,6 @@ void convTools::fillTaCB()
     mTaCB.push_back("F/C");
     mTaCB.push_back("K/C");
     mTaCB.push_back("K/F");
-
 }
 
 void convTools::fillLaCB()

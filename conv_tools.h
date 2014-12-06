@@ -3,6 +3,7 @@
 
 #include <QList>
 #include <QString>
+#include "QTranslator"
 
 class convTools
 {
