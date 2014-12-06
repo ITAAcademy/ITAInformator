@@ -98,16 +98,22 @@ void Temperature::on_comboBoxTemperature_activated(const QString )
 {
     if(ui->comboBoxTemperature->currentText() == "F to C")
         {
+        ui->lineEdit_T_Left->clear();
+        ui->lineEdit_T_right->clear();
         ui->label_Left->setText("Fahrenheit");
         ui->label_Right->setText("Celsius");
         }
     if(ui->comboBoxTemperature->currentText() == "K to C")
         {
+        ui->lineEdit_T_Left->clear();
+        ui->lineEdit_T_right->clear();
         ui->label_Left->setText("Kelvin");
         ui->label_Right->setText("Celsius");
         }
     if(ui->comboBoxTemperature->currentText() == "K to F")
         {
+        ui->lineEdit_T_Left->clear();
+        ui->lineEdit_T_right->clear();
         ui->label_Left->setText("Kelvin");
         ui->label_Right->setText("Fahrenheit");
         }
