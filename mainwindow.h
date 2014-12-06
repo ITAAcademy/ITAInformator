@@ -42,6 +42,7 @@ public slots:
     void chLangEn();
     void chLangUa();
     void chLangPl();
+    void chLangRu();
     void reTranslateUi();
     void appChangeLanguage();
 

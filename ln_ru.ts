@@ -6,17 +6,17 @@
     <message>
         <location filename="distanceandlength.ui" line="14"/>
         <source>Distance and Length</source>
-        <translation>Відстань і довжини</translation>
+        <translation>Длина, расстояние</translation>
     </message>
     <message>
         <location filename="distanceandlength.ui" line="56"/>
         <source>Millimeters</source>
-        <translation>Міліметри</translation>
+        <translation>Миллиметры</translation>
     </message>
     <message>
         <location filename="distanceandlength.ui" line="69"/>
         <source>Centimeters</source>
-        <translation>Сантиметри</translation>
+        <translation>Сантиметры</translation>
     </message>
 </context>
 <context>
@@ -24,7 +24,7 @@
     <message>
         <location filename="AdditionalFiles/listopenedwindows.ui" line="26"/>
         <source>List opened windows</source>
-        <translation>Список відкритих вікон</translation>
+        <translation>Список открытых окон</translation>
     </message>
 </context>
 <context>
@@ -32,83 +32,83 @@
     <message>
         <location filename="mainwindow.ui" line="14"/>
         <source>MainWindow</source>
-        <translation>Головне вікно</translation>
+        <translation>Главное окно</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="27"/>
         <location filename="mainwindow.cpp" line="265"/>
         <source>Temperature conversion</source>
-        <translation>Конвертер температур</translation>
+        <translation>Преобразования температуры</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="76"/>
         <location filename="mainwindow.cpp" line="264"/>
         <source>Lenght conversion</source>
-        <translation>Конвертер довжин</translation>
+        <translation>Преобразование длины</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="125"/>
         <location filename="mainwindow.cpp" line="263"/>
         <source>Weight conversion</source>
-        <translation>Конвертер ваги</translation>
+        <translation>Преобразование веса</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="174"/>
         <location filename="mainwindow.cpp" line="266"/>
         <source>Informer</source>
-        <translation>Інформер</translation>
+        <translation>Информатор</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="187"/>
         <source>about:blank</source>
-        <translation>пуста сторінка</translation>
+        <translation>about:blank</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="211"/>
         <location filename="mainwindow.cpp" line="267"/>
         <source>Informer conversion</source>
-        <translation>Конвертер величин</translation>
+        <translation>Информер преобразований</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="275"/>
         <location filename="mainwindow.cpp" line="252"/>
         <source>Program</source>
-        <translation>Програма</translation>
+        <translation>Программа</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="279"/>
         <source>&amp;Conversion</source>
-        <translation>&amp;Перетворення</translation>
+        <translation>&amp;Преобразование</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="294"/>
         <location filename="mainwindow.cpp" line="243"/>
         <source>Tools</source>
-        <translation>Інструменти</translation>
+        <translation>Инструменты</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="298"/>
         <location filename="mainwindow.cpp" line="244"/>
         <source>&amp;Language</source>
-        <translation>&amp;Мова</translation>
+        <translation>&amp;Язык</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="307"/>
         <location filename="mainwindow.cpp" line="249"/>
         <source>&amp;Settings</source>
-        <translation>&amp;Налаштування</translation>
+        <translation>&amp;Настройки</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="317"/>
         <location filename="mainwindow.cpp" line="241"/>
         <source>Help</source>
-        <translation>Допомога</translation>
+        <translation>Помощь</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="331"/>
         <location filename="mainwindow.cpp" line="262"/>
         <source>&amp;Exit</source>
-        <translation>&amp;Вихід</translation>
+        <translation>&amp;Выход</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="334"/>
@@ -139,7 +139,7 @@
         <location filename="mainwindow.ui" line="360"/>
         <location filename="mainwindow.cpp" line="242"/>
         <source>&amp;About</source>
-        <translation>&amp;Про програму</translation>
+        <translation>&amp;Про</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="365"/>
@@ -150,30 +150,30 @@
     <message>
         <location filename="mainwindow.ui" line="370"/>
         <source>Area</source>
-        <translation>Площа</translation>
+        <translation>Площадь</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="375"/>
         <source>Volume, capacity</source>
-        <translation>Об&apos;єм, потужність</translation>
+        <translation>Объем, вместимость</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="380"/>
         <location filename="mainwindow.cpp" line="255"/>
         <source>Distance and Length</source>
-        <translation>Відстань і довжина</translation>
+        <translation>Длина, расстояние</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="385"/>
         <location filename="mainwindow.cpp" line="256"/>
         <source>Weight</source>
-        <translation>Вага</translation>
+        <translation>Вес</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="393"/>
         <location filename="mainwindow.cpp" line="257"/>
         <source>&amp;Oil Charts</source>
-        <translation>&amp;Курс нафти</translation>
+        <translation>&amp;Курс нефти</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="396"/>
@@ -184,7 +184,7 @@
         <location filename="mainwindow.ui" line="404"/>
         <location filename="mainwindow.cpp" line="259"/>
         <source>&amp;Currency</source>
-        <translation>&amp;Валют</translation>
+        <translation>&amp;Валюта</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="407"/>
@@ -195,29 +195,29 @@
         <location filename="mainwindow.ui" line="412"/>
         <location filename="mainwindow.cpp" line="250"/>
         <source>&amp;Font settings</source>
-        <translation>&amp;Шрифта</translation>
+        <translation>&amp;Параметры шрифтов</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="417"/>
         <source>&amp;List opened windows</source>
-        <translation>&amp;Список відкритих вікон</translation>
+        <translation>&amp;Список открытых окон</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="420"/>
         <location filename="mainwindow.cpp" line="261"/>
         <source>List opened windows</source>
-        <translation>Список відкритих вікон</translation>
+        <translation>Список открытых окон</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="425"/>
         <location filename="mainwindow.cpp" line="251"/>
         <source>&amp;Default settings</source>
-        <translation>&amp;По замовченню</translation>
+        <translation>&amp;Настройки по умолчанию</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="428"/>
         <source>Default settings</source>
-        <translation>По замовчанню</translation>
+        <translation>Настройки по умолчанию</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="433"/>
@@ -226,30 +226,24 @@
         <translation>Рос</translation>
     </message>
     <message>
-        <source>Select font</source>
-        <comment>Font</comment>
-        <translation type="obsolete">Виберіть шрифт</translation>
-    </message>
-    <message>
-        <location filename="mainwindow.cpp" line="260"/>
-        <source>Ruble Interbank</source>
-        <translation>Курс рубля</translation>
-    </message>
-    <message>
-        <location filename="mainwindow.cpp" line="258"/>
-        <source>Oil Charts</source>
-        <oldsource>Oil Prices</oldsource>
-        <translation>Курс нафти</translation>
-    </message>
-    <message>
         <location filename="mainwindow.cpp" line="240"/>
         <source>Some name</source>
-        <translation>ІтаІнформатор</translation>
+        <translation>Некоторое называние</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="253"/>
         <source>Conversion</source>
-        <translation>Перетворення</translation>
+        <translation>Преобразование</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="258"/>
+        <source>Oil Charts</source>
+        <translation>Курс нефти</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="260"/>
+        <source>Ruble Interbank</source>
+        <translation>Курс валют</translation>
     </message>
 </context>
 <context>
@@ -257,7 +251,7 @@
     <message>
         <location filename="Charts/oilprices.ui" line="26"/>
         <source>Oil Prices</source>
-        <translation>Курс нафти</translation>
+        <translation>Курс нефти</translation>
     </message>
 </context>
 <context>
@@ -275,7 +269,7 @@
     <message>
         <location filename="Units/Temperature/temperature.ui" line="69"/>
         <source>Celsius</source>
-        <translation>Цельсій</translation>
+        <translation>Цельсий</translation>
     </message>
 </context>
 <context>
@@ -283,17 +277,17 @@
     <message>
         <location filename="weight.ui" line="14"/>
         <source>Weight</source>
-        <translation>Вага</translation>
+        <translation>Вес</translation>
     </message>
     <message>
         <location filename="weight.ui" line="56"/>
         <source>Grams</source>
-        <translation>Грами</translation>
+        <translation>Граммы</translation>
     </message>
     <message>
         <location filename="weight.ui" line="69"/>
         <source>Kilograms</source>
-        <translation>Кілограми</translation>
+        <translation>Килограммы</translation>
     </message>
 </context>
 <context>
@@ -301,7 +295,7 @@
     <message>
         <location filename="conv_tools.cpp" line="14"/>
         <source>F/C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ф/С</translation>
     </message>
 </context>
 <context>
@@ -309,61 +303,53 @@
     <message>
         <location filename="AdditionalFiles/modal_window.ui" line="26"/>
         <source>About Converter 2014</source>
-        <translation>Про програму</translation>
-    </message>
-    <message>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#aa0000;&quot;&gt;Converter 2014&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">Конвертер - інформатор</translation>
+        <translation>Про конвертер 2014</translation>
     </message>
     <message>
         <location filename="AdditionalFiles/modal_window.ui" line="47"/>
         <source>Project manager:</source>
-        <translation>Керівник проекту:</translation>
+        <translation>Руководитель проекта:</translation>
     </message>
     <message>
         <location filename="AdditionalFiles/modal_window.ui" line="60"/>
         <source>Alexey Tyurenkov</source>
-        <translation>Олексій Тюренков</translation>
+        <translation>Алексей Тюренков</translation>
     </message>
     <message>
         <location filename="AdditionalFiles/modal_window.ui" line="73"/>
         <source>Created by the students of group A14:</source>
-        <translation>Розроблено студентами групи А14:</translation>
+        <translation>Создано студентами  группы А14:</translation>
     </message>
     <message>
         <location filename="AdditionalFiles/modal_window.ui" line="86"/>
         <source>Dmitro Vyakhk</source>
-        <translation>Дмитро Вяхк</translation>
+        <translation>Дмитрий Вяхк</translation>
     </message>
     <message>
         <location filename="AdditionalFiles/modal_window.ui" line="99"/>
         <source>Ivan Pirus     </source>
-        <translation>Іван Пірус</translation>
+        <translation>Иван Пирус</translation>
     </message>
     <message>
         <location filename="AdditionalFiles/modal_window.ui" line="112"/>
         <source>Andrey Shtadler</source>
-        <translation>Андрій Штадлер</translation>
+        <translation>Андрей Штадлер</translation>
     </message>
     <message>
         <location filename="AdditionalFiles/modal_window.ui" line="125"/>
         <source>Andrey Nizinkovskiy</source>
-        <translation>Андрій Нізіньковський</translation>
+        <translation>Андрей Низиньковский</translation>
     </message>
     <message>
         <location filename="AdditionalFiles/modal_window.ui" line="138"/>
         <source>Helen Dyogtyeva</source>
-        <translation>Олена Дьогтева</translation>
+        <translation>Елена Дёгтева</translation>
     </message>
     <message>
         <location filename="AdditionalFiles/modal_window.ui" line="200"/>
         <location filename="AdditionalFiles/modal_window.cpp" line="10"/>
         <source>Close</source>
-        <translation>Закрити</translation>
+        <translation>Закрыть</translation>
     </message>
 </context>
 <context>
@@ -371,7 +357,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="Charts/rubleinterbank.ui" line="35"/>
         <source>Ruble Interbank</source>
-        <translation>Курс рубля</translation>
+        <translation>Курс валют</translation>
     </message>
 </context>
 </TS>

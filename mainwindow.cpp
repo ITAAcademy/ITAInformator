@@ -57,6 +57,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->actionEn, SIGNAL(triggered()), this, SLOT(chLangEn()));
     connect(ui->actionUa, SIGNAL(triggered()), this, SLOT(chLangUa()));
     connect(ui->actionPl, SIGNAL(triggered()), this, SLOT(chLangPl()));
+    connect(ui->actionRu, SIGNAL(triggered()), this, SLOT(chLangRu()));
 }
 
 MainWindow::~MainWindow()
@@ -83,6 +84,11 @@ void MainWindow::appChangeLanguage()
     if(pLang == QString("pl"))
     {
         chLangPl();
+        return;
+    }
+    if(pLang == QString("ru"))
+    {
+        chLangRu();
         return;
     }
 }
@@ -219,6 +225,16 @@ void MainWindow::chLangPl()
     pLang = "pl";
 }
 
+void MainWindow::chLangRu()
+{
+    translator->load("ln_ru");
+    qAppTranslator->load("qt_ru");
+    qApp->installTranslator(translator);
+    qApp->installTranslator(qAppTranslator);
+    reTranslateUi();
+    pLang = "ru";
+}
+
 void MainWindow::reTranslateUi()
 {
     setWindowTitle(tr("Some name"));
@@ -229,10 +245,15 @@ void MainWindow::reTranslateUi()
             ui->actionEn->setText(tr("En"));
             ui->actionUa->setText(tr("Ua"));
             ui->actionPl->setText(tr("Pl"));
+            ui->actionRu->setText(tr("Ru"));
         ui->menuSettings->setTitle(tr("&Settings"));
             ui->action_Font_settings->setText(tr("&Font settings"));
             ui->action_Default_settings->setText(tr("&Default settings"));
     ui->menuProgram->setTitle(tr("Program"));
+        ui->menuConversion->setTitle(tr("Conversion"));
+            ui->actionTemperature->setText(tr("Temperature"));
+            ui->actionDistance_and_Length->setText(tr("Distance and Length"));
+            ui->actionWeight_weight->setText(tr("Weight"));
         ui->action_Oil_Charts->setText(tr("&Oil Charts"));
             formOilPrices.setWindowTitle(tr("Oil Charts"));
         ui->action_Currency->setText(tr("&Currency"));
