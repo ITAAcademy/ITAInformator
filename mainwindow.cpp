@@ -37,11 +37,6 @@ MainWindow::MainWindow(QWidget *parent) :
     appDefaultLang = ("EN");
     ui->setupUi(this);
     this->setFixedSize(675,420);
-    fillTaCB();
-    fillLaCB();
-    fillWaCB();
-    fillIchCB();
-    fillIaCB();
 
     if(mSettings.FirstRun())
     {
@@ -144,46 +139,6 @@ void MainWindow::on_action_Default_settings_triggered()
     setGeometry(QRect(355,100,760,558));
     setFont(QFont("Times",10,1,false));
     pLang = appDefaultLang;
-}
-
-void MainWindow::fillTaCB()
-{
-    const QList<QString> &ref = mConvTool.TaCB();
-
-    for(int i = 0; i < ref.size(); ++i)
-        ui->TaCB->addItem(ref.at(i));
-}
-
-void MainWindow::fillLaCB()
-{
-    const QList<QString> &ref = mConvTool.LaCB();
-
-    for(int i = 0; i < ref.size(); ++i)
-        ui->LaCB->addItem(ref.at(i));
-}
-
-void MainWindow::fillWaCB()
-{
-    const QList<QString> &ref = mConvTool.WaCB();
-
-    for(int i = 0; i < ref.size(); ++i)
-        ui->WaCB->addItem(ref.at(i));
-}
-
-void MainWindow::fillIchCB()
-{
-    const QList<QString> &ref = mConvTool.IchCB();
-
-    for(int i = 0; i < ref.size(); ++i)
-        ui->IchCB->addItem(ref.at(i));
-}
-
-void MainWindow::fillIaCB()
-{
-    const QList<QString> &ref = mConvTool.IaCB();
-
-    for(int i = 0; i < ref.size(); ++i)
-        ui->IaCB->addItem(ref.at(i));
 }
 
 void MainWindow::on_IchCB_currentTextChanged(const QString )

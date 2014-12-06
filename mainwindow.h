@@ -5,7 +5,7 @@
 
 #include "distanceandlength.h"
 #include "weight.h"
-#include "conv_tools.h"
+//#include "conv_tools.h"
 
 #include "AdditionalFiles/modal_window.h"
 #include "AdditionalFiles/settings.h"
@@ -64,20 +64,12 @@ private slots:
     void on_IchCB_currentTextChanged(const QString);
 
 private:
-    void fillTaCB();
-    void fillLaCB();
-    void fillWaCB();
-    void fillIchCB();
-    void fillIaCB();
-
-private:
 
     Ui::MainWindow      *ui;
     QMdiArea            *mdiArea;
     QMenuBar            *menuBar;
     QString             appDefaultLang;
     QString             pLang;
-    convTools           mConvTool;
 
     DistanceAndLength   *formDistanceAndLength;
     Weight              *formWeight;
