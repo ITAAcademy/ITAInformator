@@ -66,7 +66,10 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->menuBar->setFont(QFont("Times",10,1,false));
 
-    ui->webView->setHtml(myURLrubleInterbank2);
+    ui->IchCB->addItem(tr("Oil Charts"));
+    ui->IchCB->addItem(tr("Rubel Info"));
+    ui->IchCB->addItem(tr("Oil graphics"));
+    ui->IchCB->addItem(tr("Precious metals"));
 
    // ui->menuBar->setNativeMenuBar(true);
 }
@@ -82,8 +85,8 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_action_Widget_you_2_triggered()
 {
-    modal_window formmodal_window; // указываем новое имя класса
-    formmodal_window.setModal(true); // говорим форме что она модальна
+    modal_window formmodal_window; // Specifies the new name of the class
+    formmodal_window.setModal(true); // say that it is modal form
     formmodal_window.exec();
 }
 
@@ -183,6 +186,26 @@ void MainWindow::fillIaCB()
         ui->IaCB->addItem(ref.at(i));
 }
 
+void MainWindow::on_IchCB_currentTextChanged(const QString )
+{
+    if(ui->IchCB->currentText() == "Oil Charts")
+        {
+            ui->webView->setHtml(myURLOilPrices2);
+        }
+        if(ui->IchCB->currentText() == "Rubel Info")
+        {
+            ui->webView->setHtml(myURLrubleInterbank2);
+        }
+        if(ui->IchCB->currentText() == "Oil graphics")
+        {
+            ui->webView->setHtml(myURLOilgraphics);
+        }
+        if(ui->IchCB->currentText() == "Precious metals")
+        {
+            ui->webView->setHtml(myURLDrahotsennemetals);
+        }
+        ui->webView->reload();
+}
 
 
 void MainWindow::on_webView_loadFinished(bool )
@@ -205,4 +228,6 @@ void MainWindow::on_RightITE_textChanged(const QString )
     double usd = ui->RightITE->text().toDouble();
     ui->LeftITE->setText(QString::number(usd * mCoofRubToUsd));
 }
+
+
 

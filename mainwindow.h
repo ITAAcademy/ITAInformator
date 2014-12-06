@@ -61,6 +61,8 @@ private slots:
     void on_LeftITE_textChanged(const QString );
     void on_RightITE_textChanged(const QString );
 
+    void on_IchCB_currentTextChanged(const QString);
+
 private:
     void fillTaCB();
     void fillLaCB();
