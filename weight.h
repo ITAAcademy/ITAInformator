@@ -14,6 +14,20 @@ class Weight : public QDialog
 public:
     explicit Weight(QWidget *parent = 0);
     ~Weight();
+// Begin(List_Opened_Windows)
+protected:
+        void closeEvent(QCloseEvent *);
+        void showEvent(QShowEvent *);
+// End
+
+private slots:
+
+
+        void on_lineEdit_W_Left_textChanged(const QString );
+
+        void on_lineEdit_W_right_textChanged(const QString );
+
+        void on_comboBoxWeight_activated(const QString );
 
 private:
     Ui::Weight *ui;

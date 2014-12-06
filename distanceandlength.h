@@ -14,6 +14,18 @@ class DistanceAndLength : public QDialog
 public:
     explicit DistanceAndLength(QWidget *parent = 0);
     ~DistanceAndLength();
+// Begin(List_Opened_Windows)
+protected:
+   void closeEvent(QCloseEvent *);
+   void showEvent(QShowEvent *);
+// End
+
+private slots:
+   void on_lineEdit_D_Left_textChanged(const QString );
+
+   void on_lineEdit_D_right_textChanged(const QString );
+
+   void on_comboBoxDistance_activated(const QString );
 
 private:
     Ui::DistanceAndLength *ui;
