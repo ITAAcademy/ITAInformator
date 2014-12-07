@@ -26,6 +26,7 @@ SOURCES += main.cpp\
     distanceandlength.cpp \
     weight.cpp \
     Units/Temperature/temperature.cpp
+    AdditionalFiles/appsettings.cpp
 
 
 HEADERS  += mainwindow.h \
@@ -39,6 +40,7 @@ HEADERS  += mainwindow.h \
     distanceandlength.h \
     weight.h \
     Units/Temperature/temperature.h
+    AdditionalFiles/appsettings.h
 
 
 CONFIG   += c++11

@@ -97,6 +97,11 @@ private:
     void fillIchCB();
     void fillIaCB();
     void converterfunc(int);
+    void on_webView_loadFinished(bool );
+    void on_LeftITE_textChanged(const QString );
+    void on_RightITE_textChanged(const QString );
+
+    void on_IchCB_currentTextChanged(const QString);
 
 private:
 
@@ -120,6 +125,8 @@ private:
     // Begin(List_Opened_Windows)
     ListOpenedWindows   *formListOpenedWindows;
     // End
+
+    double mCoofRubToUsd;
 };
 
 #endif // MAINWINDOW_H
