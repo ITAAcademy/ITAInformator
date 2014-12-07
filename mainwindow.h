@@ -79,7 +79,6 @@ private slots:
 
     void on_lineEdit_WeightRight_textChanged(const QString );
 
-
     void on_LeftITE_textChanged(const QString);
 
     void on_RightITE_textChanged(const QString );
@@ -91,16 +90,7 @@ private slots:
     void on_WaCB_activated(const QString );
 
 private:
-    void fillTaCB();
-    void fillLaCB();
-    void fillWaCB();
-    void fillIchCB();
-    void fillIaCB();
-    void converterfunc(int);
     void on_webView_loadFinished(bool );
-//    void on_LeftITE_textChanged(const QString );
-//    void on_RightITE_textChanged(const QString );
-
     void on_IchCB_currentTextChanged(const QString);
 
 private:
