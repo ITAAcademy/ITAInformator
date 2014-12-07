@@ -5,7 +5,6 @@
 
 #include "distanceandlength.h"
 #include "weight.h"
-//#include "conv_tools.h"
 
 #include "AdditionalFiles/modal_window.h"
 #include "AdditionalFiles/settings.h"
