@@ -54,9 +54,9 @@ FORMS += \
     Units/distanceandlength.ui
 
 TRANSLATIONS += \
-    ln_ua.ts \
-    ln_pl.ts \
-    ln_ru.ts
+    lang\ln_ua.ts \
+    lang\ln_pl.ts \
+    lang\ln_ru.ts
 
 
 win32:RC_FILE = IcoConvert.rc
@@ -65,10 +65,10 @@ RESOURCES += \
     Img.qrc
 
 OTHER_FILES += \
-    ln_pl.ts \
-    ln_ua.ts \
-    qt_uk.ts \
-    qt_pl.ts \
-    qt_ru.ts \
-    ln_ru.ts
+    lang\ln_pl.ts \
+    lang\ln_ua.ts \
+    lang\qt_uk.ts \
+    lang\qt_pl.ts \
+    lang\qt_ru.ts \
+    lang\ln_ru.ts
 

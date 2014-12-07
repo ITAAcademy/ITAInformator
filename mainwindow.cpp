@@ -169,8 +169,8 @@ void MainWindow::chLangEn()
 
 void MainWindow::chLangUa()
 {
-    translator->load("ln_ua");
-    qAppTranslator->load("qt_uk");
+    translator->load("lang/ln_ua");
+    qAppTranslator->load("lang/qt_uk");
     qApp->installTranslator(translator);
     qApp->installTranslator(qAppTranslator);
     reTranslateUi();
@@ -179,8 +179,8 @@ void MainWindow::chLangUa()
 
 void MainWindow::chLangPl()
 {
-    translator->load("ln_pl");
-    qAppTranslator->load("qt_pl");
+    translator->load("lang/ln_pl");
+    qAppTranslator->load("lang/qt_pl");
     qApp->installTranslator(translator);
     qApp->installTranslator(qAppTranslator);
     reTranslateUi();
@@ -189,8 +189,8 @@ void MainWindow::chLangPl()
 
 void MainWindow::chLangRu()
 {
-    translator->load("ln_ru");
-    qAppTranslator->load("qt_ru");
+    translator->load("lang/ln_ru");
+    qAppTranslator->load("lang/qt_ru");
     qApp->installTranslator(translator);
     qApp->installTranslator(qAppTranslator);
     reTranslateUi();
