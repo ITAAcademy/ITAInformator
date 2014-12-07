@@ -1,5 +1,4 @@
 #include "modal_window.h"
-#include "ui_modal_window.h"
 
 modal_window::modal_window(QWidget *parent) :
     QDialog(parent),

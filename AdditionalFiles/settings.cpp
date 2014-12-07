@@ -1,7 +1,4 @@
-#include "qmessagebox.h"
 #include "settings.h"
-
-
 
 pSettings::pSettings() :
     isFirstRun(false)
@@ -94,4 +91,3 @@ const QString &pSettings::getAppLang()const
 {
     return appLang;
 }
-

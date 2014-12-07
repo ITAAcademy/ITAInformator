@@ -1,6 +1,5 @@
 #include "appsettings.h"
 
-
 appActiveWindows::appActiveWindows()
 {
 }
@@ -31,18 +30,3 @@ const QList<QString> &appActiveWindows::allActiveWindows()const
 {
     return mListActiveWindows;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

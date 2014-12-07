@@ -1,11 +1,6 @@
 #include "weight.h"
-#include "ui_weight.h"
-
-// Begin(List_Opened_Windows)
-#include "AdditionalFiles/appsettings.h"
 
 static const QString windowName = "Weight";
-// End
 
 Weight::Weight(QWidget *parent) :
     QDialog(parent),
@@ -14,16 +9,16 @@ Weight::Weight(QWidget *parent) :
     ui->setupUi(this);
     this->setFixedSize(375,150);
 
-    ui->comboBoxWeight->addItem("G to Kg");
-    ui->comboBoxWeight->addItem("Kg to P");
-    ui->comboBoxWeight->addItem("P to G");
+    ui->comboBoxWeight->addItem(tr("g to kg"));
+    ui->comboBoxWeight->addItem(tr("kg to p"));
+    ui->comboBoxWeight->addItem(tr("p to g"));
 }
 
 Weight::~Weight()
 {
     delete ui;
 }
-// Begin(List_Opened_Windows)
+
 void Weight::closeEvent(QCloseEvent *)
 {
     appActiveWindows &ref = appActiveWindows::getInstance();
@@ -34,24 +29,23 @@ void Weight::showEvent(QShowEvent *)
     appActiveWindows &ref = appActiveWindows::getInstance();
     ref.addActiveWindowName(windowName);
 }
-// End
 
 void Weight::on_lineEdit_W_Left_textChanged(const QString)
 {  if(ui->lineEdit_W_Left->hasFocus())
     {
-    if(ui->comboBoxWeight->currentText() == "G to Kg")
+    if(ui->comboBoxWeight->currentText() == "g to kg")
         {
         double G = ui->lineEdit_W_Left->text().toDouble();
         double Kg = G;
         ui->lineEdit_W_right->setText(QString::number(Kg /1000));;
         }
-    if(ui->comboBoxWeight->currentText() == "Kg to P")
+    if(ui->comboBoxWeight->currentText() == "kg to p")
         {
         double Kg = ui->lineEdit_W_Left->text().toDouble();
         double P = Kg;
         ui->lineEdit_W_right->setText(QString::number(P * 2.205 ));;
         }
-    if(ui->comboBoxWeight->currentText() == "P to G")
+    if(ui->comboBoxWeight->currentText() == "p to g")
         {
         double P = ui->lineEdit_W_Left->text().toDouble();
         double G = P;
@@ -63,19 +57,19 @@ void Weight::on_lineEdit_W_Left_textChanged(const QString)
 void Weight::on_lineEdit_W_right_textChanged(const QString)
 {  if(ui->lineEdit_W_right->hasFocus())
     {
-    if(ui->comboBoxWeight->currentText() == "G to Kg")
+    if(ui->comboBoxWeight->currentText() == "g to kg")
         {
         double Kg = ui->lineEdit_W_right->text().toDouble();
         double G = Kg;
         ui->lineEdit_W_Left->setText(QString::number(G * 1000));;
         }
-    if(ui->comboBoxWeight->currentText() == "Kg to P")
+    if(ui->comboBoxWeight->currentText() == "kg to p")
         {
         double P = ui->lineEdit_W_right->text().toDouble();
         double Kg = P;
         ui->lineEdit_W_Left->setText(QString::number(Kg /2.205 ));;
         }
-    if(ui->comboBoxWeight->currentText() == "P to G")
+    if(ui->comboBoxWeight->currentText() == "p to g")
         {
         double G = ui->lineEdit_W_right->text().toDouble();
         double P = G;
@@ -87,26 +81,26 @@ void Weight::on_lineEdit_W_right_textChanged(const QString)
 void Weight::on_comboBoxWeight_activated(const QString)
 {
 
-    if(ui->comboBoxWeight->currentText() == "G to Kg")
+    if(ui->comboBoxWeight->currentText() == "g to kg")
         {
         ui->lineEdit_W_Left->clear();
         ui->lineEdit_W_right->clear();
-        ui->label_Left->setText("Gram");
-        ui->label_Right->setText("Kilogram");
+        ui->label_Left->setText(tr("Gram"));
+        ui->label_Right->setText(tr("Kilogram"));
         }
-    if(ui->comboBoxWeight->currentText() == "Kg to P")
+    if(ui->comboBoxWeight->currentText() == "kg to p")
         {
         ui->lineEdit_W_Left->clear();
         ui->lineEdit_W_right->clear();
-        ui->label_Left->setText("Kilogram");
-        ui->label_Right->setText("Pound");
+        ui->label_Left->setText(tr("Kilogram"));
+        ui->label_Right->setText(tr("Pound"));
         }
-    if(ui->comboBoxWeight->currentText() == "P to G")
+    if(ui->comboBoxWeight->currentText() == "p to g")
         {
         ui->lineEdit_W_Left->clear();
         ui->lineEdit_W_right->clear();
-        ui->label_Left->setText("Pound");
-        ui->label_Right->setText("Gram");
+        ui->label_Left->setText(tr("Pound"));
+        ui->label_Right->setText(tr("Gram"));
         }
 
 }

@@ -3,7 +3,10 @@
 
 #include <QDialog>
 #include <QtWebKitWidgets/QWebView>
+#include <QLabel>
 #include <QString>
+#include "ui_rubleinterbank.h"
+#include "AdditionalFiles/appsettings.h"
 
 namespace Ui {
 class rubleInterbank;
@@ -14,17 +17,14 @@ class rubleInterbank : public QDialog
     Q_OBJECT
 
 public:
+
     explicit rubleInterbank(QWidget *parent = 0);
     ~rubleInterbank();
-// Begin(List_Opened_Windows)
-protected:
-        void closeEvent(QCloseEvent *);
-        void showEvent(QShowEvent *);
-// End
 
-//----------Begin(Font_settings
-//    void setRubleInterbankFont(QFont &font);
-//----------End
+protected:
+
+    void closeEvent (QCloseEvent *);
+    void showEvent  (QShowEvent *);
 
 private:
     Ui::rubleInterbank *ui;

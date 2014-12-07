@@ -1,6 +1,5 @@
 #include "listopenedwindows.h"
-#include "ui_listopenedwindows.h"
-#include "AdditionalFiles/appsettings.h"
+
 
 ListOpenedWindows::ListOpenedWindows(QWidget *parent) :
     QDialog(parent),

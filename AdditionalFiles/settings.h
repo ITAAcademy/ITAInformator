@@ -6,8 +6,7 @@
 #include <QRect>
 #include <QFontDialog>
 #include <QSettings>
-
-
+#include <QMessageBox>
 
 class pSettings
 {
@@ -19,15 +18,15 @@ public:
 
     const bool &FirstRun()const;
 
-    void setMainWindowTitle(const QString &aTitle);
-    void setMainWindowRect(const QRect &aRect);
-    void setMainWindowFont (const QFont &aFont);
-    void setAppLang(const QString &aLang);
+    void setMainWindowTitle (const QString &aTitle);
+    void setMainWindowRect  (const QRect &aRect);
+    void setMainWindowFont  (const QFont &aFont);
+    void setAppLang         (const QString &aLang);
 
-    const QString   &getMainWindowTitle()const;
-    const QRect     &getMainWindowRect()const;
-    const QFont     &getMainWindowFont()const;
-    const QString   &getAppLang()const;
+    const QString   &getMainWindowTitle ()const;
+    const QRect     &getMainWindowRect  ()const;
+    const QFont     &getMainWindowFont  ()const;
+    const QString   &getAppLang         ()const;
 
     void saveAppLang();
     void loadAppLang();
@@ -44,6 +43,5 @@ private:
     QString     appLang;
     QSettings   *mSettings;
 };
-
 
 #endif // SETTINGS_H
