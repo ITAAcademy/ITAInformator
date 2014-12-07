@@ -48,9 +48,10 @@ MainWindow::MainWindow(QWidget *parent) :
         ui->WaCB->addItem("p/g");
 
 
-
-        ui->IchCB->addItem("Oil Charts");
-        ui->IchCB->addItem("Rubel Info");
+        ui->IchCB->addItem(tr("Oil Charts"));
+        ui->IchCB->addItem(tr("Rubel Info"));
+        ui->IchCB->addItem(tr("Oil graphics"));
+        ui->IchCB->addItem(tr("Precious metals"));
 
         ui->IaCB->addItem("Oil Charts");
         ui->IaCB->addItem("Rubel Info");
@@ -79,10 +80,6 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->menuBar->setFont(QFont("Times",10,1,false));
 
-    ui->IchCB->addItem(tr("Oil Charts"));
-    ui->IchCB->addItem(tr("Rubel Info"));
-    ui->IchCB->addItem(tr("Oil graphics"));
-    ui->IchCB->addItem(tr("Precious metals"));
 
    // ui->menuBar->setNativeMenuBar(true);
 
@@ -394,17 +391,6 @@ void MainWindow::on_lineEdit_WeightRight_textChanged(const QString)
         ui->lineEdit_WeightLeft->setText(QString::number((G *2.205) /1000 ));;
         }
     }
-}
-
-
-void MainWindow::on_lineEdit_textChanged(const QString)
-{
-
-}
-
-void MainWindow::on_lineEdit_2_textChanged(const QString)
-{
-
 }
 
 void MainWindow::on_TaCB_activated(const QString )
