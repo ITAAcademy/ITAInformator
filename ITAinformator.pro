@@ -23,10 +23,9 @@ SOURCES += main.cpp\
     AdditionalFiles/settings.cpp \
     AdditionalFiles/listopenedwindows.cpp \
     AdditionalFiles/appsettings.cpp \
-    distanceandlength.cpp \
-    weight.cpp \
-    Units/Temperature/temperature.cpp
-    AdditionalFiles/appsettings.cpp
+    Units/temperature.cpp\
+    Units/weight.cpp\
+    Units/distanceandlength.cpp
 
 
 HEADERS  += mainwindow.h \
@@ -37,10 +36,9 @@ HEADERS  += mainwindow.h \
     AdditionalFiles/settings.h \
     AdditionalFiles/listopenedwindows.h \
     AdditionalFiles/appsettings.h \
-    distanceandlength.h \
-    weight.h \
-    Units/Temperature/temperature.h
-    AdditionalFiles/appsettings.h
+    Units/temperature.h\
+    Units/weight.h\
+    Units/distanceandlength.h
 
 
 CONFIG   += c++11
@@ -51,9 +49,9 @@ FORMS += \
     Charts/rubleinterbank.ui \
     AdditionalFiles/modal_window.ui \
     AdditionalFiles/listopenedwindows.ui \
-    distanceandlength.ui \
-    weight.ui \
-    Units/Temperature/temperature.ui
+    Units/temperature.ui\
+    Units/weight.ui\
+    Units/distanceandlength.ui
 
 TRANSLATIONS += \
     ln_ua.ts \

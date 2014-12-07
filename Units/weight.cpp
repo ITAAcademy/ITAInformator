@@ -1,4 +1,4 @@
-#include "weight.h"
+#include "Units/weight.h"
 
 static const QString windowName = "Weight";
 

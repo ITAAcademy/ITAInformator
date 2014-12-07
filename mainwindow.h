@@ -11,15 +11,16 @@
 #include <QList>
 #include <QString>
 #include "ui_mainwindow.h"
-#include "distanceandlength.h"
-#include "weight.h"
 #include "qmainwindow.h"
+#include "Units/distanceandlength.h"
+#include "Units/weight.h"
+#include "Units/temperature.h"
 #include "AdditionalFiles/listopenedwindows.h"
 #include "AdditionalFiles/modal_window.h"
 #include "AdditionalFiles/settings.h"
 #include "Charts/oilprices.h"
 #include "Charts/rubleinterbank.h"
-#include "Units/Temperature/temperature.h"
+
 
 class QMdiArea;
 class QSignalMapper;

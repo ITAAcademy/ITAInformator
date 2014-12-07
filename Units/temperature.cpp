@@ -1,4 +1,4 @@
-#include "temperature.h"
+#include "Units/temperature.h"
 
 static const QString windowName = "Temperature";
 
