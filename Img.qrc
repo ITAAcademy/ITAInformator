@@ -1,8 +1,6 @@
 <RCC>
-    <qresource prefix="/imagin">
+    <qresource prefix="/image">
         <file>no-internet.png</file>
-        <file>pic.png</file>
-        <file>Converter-2014.png</file>
-        <file>konverter.png</file>
+        <file>logo.png</file>
     </qresource>
 </RCC>
