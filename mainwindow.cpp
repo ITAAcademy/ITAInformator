@@ -14,22 +14,22 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     this->setFixedSize(675,420);
 
-        ui->TaCB->addItem(tr("f/c"));
-        ui->TaCB->addItem(tr("k/c"));
-        ui->TaCB->addItem(tr("k/f"));
+        ui->TaCB->addItem("f/c");
+        ui->TaCB->addItem("k/c");
+        ui->TaCB->addItem("k/f");
 
-        ui->LaCB->addItem(tr("mm/cm"));
-        ui->LaCB->addItem(tr("cm/m"));
-        ui->LaCB->addItem(tr("m/km"));
+        ui->LaCB->addItem("mm/cm");
+        ui->LaCB->addItem("cm/m");
+        ui->LaCB->addItem("m/km");
 
-        ui->WaCB->addItem(tr("g/kg"));
-        ui->WaCB->addItem(tr("kg/p"));
-        ui->WaCB->addItem(tr("p/g"));
+        ui->WaCB->addItem("g/kg");
+        ui->WaCB->addItem("kg/p");
+        ui->WaCB->addItem("p/g");
 
-        ui->IchCB->addItem(tr("Oil Charts"));
-        ui->IchCB->addItem(tr("Rubel Info"));
-        ui->IchCB->addItem(tr("Oil graphics"));
-        ui->IchCB->addItem(tr("Precious metals"));
+        ui->IchCB->addItem("Oil Charts");
+        ui->IchCB->addItem("Rubel Info");
+        ui->IchCB->addItem("Oil graphics");
+        ui->IchCB->addItem("Precious metals");
 
         ui->IaCB->addItem(tr("Oil Charts"));
         ui->IaCB->addItem(tr("Rubel Info"));
@@ -384,7 +384,7 @@ void MainWindow::on_TaCB_activated(const QString )
 
 void MainWindow::on_LaCB_activated(const QString )
 {
-    if(ui->LaCB->currentText() == tr("mm/cm"))
+    if(ui->LaCB->currentText() == ("mm/cm"))
     {
        ui->lineEdit_LenghtLeft->clear();
        ui->lineEdit_LenghtRight->clear();

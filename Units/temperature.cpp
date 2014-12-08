@@ -9,9 +9,9 @@ Temperature::Temperature(QWidget *parent) :
     ui->setupUi(this);
     this->setFixedSize(375,150);
 
-    ui->comboBoxTemperature->addItem(tr("f to c"));
-    ui->comboBoxTemperature->addItem(tr("k to c"));
-    ui->comboBoxTemperature->addItem(tr("k to f"));
+    ui->comboBoxTemperature->addItem("f to c");
+    ui->comboBoxTemperature->addItem("k to c");
+    ui->comboBoxTemperature->addItem("k to f");
 }
 
 Temperature::~Temperature()

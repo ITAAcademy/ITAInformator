@@ -9,9 +9,9 @@ DistanceAndLength::DistanceAndLength(QWidget *parent) :
     ui->setupUi(this);
     this->setFixedSize(375,150);
 
-    ui->comboBoxDistance->addItem(tr("mm to cm"));
-    ui->comboBoxDistance->addItem(tr("cm to m"));
-    ui->comboBoxDistance->addItem(tr("m to km"));
+    ui->comboBoxDistance->addItem("mm to cm");
+    ui->comboBoxDistance->addItem("cm to m");
+    ui->comboBoxDistance->addItem("m to km");
 }
 
 DistanceAndLength::~DistanceAndLength()
