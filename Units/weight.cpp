@@ -9,9 +9,9 @@ Weight::Weight(QWidget *parent) :
     ui->setupUi(this);
     this->setFixedSize(375,150);
 
-    ui->comboBoxWeight->addItem(tr("g to kg"));
-    ui->comboBoxWeight->addItem(tr("kg to p"));
-    ui->comboBoxWeight->addItem(tr("p to g"));
+    ui->comboBoxWeight->addItem("g to kg");
+    ui->comboBoxWeight->addItem("kg to p");
+    ui->comboBoxWeight->addItem("p to g");
 }
 
 Weight::~Weight()
@@ -33,6 +33,7 @@ void Weight::showEvent(QShowEvent *)
 void Weight::on_lineEdit_W_Left_textChanged(const QString)
 {  if(ui->lineEdit_W_Left->hasFocus())
     {
+
     if(ui->comboBoxWeight->currentText() == "g to kg")
         {
         double G = ui->lineEdit_W_Left->text().toDouble();
