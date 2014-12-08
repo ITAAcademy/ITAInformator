@@ -75,6 +75,8 @@ private slots:
     void on_IchCB_currentTextChanged        (const QString);
     void on_webView_loadFinished            (bool);
 
+
+
 private:
 
     Ui::MainWindow      *ui;
