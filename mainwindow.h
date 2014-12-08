@@ -63,6 +63,8 @@ private slots:
 
     void on_IchCB_currentTextChanged(const QString);
 
+
+
 private:
 
     Ui::MainWindow      *ui;

@@ -150,6 +150,7 @@ void MainWindow::on_IchCB_currentTextChanged(const QString )
         if(ui->IchCB->currentText() == "Rubel Info")
         {
             ui->webView->setHtml(myURLrubleInterbank2);
+
         }
         if(ui->IchCB->currentText() == "Oil graphics")
         {
@@ -165,10 +166,9 @@ void MainWindow::on_IchCB_currentTextChanged(const QString )
 
 void MainWindow::on_webView_loadFinished(bool )
 {
-    QVariant var;
-    var = ui->webView->page()->currentFrame()->evaluateJavaScript("document.getElementById('usdrubbid').innerHTML");
-
-    mCoofRubToUsd = var.toDouble();
+    QVariant coefficient;
+    coefficient  = ui->webView->page()->currentFrame()->evaluateJavaScript("document.getElementById('usdrubbid').innerHTML");
+    mCoofRubToUsd = coefficient.toDouble();
 }
 
 void MainWindow::on_LeftITE_textChanged(const QString )
