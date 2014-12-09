@@ -4,6 +4,9 @@
 #include <QDialog>
 #include <QtWebKitWidgets/QWebView>
 #include <QString>
+#include <QLabel>
+#include "ui_oilprices.h"
+#include "AdditionalFiles/appsettings.h"
 
 namespace Ui {
 class OilPrices;
@@ -14,12 +17,13 @@ class OilPrices : public QDialog
     Q_OBJECT
 
 public:
+
     explicit OilPrices(QWidget *parent = 0);
     ~OilPrices();
+protected:
 
-//----------Begin(Font_settings)
-//    void setOilpricesFont(QFont &font);
-//----------End
+    void closeEvent (QCloseEvent *);
+    void showEvent  (QShowEvent *);
 
 private:
     Ui::OilPrices *ui;
