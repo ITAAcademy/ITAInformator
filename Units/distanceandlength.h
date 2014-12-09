@@ -29,6 +29,8 @@ private slots:
    void on_lineEdit_D_right_textChanged (const QString );
    void on_comboBoxDistance_activated   (const QString );
 
+   void on_pushButton_clearLenght_clicked();
+
 private:
     Ui::DistanceAndLength *ui;
 };

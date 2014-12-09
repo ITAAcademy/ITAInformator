@@ -238,7 +238,7 @@ void MainWindow::on_lineEdit_TempLeft_textChanged(const QString)
 {
     if(ui->lineEdit_TempLeft->hasFocus())
     {
-    if(ui->TaCB->currentText() == tr("f/c"))
+    if(ui->TaCB->currentText() == ("f/c"))
         {
 
         double Farengate = ui->lineEdit_TempLeft->text().toDouble();
@@ -261,7 +261,7 @@ void MainWindow::on_lineEdit_TempRight_textChanged(const QString)
 {
    if(ui->lineEdit_TempRight->hasFocus())
    {
-    if(ui->TaCB->currentText() == tr("f/c"))
+    if(ui->TaCB->currentText() == ("f/c"))
         {
         double Celsius = ui->lineEdit_TempRight->text().toDouble();
         ui->lineEdit_TempLeft->setText(QString::number((Celsius *9/5)+32 ));
@@ -459,4 +459,22 @@ void MainWindow::on_RightITE_textChanged(const QString )
 {
     double usd = ui->RightITE->text().toDouble();
     ui->LeftITE->setText(QString::number(usd * mCoofRubToUsd));
+}
+
+void MainWindow::on_pushButton_ClearTemper_clicked()
+{
+    ui->lineEdit_TempLeft->clear();
+    ui->lineEdit_TempRight->clear();
+}
+
+void MainWindow::on_pushButton_ClearLenght_clicked()
+{
+    ui->lineEdit_LenghtLeft->clear();
+    ui->lineEdit_LenghtRight->clear();
+}
+
+void MainWindow::on_pushButton_ClearWeight_clicked()
+{
+    ui->lineEdit_WeightLeft->clear();
+    ui->lineEdit_WeightRight->clear();
 }

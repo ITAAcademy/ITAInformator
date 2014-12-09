@@ -75,6 +75,12 @@ private slots:
     void on_IchCB_currentTextChanged        (const QString);
     void on_webView_loadFinished            (bool);
 
+    void on_pushButton_ClearTemper_clicked();
+
+    void on_pushButton_ClearLenght_clicked();
+
+    void on_pushButton_ClearWeight_clicked();
+
 private:
 
     Ui::MainWindow      *ui;

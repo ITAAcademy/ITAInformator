@@ -102,3 +102,9 @@ void DistanceAndLength::on_comboBoxDistance_activated(const QString )
         ui->label_Right->setText("Kilometer");
         }
 }
+
+void DistanceAndLength::on_pushButton_clearLenght_clicked()
+{
+    ui->lineEdit_D_Left->clear();
+    ui->lineEdit_D_right->clear();
+}

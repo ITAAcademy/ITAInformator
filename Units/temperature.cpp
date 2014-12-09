@@ -104,3 +104,9 @@ void Temperature::on_comboBoxTemperature_activated(const QString )
         ui->label_Right->setText("Fahrenheit");
         }
 }
+
+void Temperature::on_pushButton_clearTemper_clicked()
+{
+    ui->lineEdit_T_Left->clear();
+    ui->lineEdit_T_right->clear();
+}

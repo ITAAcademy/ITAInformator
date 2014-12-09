@@ -28,6 +28,8 @@ private slots:
     void on_lineEdit_W_right_textChanged(const QString );
     void on_comboBoxWeight_activated    (const QString );
 
+    void on_pushButton_ClearWeight_clicked();
+
 private:
 
     Ui::Weight *ui;

@@ -105,3 +105,9 @@ void Weight::on_comboBoxWeight_activated(const QString)
         }
 
 }
+
+void Weight::on_pushButton_ClearWeight_clicked()
+{
+    ui->lineEdit_W_Left->clear();
+    ui->lineEdit_W_right->clear();
+}
