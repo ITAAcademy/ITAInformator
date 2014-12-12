@@ -19,19 +19,21 @@
         <translation>Centymetry</translation>
     </message>
     <message>
-        <location filename="../Units/distanceandlength.cpp" line="12"/>
+        <location filename="../Units/distanceandlength.ui" line="88"/>
+        <source>Clear</source>
+        <translation>Jasny</translation>
+    </message>
+    <message>
         <source>mm to cm</source>
-        <translation>mm do cm</translation>
+        <translation type="vanished">mm do cm</translation>
     </message>
     <message>
-        <location filename="../Units/distanceandlength.cpp" line="13"/>
         <source>cm to m</source>
-        <translation>mm do cm</translation>
+        <translation type="vanished">mm do cm</translation>
     </message>
     <message>
-        <location filename="../Units/distanceandlength.cpp" line="14"/>
         <source>m to km</source>
-        <translation>m do km</translation>
+        <translation type="vanished">m do km</translation>
     </message>
 </context>
 <context>
@@ -56,186 +58,193 @@
         <translation>Konwerter temperatury</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="76"/>
+        <location filename="../mainwindow.ui" line="75"/>
+        <location filename="../mainwindow.ui" line="137"/>
+        <location filename="../mainwindow.ui" line="199"/>
+        <source>Clear</source>
+        <translation>Jasny</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="89"/>
         <location filename="../mainwindow.cpp" line="226"/>
         <source>Lenght conversion</source>
         <translation>Długości Converter</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="125"/>
+        <location filename="../mainwindow.ui" line="151"/>
         <location filename="../mainwindow.cpp" line="225"/>
         <source>Weight conversion</source>
         <translation>Konwersji Waga</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="174"/>
+        <location filename="../mainwindow.ui" line="213"/>
         <location filename="../mainwindow.cpp" line="228"/>
         <source>Informer</source>
         <translation>Informator</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="187"/>
+        <location filename="../mainwindow.ui" line="226"/>
         <source>about:blank</source>
         <translation>formularz:puste</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="211"/>
+        <location filename="../mainwindow.ui" line="250"/>
         <location filename="../mainwindow.cpp" line="229"/>
         <source>Informer conversion</source>
         <translation>Informer konwersji</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="275"/>
+        <location filename="../mainwindow.ui" line="314"/>
         <location filename="../mainwindow.cpp" line="214"/>
         <source>Program</source>
         <translation>Program</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="279"/>
+        <location filename="../mainwindow.ui" line="318"/>
         <source>&amp;Conversion</source>
         <translation>&amp;Konwersja</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="294"/>
+        <location filename="../mainwindow.ui" line="333"/>
         <location filename="../mainwindow.cpp" line="205"/>
         <source>Tools</source>
         <translation>Narzędzia</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="298"/>
+        <location filename="../mainwindow.ui" line="337"/>
         <location filename="../mainwindow.cpp" line="206"/>
         <source>&amp;Language</source>
         <translation>&amp;Język</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="307"/>
+        <location filename="../mainwindow.ui" line="346"/>
         <location filename="../mainwindow.cpp" line="211"/>
         <source>&amp;Settings</source>
         <translation>&amp;Ustawienia</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="317"/>
+        <location filename="../mainwindow.ui" line="356"/>
         <location filename="../mainwindow.cpp" line="203"/>
         <source>Help</source>
         <translation>Pomoc</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="331"/>
+        <location filename="../mainwindow.ui" line="370"/>
         <location filename="../mainwindow.cpp" line="224"/>
         <source>&amp;Exit</source>
         <translation>&amp;Wyjdź</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="334"/>
+        <location filename="../mainwindow.ui" line="373"/>
         <source>Alt+X</source>
         <translation>Alt+X</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="339"/>
+        <location filename="../mainwindow.ui" line="378"/>
         <location filename="../mainwindow.cpp" line="207"/>
         <source>En</source>
         <translation>En</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="344"/>
-        <location filename="../mainwindow.ui" line="347"/>
+        <location filename="../mainwindow.ui" line="383"/>
+        <location filename="../mainwindow.ui" line="386"/>
         <location filename="../mainwindow.cpp" line="208"/>
         <source>Ua</source>
         <translation>Ua</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="352"/>
-        <location filename="../mainwindow.ui" line="355"/>
+        <location filename="../mainwindow.ui" line="391"/>
+        <location filename="../mainwindow.ui" line="394"/>
         <location filename="../mainwindow.cpp" line="209"/>
         <source>Pl</source>
         <translation>Pl</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="360"/>
+        <location filename="../mainwindow.ui" line="399"/>
         <location filename="../mainwindow.cpp" line="204"/>
         <source>&amp;About</source>
         <translation>&amp;O programie</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="365"/>
+        <location filename="../mainwindow.ui" line="404"/>
         <location filename="../mainwindow.cpp" line="216"/>
         <source>Temperature</source>
         <translation>Temperatura</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="370"/>
+        <location filename="../mainwindow.ui" line="409"/>
         <source>Area</source>
         <translation>Obszar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="375"/>
+        <location filename="../mainwindow.ui" line="414"/>
         <source>Volume, capacity</source>
         <translation>Objętość, pojemność</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="380"/>
+        <location filename="../mainwindow.ui" line="419"/>
         <location filename="../mainwindow.cpp" line="217"/>
         <source>Distance and Length</source>
         <translation>Dystans i długość</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="385"/>
+        <location filename="../mainwindow.ui" line="424"/>
         <location filename="../mainwindow.cpp" line="218"/>
         <source>Weight</source>
         <translation>Waga</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="393"/>
+        <location filename="../mainwindow.ui" line="432"/>
         <location filename="../mainwindow.cpp" line="219"/>
         <source>&amp;Oil Charts</source>
         <translation>&amp;Oil Wykresy</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="396"/>
+        <location filename="../mainwindow.ui" line="435"/>
         <source>Alt+O</source>
         <translation>Alt+O</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="404"/>
+        <location filename="../mainwindow.ui" line="443"/>
         <location filename="../mainwindow.cpp" line="221"/>
         <source>&amp;Currency</source>
         <translation>&amp;Waluta</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="407"/>
+        <location filename="../mainwindow.ui" line="446"/>
         <source>Alt+C</source>
         <translation>Alt+C</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="412"/>
+        <location filename="../mainwindow.ui" line="451"/>
         <location filename="../mainwindow.cpp" line="212"/>
         <source>&amp;Font settings</source>
         <translation>&amp;Ustawienia czcionki</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="417"/>
+        <location filename="../mainwindow.ui" line="456"/>
         <source>&amp;List opened windows</source>
         <translation>&amp;Lista otwartych okien</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="420"/>
+        <location filename="../mainwindow.ui" line="459"/>
         <location filename="../mainwindow.cpp" line="223"/>
         <source>List opened windows</source>
         <translation>Lista otwartych okien</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="425"/>
+        <location filename="../mainwindow.ui" line="464"/>
         <location filename="../mainwindow.cpp" line="213"/>
         <source>&amp;Default settings</source>
         <translation>&amp;Ustawienia domyślne</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="428"/>
+        <location filename="../mainwindow.ui" line="467"/>
         <source>Default settings</source>
         <translation>Ustawienia domyślne</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="433"/>
+        <location filename="../mainwindow.ui" line="472"/>
         <location filename="../mainwindow.cpp" line="210"/>
         <source>Ru</source>
         <translation>Ru</translation>
@@ -251,7 +260,6 @@
         <translation>Konwersja</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="29"/>
         <location filename="../mainwindow.cpp" line="34"/>
         <location filename="../mainwindow.cpp" line="220"/>
         <location filename="../mainwindow.cpp" line="425"/>
@@ -259,69 +267,54 @@
         <translation>Oil Wykresy</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="17"/>
-        <location filename="../mainwindow.cpp" line="241"/>
-        <location filename="../mainwindow.cpp" line="264"/>
         <location filename="../mainwindow.cpp" line="368"/>
         <source>f/c</source>
         <translation>f/c</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="18"/>
         <source>k/c</source>
-        <translation>k/c</translation>
+        <translation type="vanished">k/c</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="19"/>
         <source>k/f</source>
-        <translation>k/f</translation>
+        <translation type="vanished">k/f</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="21"/>
-        <location filename="../mainwindow.cpp" line="387"/>
         <source>mm/cm</source>
-        <translation>mm/cm</translation>
+        <translation type="vanished">mm/cm</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="22"/>
         <source>cm/m</source>
-        <translation>cm/m</translation>
+        <translation type="vanished">cm/m</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="23"/>
         <source>m/km</source>
-        <translation>m/km</translation>
+        <translation type="vanished">m/km</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="25"/>
         <source>g/kg</source>
-        <translation>g/kg</translation>
+        <translation type="vanished">g/kg</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="26"/>
         <source>kg/p</source>
-        <translation>kg/p</translation>
+        <translation type="vanished">kg/p</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="27"/>
         <source>p/g</source>
-        <translation>p/g</translation>
+        <translation type="vanished">p/g</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="30"/>
         <location filename="../mainwindow.cpp" line="35"/>
         <source>Rubel Info</source>
         <translation>Rubel informacji</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="31"/>
         <source>Oil graphics</source>
-        <translation>Olej grafiki</translation>
+        <translation type="vanished">Olej grafiki</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="32"/>
         <source>Precious metals</source>
-        <translation>Metale szlachetne</translation>
+        <translation type="vanished">Metale szlachetne</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="222"/>
@@ -355,19 +348,21 @@
         <translation>Celsiu</translation>
     </message>
     <message>
-        <location filename="../Units/temperature.cpp" line="12"/>
+        <location filename="../Units/temperature.ui" line="88"/>
+        <source>Clear</source>
+        <translation>Jasny</translation>
+    </message>
+    <message>
         <source>f to c</source>
-        <translation>f do c</translation>
+        <translation type="vanished">f do c</translation>
     </message>
     <message>
-        <location filename="../Units/temperature.cpp" line="13"/>
         <source>k to c</source>
-        <translation>k do c</translation>
+        <translation type="vanished">k do c</translation>
     </message>
     <message>
-        <location filename="../Units/temperature.cpp" line="14"/>
         <source>k to f</source>
-        <translation>k do f</translation>
+        <translation type="vanished">k do f</translation>
     </message>
 </context>
 <context>
@@ -388,35 +383,37 @@
         <translation>Kilogramy</translation>
     </message>
     <message>
-        <location filename="../Units/weight.cpp" line="12"/>
+        <location filename="../Units/weight.ui" line="88"/>
+        <source>Clear</source>
+        <translation>Jasny</translation>
+    </message>
+    <message>
         <source>g to kg</source>
-        <translation>g do kg</translation>
+        <translation type="vanished">g do kg</translation>
     </message>
     <message>
-        <location filename="../Units/weight.cpp" line="13"/>
         <source>kg to p</source>
-        <translation>kg do p</translation>
+        <translation type="vanished">kg do p</translation>
     </message>
     <message>
-        <location filename="../Units/weight.cpp" line="14"/>
         <source>p to g</source>
-        <translation>p do g</translation>
+        <translation type="vanished">p do g</translation>
     </message>
     <message>
-        <location filename="../Units/weight.cpp" line="88"/>
-        <location filename="../Units/weight.cpp" line="103"/>
+        <location filename="../Units/weight.cpp" line="89"/>
+        <location filename="../Units/weight.cpp" line="104"/>
         <source>Gram</source>
         <translation>Gram</translation>
     </message>
     <message>
-        <location filename="../Units/weight.cpp" line="89"/>
-        <location filename="../Units/weight.cpp" line="95"/>
+        <location filename="../Units/weight.cpp" line="90"/>
+        <location filename="../Units/weight.cpp" line="96"/>
         <source>Kilogram</source>
         <translation>Kilogram</translation>
     </message>
     <message>
-        <location filename="../Units/weight.cpp" line="96"/>
-        <location filename="../Units/weight.cpp" line="102"/>
+        <location filename="../Units/weight.cpp" line="97"/>
+        <location filename="../Units/weight.cpp" line="103"/>
         <source>Pound</source>
         <translation>Funt</translation>
     </message>

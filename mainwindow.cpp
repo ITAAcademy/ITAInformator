@@ -227,6 +227,9 @@ void MainWindow::reTranslateUi()
     ui->Temperature->setTitle(tr("Temperature conversion"));
     ui->Informer->setTitle(tr("Informer"));
     ui->Informer_block->setTitle(tr("Informer conversion"));
+    ui->pushButton_ClearLenght->setText(tr("Clear"));
+    ui->pushButton_ClearTemper->setText(tr("Clear"));
+    ui->pushButton_ClearWeight->setText(tr("Clear"));
 }
 
 void MainWindow::on_actionExit_triggered()
