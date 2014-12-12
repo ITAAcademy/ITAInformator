@@ -61,8 +61,8 @@ TRANSLATIONS += \
 
 win32:RC_FILE = IcoConvert.rc
 
-RESOURCES += \
-    Img.qrc
+RESOURCES += Img.qrc \
+
 
 OTHER_FILES += \
     lang\ln_pl.ts \
