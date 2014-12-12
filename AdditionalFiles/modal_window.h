@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include "ui_modal_window.h"
+#include <QPalette>
 
 namespace Ui {
 class modal_window;
@@ -19,7 +20,8 @@ public:
 
 private:
 
-    Ui::modal_window *ui;
+    QPalette            logo_palette;
+    Ui::modal_window    *ui;
 };
 
 #endif // MODAL_WINDOW_H

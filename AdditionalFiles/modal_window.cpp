@@ -4,18 +4,26 @@ modal_window::modal_window(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::modal_window)
 {
+    logo_palette.setColor(QPalette::WindowText, Qt::blue);
     ui->setupUi(this);
-    setGeometry(QRect(520,250,200,600));
+    setGeometry(QRect(450,250,180,510));
     ui->pushButton->setText(tr("Close"));
-    QPixmap pixmap_0(":/imagin/pic.png");
-    ui->label_pict_0->setPixmap(pixmap_0);
 
-    QPixmap pixmap_1(":/imagin/konverter.png");
-    ui->label_pict_1->setPixmap(pixmap_1);
+    ui->progName->setFont(QFont("Times",14,QFont::Bold,false));
 
-    QPixmap pixmap_2(":/imagin/Converter-2014.png");
-    ui->label_pict_2->setPixmap(pixmap_2);
+    ui->sgTitle->setFont(QFont("Times",9,1,false));
+    ui->sgTitle_2->setFont(QFont("Times",9,1,false));
+    ui->sgTitle_3->setFont(QFont("Times",9,1,false));
 
+    ui->pmTitle->setFont(QFont("Times",9,1,false));
+    ui->pmName->setFont(QFont("Times",9,QFont::Bold,true));
+
+    ui->sgName_AN->setFont(QFont("Times",9,QFont::Bold,true));
+    ui->sgName_AS->setFont(QFont("Times",9,QFont::Bold,true));
+    ui->sgName_DV->setFont(QFont("Times",9,QFont::Bold,true));
+    ui->sgName_HD->setFont(QFont("Times",9,QFont::Bold,true));
+    ui->sgName_IP->setFont(QFont("Times",9,QFont::Bold,true));
+    ui->progName->setPalette(logo_palette);
 }
 
 modal_window::~modal_window()
