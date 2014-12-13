@@ -161,6 +161,10 @@ void MainWindow::on_action_Default_settings_triggered()
 
 void MainWindow::chLangEn()
 {
+    ui->actionEn->setFont(QFont("Times",10,QFont::Bold,false));
+    ui->actionUa->setFont(QFont("Times",10,false));
+    ui->actionPl->setFont(QFont("Times",10,false));
+    ui->actionRu->setFont(QFont("Times",10,false));
     qApp->removeTranslator(translator);
     qApp->removeTranslator(qAppTranslator);
     reTranslateUi();
@@ -169,6 +173,10 @@ void MainWindow::chLangEn()
 
 void MainWindow::chLangUa()
 {
+    ui->actionEn->setFont(QFont("Times",10,false));
+    ui->actionUa->setFont(QFont("Times",10,QFont::Bold,false));
+    ui->actionPl->setFont(QFont("Times",10,false));
+    ui->actionRu->setFont(QFont("Times",10,false));
     translator->load("lang/ln_ua");
     qAppTranslator->load("lang/qt_uk");
     qApp->installTranslator(translator);
@@ -179,6 +187,10 @@ void MainWindow::chLangUa()
 
 void MainWindow::chLangPl()
 {
+    ui->actionEn->setFont(QFont("Times",10,false));
+    ui->actionUa->setFont(QFont("Times",10,false));
+    ui->actionPl->setFont(QFont("Times",10,QFont::Bold,false));
+    ui->actionRu->setFont(QFont("Times",10,false));
     translator->load("lang/ln_pl");
     qAppTranslator->load("lang/qt_pl");
     qApp->installTranslator(translator);
@@ -189,6 +201,10 @@ void MainWindow::chLangPl()
 
 void MainWindow::chLangRu()
 {
+    ui->actionEn->setFont(QFont("Times",10,false));
+    ui->actionUa->setFont(QFont("Times",10,false));
+    ui->actionPl->setFont(QFont("Times",10,false));
+    ui->actionRu->setFont(QFont("Times",10,QFont::Bold,false));
     translator->load("lang/ln_ru");
     qAppTranslator->load("lang/qt_ru");
     qApp->installTranslator(translator);
