@@ -83,6 +83,8 @@ private slots:
     void on_pushButton_ClearWeight_clicked();
 
 
+    void on_pushButton_Clear_Many_clicked();
+
 private:
 
     Ui::MainWindow      *ui;
@@ -103,7 +105,10 @@ private:
 
     ListOpenedWindows   *formListOpenedWindows;
 
-    double              mCoofRubToUsd;
+    double              mCoofRubToUsdBuy;
+    double              mCoofRubToEurBuy;
+    double              mCoofRubInUsdSale;
+    double              mCoofRubInEurSale;
 };
 
 #endif // MAINWINDOW_H
