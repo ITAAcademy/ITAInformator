@@ -404,16 +404,6 @@
     <string>Temperature</string>
    </property>
   </action>
-  <action name="actionArea">
-   <property name="text">
-    <string>Area</string>
-   </property>
-  </action>
-  <action name="actionVolume_capacity">
-   <property name="text">
-    <string>Volume, capacity</string>
-   </property>
-  </action>
   <action name="actionDistance_and_Length">
    <property name="text">
     <string>Distance and Length</string>
