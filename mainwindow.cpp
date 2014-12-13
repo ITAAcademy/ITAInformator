@@ -63,6 +63,10 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->actionUa, SIGNAL(triggered()), this, SLOT(chLangUa()));
     connect(ui->actionPl, SIGNAL(triggered()), this, SLOT(chLangPl()));
     connect(ui->actionRu, SIGNAL(triggered()), this, SLOT(chLangRu()));
+
+    connect(&mgr, SIGNAL(onlineStateChanged(bool)), this, SLOT(isConnection(bool)));
+
+
 }
 
 MainWindow::~MainWindow()
@@ -446,6 +450,7 @@ void MainWindow::on_IchCB_currentTextChanged(const QString )
         {
         ui->webView->setGeometry(55,90,225,105);
         ui->webView->setHtml(myURLrubleInterbank2);
+
         }
         if(ui->IchCB->currentText() == tr("Oil Charts"))
         {
@@ -532,9 +537,39 @@ void MainWindow::on_pushButton_ClearWeight_clicked()
     ui->lineEdit_WeightRight->clear();
 }
 
+
+void MainWindow::on_IaCB_activated(const QString)
+{
+    if(ui->IaCB->currentText() == "Ruble <-> USD")
+        {
+        ui->LeftITE->clear();
+        ui->RightITE->clear();
+        ui->labelLeftCurrency->setText("Ruble");
+        ui->labelRightCurrency->setText("USD");
+        }
+    if(ui->IaCB->currentText() == "Ruble <-> Euro")
+        {
+        ui->LeftITE->clear();
+        ui->RightITE->clear();
+        ui->labelLeftCurrency->setText("Ruble");
+        ui->labelRightCurrency->setText("Euro");
+        }
+
+}
+
 void MainWindow::on_pushButton_Clear_Many_clicked()
 {
     ui->LeftITE->clear();
     ui->RightITE->clear();
+
+}
+
+void MainWindow::on_radioButtonBuy_clicked()
+{
+
+}
+
+void MainWindow::on_radioButtonSell_clicked()
+{
 
 }

@@ -20,6 +20,8 @@
 #include "AdditionalFiles/settings.h"
 #include "Charts/oilprices.h"
 #include "Charts/rubleinterbank.h"
+#include <QNetworkInterface>
+#include <QNetworkConfigurationManager>
 
 
 class QMdiArea;
@@ -85,6 +87,12 @@ private slots:
 
     void on_pushButton_Clear_Many_clicked();
 
+    void on_IaCB_activated(const QString);
+
+    void on_radioButtonBuy_clicked();
+
+    void on_radioButtonSell_clicked();
+
 private:
 
     Ui::MainWindow      *ui;
@@ -109,6 +117,8 @@ private:
     double              mCoofRubToEurBuy;
     double              mCoofRubInUsdSale;
     double              mCoofRubInEurSale;
+
+    QNetworkConfigurationManager mgr;
 };
 
 #endif // MAINWINDOW_H

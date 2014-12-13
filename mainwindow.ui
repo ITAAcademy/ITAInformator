@@ -318,6 +318,32 @@
        <string>sell</string>
       </property>
      </widget>
+     <widget class="QLabel" name="labelLeftCurrency">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>46</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Ruble</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelRightCurrency">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>20</y>
+        <width>46</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>USD</string>
+      </property>
+     </widget>
     </widget>
    </widget>
   </widget>
