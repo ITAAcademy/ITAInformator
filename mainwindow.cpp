@@ -26,10 +26,10 @@ MainWindow::MainWindow(QWidget *parent) :
         ui->WaCB->addItem("kg/p");
         ui->WaCB->addItem("p/g");
 
-        ui->IchCB->addItem("Ruble Info");
-        ui->IchCB->addItem("Oil Charts");
-        ui->IchCB->addItem("Oil graphics");
-        ui->IchCB->addItem("Precious metals");
+        ui->IchCB->addItem(tr("Rates of Exchange"));
+        ui->IchCB->addItem(tr("Oil Charts"));
+        ui->IchCB->addItem(tr("Oil graphics"));
+        ui->IchCB->addItem(tr("Precious metals"));
 
         ui->IaCB->addItem(tr("Ruble <-> USD"));
         ui->IaCB->addItem(tr("Ruble <-> Euro"));
@@ -38,7 +38,7 @@ MainWindow::MainWindow(QWidget *parent) :
     if(mSettings.FirstRun())
     {
         QMessageBox::information(this, "First run", "This is the first run of the program. \n Thank you for your choice");
-        setWindowTitle("Some name");
+        setWindowTitle("ITAInformator");
         setGeometry(QRect(355,100,760,558));
         setFont(QFont("Times",10,1,false));
         pLang = "en";
@@ -220,7 +220,7 @@ void MainWindow::chLangRu()
 
 void MainWindow::reTranslateUi()
 {
-    setWindowTitle(tr("Some name"));
+    setWindowTitle(tr("ITAInformator"));
     ui->menuAbout->setTitle(tr("Help"));
         ui->action_About->setText(tr("&About"));
     ui->menuTools->setTitle(tr("Tools"));
@@ -240,14 +240,14 @@ void MainWindow::reTranslateUi()
         ui->action_Oil_Charts->setText(tr("&Oil Charts"));
             formOilPrices.setWindowTitle(tr("Oil Charts"));
         ui->action_Currency->setText(tr("&Currency"));
-            formrubleInterbank.setWindowTitle(tr("Ruble Interbank"));
+            formrubleInterbank.setWindowTitle(tr("Currency"));
         ui->action_List_opened_windows->setText(tr("List opened windows"));
         ui->actionExit->setText(tr("&Exit"));
     ui->Weight->setTitle(tr("Weight conversion"));
     ui->Lenght->setTitle(tr("Lenght conversion"));
     ui->Temperature->setTitle(tr("Temperature conversion"));
     ui->Informer->setTitle(tr("Informer"));
-    ui->Informer_block->setTitle(tr("Informer conversion"));
+    ui->Informer_block->setTitle(tr("Currency conversion"));
     ui->pushButton_ClearLenght->setText(tr("Clear"));
     ui->pushButton_ClearTemper->setText(tr("Clear"));
     ui->pushButton_ClearWeight->setText(tr("Clear"));
@@ -446,7 +446,7 @@ void MainWindow::on_WaCB_activated(const QString)
 
 void MainWindow::on_IchCB_currentTextChanged(const QString )
 {
-        if(ui->IchCB->currentText() == "Ruble Info")
+        if(ui->IchCB->currentText() == tr("Rates of Exchange"))
         {
         ui->webView->setGeometry(55,90,225,105);
         ui->webView->setHtml(myURLrubleInterbank2);
@@ -458,12 +458,12 @@ void MainWindow::on_IchCB_currentTextChanged(const QString )
             ui->webView->setHtml(myURLOilPrices2);
         }
 
-        if(ui->IchCB->currentText() == "Oil graphics")
+        if(ui->IchCB->currentText() == tr("Oil graphics"))
         {
             ui->webView->setGeometry(48,90,250,145);
             ui->webView->setHtml(myURLOilgraphics);
         }
-        if(ui->IchCB->currentText() == "Precious metals")
+        if(ui->IchCB->currentText() == tr("Precious metals"))
         {
             ui->webView->setGeometry(70,90,200,106);
             ui->webView->setHtml(myURLDrahotsennemetals);
@@ -540,19 +540,19 @@ void MainWindow::on_pushButton_ClearWeight_clicked()
 
 void MainWindow::on_IaCB_activated(const QString)
 {
-    if(ui->IaCB->currentText() == "Ruble <-> USD")
+    if(ui->IaCB->currentText() == tr("Ruble <-> USD"))
         {
         ui->LeftITE->clear();
         ui->RightITE->clear();
-        ui->labelLeftCurrency->setText("Ruble");
-        ui->labelRightCurrency->setText("USD");
+        ui->labelLeftCurrency->setText (tr("Ruble"));
+        ui->labelRightCurrency->setText(tr("USD"));
         }
-    if(ui->IaCB->currentText() == "Ruble <-> Euro")
+    if(ui->IaCB->currentText() == tr("Ruble <-> Euro"))
         {
         ui->LeftITE->clear();
         ui->RightITE->clear();
-        ui->labelLeftCurrency->setText("Ruble");
-        ui->labelRightCurrency->setText("Euro");
+        ui->labelLeftCurrency->setText(tr("Ruble"));
+        ui->labelRightCurrency->setText(tr("Euro"));
         }
 
 }
