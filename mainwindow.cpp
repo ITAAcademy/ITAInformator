@@ -26,13 +26,14 @@ MainWindow::MainWindow(QWidget *parent) :
         ui->WaCB->addItem("kg/p");
         ui->WaCB->addItem("p/g");
 
+        ui->IchCB->addItem("Ruble Info");
         ui->IchCB->addItem("Oil Charts");
-        ui->IchCB->addItem("Rubel Info");
         ui->IchCB->addItem("Oil graphics");
         ui->IchCB->addItem("Precious metals");
 
-        ui->IaCB->addItem(tr("Oil Charts"));
-        ui->IaCB->addItem(tr("Rubel Info"));
+        ui->IaCB->addItem(tr("Ruble <-> USD"));
+        ui->IaCB->addItem(tr("Ruble <-> Euro"));
+
 
     if(mSettings.FirstRun())
     {
@@ -441,17 +442,17 @@ void MainWindow::on_WaCB_activated(const QString)
 
 void MainWindow::on_IchCB_currentTextChanged(const QString )
 {
-    if(ui->IchCB->currentText() == tr("Oil Charts"))
+        if(ui->IchCB->currentText() == "Ruble Info")
+        {
+        ui->webView->setGeometry(55,90,225,105);
+        ui->webView->setHtml(myURLrubleInterbank2);
+        }
+        if(ui->IchCB->currentText() == tr("Oil Charts"))
         {
             ui->webView->setGeometry(70,90,200,80);
             ui->webView->setHtml(myURLOilPrices2);
         }
-        if(ui->IchCB->currentText() == "Rubel Info")
-        {
-            ui->webView->setGeometry(55,90,225,105);
-            ui->webView->setHtml(myURLrubleInterbank2);
 
-        }
         if(ui->IchCB->currentText() == "Oil graphics")
         {
             ui->webView->setGeometry(48,90,250,145);
@@ -465,23 +466,52 @@ void MainWindow::on_IchCB_currentTextChanged(const QString )
         ui->webView->reload();
 }
 
-void MainWindow::on_webView_loadFinished(bool )
+void MainWindow::on_webView_loadFinished(bool)
 {
-    QVariant coefficient;
-    coefficient  = ui->webView->page()->currentFrame()->evaluateJavaScript("document.getElementById('usdrubbid').innerHTML");
-    mCoofRubToUsd = coefficient.toDouble();
+    QVariant usdrubbidCoefficientBuy;
+    QVariant eurrubbidCoefficientBuy;
+
+    QVariant  usdrubaskCoefficientSale;
+    QVariant  eurrubaskCoefficientSale;
+
+    usdrubbidCoefficientBuy   = ui->webView->page()->currentFrame()->evaluateJavaScript("document.getElementById('usdrubbid').innerHTML");
+    eurrubbidCoefficientBuy   = ui->webView->page()->currentFrame()->evaluateJavaScript("document.getElementById('eurrubbid').innerHTML");
+
+    usdrubaskCoefficientSale  = ui->webView->page()->currentFrame()->evaluateJavaScript("document.getElementById('usdrubask').innerHTML");
+    eurrubaskCoefficientSale  = ui->webView->page()->currentFrame()->evaluateJavaScript("document.getElementById('eurrubask').innerHTML");
+
+    mCoofRubToUsdBuy  = usdrubbidCoefficientBuy.toDouble();
+    mCoofRubToEurBuy  = eurrubbidCoefficientBuy.toDouble();
+
+    mCoofRubInUsdSale = usdrubaskCoefficientSale.toDouble();
+    mCoofRubInEurSale = eurrubaskCoefficientSale.toDouble();
 }
 
-void MainWindow::on_LeftITE_textChanged(const QString )
+void MainWindow::on_LeftITE_textChanged(const QString)
 {
-    double rub = ui->LeftITE->text().toDouble();
-    ui->RightITE->setText(QString::number(rub / mCoofRubToUsd));
+    double RubToUsdBuy = ui->LeftITE->text().toDouble();
+    ui->RightITE->setText(QString::number(RubToUsdBuy / mCoofRubToUsdBuy));
+    double RubToEurBuy = ui->LeftITE->text().toDouble();
+    ui->RightITE->setText(QString::number(RubToEurBuy / mCoofRubToEurBuy));
+
+    double RubInUsdSale = ui->LeftITE->text().toDouble();
+    ui->RightITE->setText(QString::number(RubInUsdSale / mCoofRubInUsdSale));
+    double RubInEurSale = ui->LeftITE->text().toDouble();
+    ui->RightITE->setText(QString::number(RubInEurSale / mCoofRubInEurSale));
+
 }
 
-void MainWindow::on_RightITE_textChanged(const QString )
+void MainWindow::on_RightITE_textChanged(const QString)
 {
-    double usd = ui->RightITE->text().toDouble();
-    ui->LeftITE->setText(QString::number(usd * mCoofRubToUsd));
+    double UsdToRubToBuy = ui->RightITE->text().toDouble();
+    ui->LeftITE->setText(QString::number(UsdToRubToBuy * mCoofRubToUsdBuy));
+    double EurToRubBuy = ui->RightITE->text().toDouble();
+    ui->LeftITE->setText(QString::number(EurToRubBuy * mCoofRubToEurBuy));
+
+    double UsdInRubSale = ui->RightITE->text().toDouble();
+    ui->LeftITE->setText(QString::number(UsdInRubSale * mCoofRubInUsdSale));
+    double EurInRubSale = ui->RightITE->text().toDouble();
+    ui->LeftITE->setText(QString::number(EurInRubSale * mCoofRubInEurSale));
 }
 
 void MainWindow::on_pushButton_ClearTemper_clicked()
@@ -500,4 +530,11 @@ void MainWindow::on_pushButton_ClearWeight_clicked()
 {
     ui->lineEdit_WeightLeft->clear();
     ui->lineEdit_WeightRight->clear();
+}
+
+void MainWindow::on_pushButton_Clear_Many_clicked()
+{
+    ui->LeftITE->clear();
+    ui->RightITE->clear();
+
 }

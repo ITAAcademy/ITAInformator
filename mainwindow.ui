@@ -206,7 +206,7 @@
       <x>330</x>
       <y>5</y>
       <width>341</width>
-      <height>351</height>
+      <height>371</height>
      </rect>
     </property>
     <property name="title">
@@ -216,9 +216,9 @@
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>70</y>
+       <y>60</y>
        <width>321</width>
-       <height>200</height>
+       <height>181</height>
       </rect>
      </property>
      <property name="url">
@@ -241,19 +241,19 @@
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>280</y>
+       <y>250</y>
        <width>321</width>
-       <height>60</height>
+       <height>111</height>
       </rect>
      </property>
      <property name="title">
-      <string>Informer conversion</string>
+      <string>Currency conversion</string>
      </property>
      <widget class="QComboBox" name="IaCB">
       <property name="geometry">
        <rect>
         <x>110</x>
-        <y>20</y>
+        <y>40</y>
         <width>100</width>
         <height>30</height>
        </rect>
@@ -263,7 +263,7 @@
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>20</y>
+        <y>40</y>
         <width>101</width>
         <height>31</height>
        </rect>
@@ -273,10 +273,49 @@
       <property name="geometry">
        <rect>
         <x>220</x>
-        <y>20</y>
+        <y>40</y>
         <width>101</width>
         <height>31</height>
        </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Clear_Many">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>80</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Clear</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButtonBuy">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>20</y>
+        <width>41</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>buy</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButtonSell">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>20</y>
+        <width>41</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>sell</string>
       </property>
      </widget>
     </widget>
