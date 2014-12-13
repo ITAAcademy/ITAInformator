@@ -185,7 +185,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Converter - Informator</string>
+     <string>ITAInformator</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
