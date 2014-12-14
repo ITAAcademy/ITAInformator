@@ -18,9 +18,9 @@
     <property name="geometry">
      <rect>
       <x>5</x>
-      <y>5</y>
+      <y>40</y>
       <width>320</width>
-      <height>121</height>
+      <height>95</height>
      </rect>
     </property>
     <property name="title">
@@ -29,9 +29,9 @@
     <widget class="QComboBox" name="TaCB">
      <property name="geometry">
       <rect>
-       <x>110</x>
+       <x>115</x>
        <y>20</y>
-       <width>100</width>
+       <width>90</width>
        <height>30</height>
       </rect>
      </property>
@@ -41,8 +41,8 @@
       <rect>
        <x>220</x>
        <y>20</y>
-       <width>91</width>
-       <height>31</height>
+       <width>90</width>
+       <height>30</height>
       </rect>
      </property>
      <property name="text">
@@ -54,8 +54,8 @@
       <rect>
        <x>10</x>
        <y>20</y>
-       <width>91</width>
-       <height>31</height>
+       <width>90</width>
+       <height>30</height>
       </rect>
      </property>
      <property name="text">
@@ -66,9 +66,9 @@
      <property name="geometry">
       <rect>
        <x>120</x>
-       <y>70</y>
+       <y>60</y>
        <width>75</width>
-       <height>23</height>
+       <height>27</height>
       </rect>
      </property>
      <property name="text">
@@ -80,9 +80,9 @@
     <property name="geometry">
      <rect>
       <x>5</x>
-      <y>130</y>
+      <y>160</y>
       <width>320</width>
-      <height>121</height>
+      <height>95</height>
      </rect>
     </property>
     <property name="title">
@@ -91,9 +91,9 @@
     <widget class="QComboBox" name="LaCB">
      <property name="geometry">
       <rect>
-       <x>110</x>
+       <x>115</x>
        <y>20</y>
-       <width>100</width>
+       <width>90</width>
        <height>30</height>
       </rect>
      </property>
@@ -103,8 +103,8 @@
       <rect>
        <x>220</x>
        <y>20</y>
-       <width>91</width>
-       <height>31</height>
+       <width>90</width>
+       <height>30</height>
       </rect>
      </property>
      <property name="text">
@@ -116,8 +116,8 @@
       <rect>
        <x>10</x>
        <y>20</y>
-       <width>91</width>
-       <height>31</height>
+       <width>90</width>
+       <height>30</height>
       </rect>
      </property>
      <property name="text">
@@ -128,9 +128,9 @@
      <property name="geometry">
       <rect>
        <x>120</x>
-       <y>70</y>
+       <y>60</y>
        <width>75</width>
-       <height>23</height>
+       <height>27</height>
       </rect>
      </property>
      <property name="text">
@@ -142,9 +142,9 @@
     <property name="geometry">
      <rect>
       <x>5</x>
-      <y>260</y>
+      <y>275</y>
       <width>320</width>
-      <height>121</height>
+      <height>95</height>
      </rect>
     </property>
     <property name="title">
@@ -153,9 +153,9 @@
     <widget class="QComboBox" name="WaCB">
      <property name="geometry">
       <rect>
-       <x>110</x>
+       <x>115</x>
        <y>20</y>
-       <width>100</width>
+       <width>90</width>
        <height>30</height>
       </rect>
      </property>
@@ -165,8 +165,8 @@
       <rect>
        <x>220</x>
        <y>20</y>
-       <width>91</width>
-       <height>31</height>
+       <width>90</width>
+       <height>30</height>
       </rect>
      </property>
      <property name="text">
@@ -178,8 +178,8 @@
       <rect>
        <x>10</x>
        <y>20</y>
-       <width>91</width>
-       <height>31</height>
+       <width>90</width>
+       <height>30</height>
       </rect>
      </property>
      <property name="text">
@@ -190,9 +190,9 @@
      <property name="geometry">
       <rect>
        <x>120</x>
-       <y>70</y>
+       <y>60</y>
        <width>75</width>
-       <height>23</height>
+       <height>27</height>
       </rect>
      </property>
      <property name="text">
@@ -205,8 +205,8 @@
      <rect>
       <x>330</x>
       <y>5</y>
-      <width>341</width>
-      <height>371</height>
+      <width>340</width>
+      <height>250</height>
      </rect>
     </property>
     <property name="title">
@@ -231,119 +231,119 @@
      <property name="geometry">
       <rect>
        <x>120</x>
-       <y>20</y>
+       <y>15</y>
        <width>100</width>
        <height>30</height>
       </rect>
      </property>
     </widget>
-    <widget class="QGroupBox" name="Informer_block">
+   </widget>
+   <widget class="QGroupBox" name="Informer_block">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>260</y>
+      <width>340</width>
+      <height>110</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Currency conversion</string>
+    </property>
+    <widget class="QComboBox" name="IaCB">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>40</y>
+       <width>100</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="LeftITE">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>250</y>
-       <width>321</width>
-       <height>111</height>
+       <y>40</y>
+       <width>90</width>
+       <height>30</height>
       </rect>
      </property>
-     <property name="title">
-      <string>Currency conversion</string>
+    </widget>
+    <widget class="QLineEdit" name="RightITE">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>40</y>
+       <width>90</width>
+       <height>30</height>
+      </rect>
      </property>
-     <widget class="QComboBox" name="IaCB">
-      <property name="geometry">
-       <rect>
-        <x>110</x>
-        <y>40</y>
-        <width>100</width>
-        <height>30</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="LeftITE">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>40</y>
-        <width>101</width>
-        <height>31</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="RightITE">
-      <property name="geometry">
-       <rect>
-        <x>220</x>
-        <y>40</y>
-        <width>101</width>
-        <height>31</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_Clear_Many">
-      <property name="geometry">
-       <rect>
-        <x>120</x>
-        <y>80</y>
-        <width>75</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Clear</string>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="radioButtonBuy">
-      <property name="geometry">
-       <rect>
-        <x>110</x>
-        <y>20</y>
-        <width>41</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>buy</string>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="radioButtonSell">
-      <property name="geometry">
-       <rect>
-        <x>180</x>
-        <y>20</y>
-        <width>41</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>sell</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="labelLeftCurrency">
-      <property name="geometry">
-       <rect>
-        <x>40</x>
-        <y>20</y>
-        <width>46</width>
-        <height>13</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Ruble</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="labelRightCurrency">
-      <property name="geometry">
-       <rect>
-        <x>260</x>
-        <y>20</y>
-        <width>46</width>
-        <height>13</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>USD</string>
-      </property>
-     </widget>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Clear_Many">
+     <property name="geometry">
+      <rect>
+       <x>135</x>
+       <y>78</y>
+       <width>75</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButtonBuy">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>20</y>
+       <width>41</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>buy</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButtonSell">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>20</y>
+       <width>41</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>sell</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelLeftCurrency">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>20</y>
+       <width>46</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ruble</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelRightCurrency">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>20</y>
+       <width>46</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>USD</string>
+     </property>
     </widget>
    </widget>
   </widget>

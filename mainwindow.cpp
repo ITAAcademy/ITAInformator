@@ -446,27 +446,30 @@ void MainWindow::on_WaCB_activated(const QString)
 
 void MainWindow::on_IchCB_currentTextChanged(const QString )
 {
-        if(ui->IchCB->currentText() == tr("Rates of Exchange"))
+        if(ui->IchCB->currentText() == "Rates of Exchange")
         {
         ui->webView->setGeometry(55,90,225,105);
         ui->webView->setHtml(myURLrubleInterbank2);
-
+        ui->Informer_block->setVisible(1);
         }
-        if(ui->IchCB->currentText() == tr("Oil Charts"))
+        if(ui->IchCB->currentText() == "Oil Charts")
         {
             ui->webView->setGeometry(70,90,200,80);
             ui->webView->setHtml(myURLOilPrices2);
+            ui->Informer_block->setVisible(0);
         }
 
-        if(ui->IchCB->currentText() == tr("Oil graphics"))
+        if(ui->IchCB->currentText() == "Oil graphics")
         {
             ui->webView->setGeometry(48,90,250,145);
             ui->webView->setHtml(myURLOilgraphics);
+            ui->Informer_block->setVisible(0);
         }
-        if(ui->IchCB->currentText() == tr("Precious metals"))
+        if(ui->IchCB->currentText() == "Precious metals")
         {
             ui->webView->setGeometry(70,90,200,106);
             ui->webView->setHtml(myURLDrahotsennemetals);
+            ui->Informer_block->setVisible(0);
         }
         ui->webView->reload();
 }
