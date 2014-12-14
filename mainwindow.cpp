@@ -12,7 +12,7 @@ MainWindow::MainWindow(QWidget *parent) :
     translator = new QTranslator;
     qAppTranslator = new QTranslator;
     ui->setupUi(this);
-    this->setFixedSize(675,420);
+    this->setFixedSize(675,410);
 
         ui->TaCB->addItem("f/c");
         ui->TaCB->addItem("k/c");
