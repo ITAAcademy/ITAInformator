@@ -12,6 +12,14 @@ DistanceAndLength::DistanceAndLength(QWidget *parent) :
     ui->comboBoxDistance->addItem("mm to cm");
     ui->comboBoxDistance->addItem("cm to m");
     ui->comboBoxDistance->addItem("m to km");
+    ui->lineEdit_D_Left->setPlaceholderText(tr("Value in mm"));
+    ui->lineEdit_D_right->setPlaceholderText(tr("Value in cm"));
+
+//    ui->lineEdit_D_Left->setValidator(new QDoubleValidator(this));
+//    ui->lineEdit_D_right->setValidator(new QDoubleValidator(this));
+
+    ui->label_Left->setVisible(0);
+    ui->label_Right->setVisible(0);
 }
 
 DistanceAndLength::~DistanceAndLength()
@@ -84,22 +92,28 @@ void DistanceAndLength::on_comboBoxDistance_activated(const QString )
         {
         ui->lineEdit_D_Left->clear();
         ui->lineEdit_D_right->clear();
-        ui->label_Left->setText("Millimetr");
-        ui->label_Right->setText("Centimeter");
+        //ui->label_Left->setText("Millimetr");
+        ui->lineEdit_D_Left->setPlaceholderText(tr("Value in mm"));
+        //ui->label_Right->setText("Centimeter");
+        ui->lineEdit_D_right->setPlaceholderText(tr("Value in cm"));
         }
     if(ui->comboBoxDistance->currentText() == "cm to m")
         {
         ui->lineEdit_D_Left->clear();
         ui->lineEdit_D_right->clear();
-        ui->label_Left->setText("Centimeter");
-        ui->label_Right->setText("Meter");
+        //ui->label_Left->setText("Centimeter");
+        ui->lineEdit_D_Left->setPlaceholderText(tr("Value in cm"));
+        //ui->label_Right->setText("Meter");
+        ui->lineEdit_D_right->setPlaceholderText(tr("Value in mm"));
         }
     if(ui->comboBoxDistance->currentText() == "m to km")
         {
         ui->lineEdit_D_Left->clear();
         ui->lineEdit_D_right->clear();
-        ui->label_Left->setText("Meter");
-        ui->label_Right->setText("Kilometer");
+        //ui->label_Left->setText("Meter");
+        ui->lineEdit_D_Left->setPlaceholderText(tr("Value in m"));
+        //ui->label_Right->setText("Kilometer");
+        ui->lineEdit_D_right->setPlaceholderText(tr("Value in km"));
         }
 }
 

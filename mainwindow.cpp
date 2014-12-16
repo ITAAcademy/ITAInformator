@@ -34,6 +34,14 @@ MainWindow::MainWindow(QWidget *parent) :
         ui->IaCB->addItem(tr("Ruble <-> USD"));
         ui->IaCB->addItem(tr("Ruble <-> Euro"));
 
+        ui->lineEdit_TempLeft->setPlaceholderText(tr("Enter value"));
+        ui->lineEdit_TempRight->setPlaceholderText(tr("Enter value"));
+        ui->lineEdit_LenghtLeft->setPlaceholderText(tr("Enter value"));
+        ui->lineEdit_LenghtRight->setPlaceholderText(tr("Enter value"));
+        ui->lineEdit_WeightLeft->setPlaceholderText(tr("Enter value"));
+        ui->lineEdit_WeightRight->setPlaceholderText(tr("Enter value"));
+        ui->LeftITE->setPlaceholderText(tr("Enter value"));
+        ui->RightITE->setPlaceholderText(tr("Enter value"));
 
     if(mSettings.FirstRun())
     {
@@ -64,7 +72,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->actionPl, SIGNAL(triggered()), this, SLOT(chLangPl()));
     connect(ui->actionRu, SIGNAL(triggered()), this, SLOT(chLangRu()));
 
-    connect(&mgr, SIGNAL(onlineStateChanged(bool)), this, SLOT(isConnection(bool)));
+    //connect(&mgr, SIGNAL(onlineStateChanged(bool)), this, SLOT(isConnection(bool)));
 
 
 }
@@ -264,19 +272,18 @@ void MainWindow::on_lineEdit_TempLeft_textChanged(const QString)
     {
     if(ui->TaCB->currentText() == ("f/c"))
         {
-
         double Farengate = ui->lineEdit_TempLeft->text().toDouble();
-        ui->lineEdit_TempRight->setText(QString::number((Farengate - 32)*5/9));;
+        ui->lineEdit_TempRight->setText(QString::number((Farengate - 32)*5/9));
         }
     if(ui->TaCB->currentText() == "k/c")
         {
         double Kelvin = ui->lineEdit_TempLeft->text().toDouble();
-        ui->lineEdit_TempRight->setText(QString::number(Kelvin - 273.15 ));;
+        ui->lineEdit_TempRight->setText(QString::number(Kelvin - 273.15 ));
         }
     if(ui->TaCB->currentText() == "k/f")
         {
         double Kelvin = ui->lineEdit_TempLeft->text().toDouble();
-        ui->lineEdit_TempRight->setText(QString::number(Kelvin *9/5-459.67 ));;
+        ui->lineEdit_TempRight->setText(QString::number(Kelvin *9/5-459.67 ));
         }
     }
 }
@@ -309,17 +316,17 @@ void MainWindow::on_lineEdit_LenghtLeft_textChanged(const QString)
     if(ui->LaCB->currentText() == "mm/cm")
         {
         double Mm = ui->lineEdit_LenghtLeft->text().toDouble();
-        ui->lineEdit_LenghtRight->setText(QString::number(Mm /10 ));;
+        ui->lineEdit_LenghtRight->setText(QString::number(Mm /10 ));
         }
     if(ui->LaCB->currentText() == "cm/m")
         {
         double Cm = ui->lineEdit_LenghtLeft->text().toDouble();
-        ui->lineEdit_LenghtRight->setText(QString::number(Cm /100 ));;
+        ui->lineEdit_LenghtRight->setText(QString::number(Cm /100 ));
         }
     if(ui->LaCB->currentText() == "m/km")
         {
         double M = ui->lineEdit_LenghtLeft->text().toDouble();
-        ui->lineEdit_LenghtRight->setText(QString::number(M /1000 ));;
+        ui->lineEdit_LenghtRight->setText(QString::number(M /1000 ));
         }
     }
 }
@@ -330,17 +337,17 @@ void MainWindow::on_lineEdit_LenghtRight_textChanged(const QString)
     if(ui->LaCB->currentText() == "mm/cm")
         {
         double Cm = ui->lineEdit_LenghtRight->text().toDouble();
-        ui->lineEdit_LenghtLeft->setText(QString::number(Cm * 10));;
+        ui->lineEdit_LenghtLeft->setText(QString::number(Cm * 10));
         }
     if(ui->LaCB->currentText() == "cm/m")
         {
         double M = ui->lineEdit_LenghtRight->text().toDouble();
-        ui->lineEdit_LenghtLeft->setText(QString::number(M * 100 ));;
+        ui->lineEdit_LenghtLeft->setText(QString::number(M * 100 ));
         }
     if(ui->LaCB->currentText() == "m/km")
         {
         double Km = ui->lineEdit_LenghtRight->text().toDouble();
-        ui->lineEdit_LenghtLeft->setText(QString::number(Km *1000 ));;
+        ui->lineEdit_LenghtLeft->setText(QString::number(Km *1000 ));
         }
     }
 }
@@ -351,17 +358,17 @@ void MainWindow::on_lineEdit_WeightLeft_textChanged(const QString)
     if(ui->WaCB->currentText() == "g/kg")
         {
         double G = ui->lineEdit_WeightLeft->text().toDouble();
-        ui->lineEdit_WeightRight->setText(QString::number(G /1000));;
+        ui->lineEdit_WeightRight->setText(QString::number(G /1000));
         }
     if(ui->WaCB->currentText() == "kg/p")
         {
         double Kg = ui->lineEdit_WeightLeft->text().toDouble();
-        ui->lineEdit_WeightRight->setText(QString::number(Kg * 2.205 ));;
+        ui->lineEdit_WeightRight->setText(QString::number(Kg * 2.205 ));
         }
     if(ui->WaCB->currentText() == "p/g")
         {
         double F = ui->lineEdit_WeightLeft->text().toDouble();
-        ui->lineEdit_WeightRight->setText(QString::number((F *1000)/2.205 ));;
+        ui->lineEdit_WeightRight->setText(QString::number((F *1000)/2.205 ));
         }
     }
 }
@@ -372,17 +379,17 @@ void MainWindow::on_lineEdit_WeightRight_textChanged(const QString)
     if(ui->WaCB->currentText() == "g/kg")
         {
         double Kg = ui->lineEdit_WeightRight->text().toDouble();
-        ui->lineEdit_WeightLeft->setText(QString::number(Kg * 1000));;
+        ui->lineEdit_WeightLeft->setText(QString::number(Kg * 1000));
         }
     if(ui->WaCB->currentText() == "kg/p")
         {
         double F = ui->lineEdit_WeightRight->text().toDouble();
-        ui->lineEdit_WeightLeft->setText(QString::number(F /2.205 ));;
+        ui->lineEdit_WeightLeft->setText(QString::number(F /2.205 ));
         }
     if(ui->WaCB->currentText() == "p/g")
         {
         double G = ui->lineEdit_WeightRight->text().toDouble();
-        ui->lineEdit_WeightLeft->setText(QString::number((G *2.205) /1000 ));;
+        ui->lineEdit_WeightLeft->setText(QString::number((G *2.205) /1000 ));
         }
     }
 }
@@ -461,7 +468,7 @@ void MainWindow::on_IchCB_currentTextChanged(const QString )
 
         if(ui->IchCB->currentText() == "Oil graphics")
         {
-            ui->webView->setGeometry(48,90,250,145);
+            ui->webView->setGeometry(48,60,270,155);
             ui->webView->setHtml(myURLOilgraphics);
             ui->Informer_block->setDisabled(1);
         }

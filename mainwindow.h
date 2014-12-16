@@ -113,6 +113,9 @@ private:
 
     ListOpenedWindows   *formListOpenedWindows;
 
+//    QLineEdit           *lineEdit_TempLeft;
+//    QLineEdit           *lineEdit_TempRight;
+
     double              mCoofRubToUsdBuy;
     double              mCoofRubToEurBuy;
     double              mCoofRubInUsdSale;
