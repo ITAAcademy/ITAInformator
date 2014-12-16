@@ -293,58 +293,6 @@
       <string>Clear</string>
      </property>
     </widget>
-    <widget class="QRadioButton" name="radioButtonBuy">
-     <property name="geometry">
-      <rect>
-       <x>120</x>
-       <y>20</y>
-       <width>41</width>
-       <height>17</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>buy</string>
-     </property>
-    </widget>
-    <widget class="QRadioButton" name="radioButtonSell">
-     <property name="geometry">
-      <rect>
-       <x>190</x>
-       <y>20</y>
-       <width>41</width>
-       <height>17</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>sell</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="labelLeftCurrency">
-     <property name="geometry">
-      <rect>
-       <x>50</x>
-       <y>20</y>
-       <width>46</width>
-       <height>13</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Ruble</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="labelRightCurrency">
-     <property name="geometry">
-      <rect>
-       <x>270</x>
-       <y>20</y>
-       <width>46</width>
-       <height>13</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>USD</string>
-     </property>
-    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">

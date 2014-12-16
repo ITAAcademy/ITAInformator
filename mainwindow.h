@@ -84,14 +84,9 @@ private slots:
 
     void on_pushButton_ClearWeight_clicked();
 
-
     void on_pushButton_Clear_Many_clicked();
 
     void on_IaCB_activated(const QString);
-
-    void on_radioButtonBuy_clicked();
-
-    void on_radioButtonSell_clicked();
 
 private:
 
@@ -120,6 +115,7 @@ private:
     double              mCoofRubToEurBuy;
     double              mCoofRubInUsdSale;
     double              mCoofRubInEurSale;
+    double              sum1;
 
     QNetworkConfigurationManager mgr;
 };

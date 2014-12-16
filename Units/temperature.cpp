@@ -12,6 +12,12 @@ Temperature::Temperature(QWidget *parent) :
     ui->comboBoxTemperature->addItem("f to c");
     ui->comboBoxTemperature->addItem("k to c");
     ui->comboBoxTemperature->addItem("k to f");
+
+    ui->lineEdit_T_Left->setPlaceholderText(tr("Value in fahr"));
+    ui->lineEdit_T_right->setPlaceholderText(tr("Value in cel"));
+
+    ui->label_Left->setVisible(0);
+    ui->label_Right->setVisible(0);
 }
 
 Temperature::~Temperature()
@@ -86,22 +92,28 @@ void Temperature::on_comboBoxTemperature_activated(const QString )
         {
         ui->lineEdit_T_Left->clear();
         ui->lineEdit_T_right->clear();
-        ui->label_Left->setText("Fahrenheit");
-        ui->label_Right->setText("Celsius");
+        //ui->label_Left->setText("Fahrenheit");
+        ui->lineEdit_T_Left->setPlaceholderText(tr("Value in fahr"));
+        //ui->label_Right->setText("Celsius");
+        ui->lineEdit_T_right->setPlaceholderText(tr("Value in cel"));
         }
     if(ui->comboBoxTemperature->currentText() == "k to c")
         {
         ui->lineEdit_T_Left->clear();
         ui->lineEdit_T_right->clear();
-        ui->label_Left->setText("Kelvin");
-        ui->label_Right->setText("Celsius");
+        //ui->label_Left->setText("Kelvin");
+        ui->lineEdit_T_Left->setPlaceholderText(tr("Value in kel"));
+        //ui->label_Right->setText("Celsius");
+        ui->lineEdit_T_right->setPlaceholderText(tr("Value in cel"));
         }
     if(ui->comboBoxTemperature->currentText() == "k to f")
         {
         ui->lineEdit_T_Left->clear();
         ui->lineEdit_T_right->clear();
-        ui->label_Left->setText("Kelvin");
-        ui->label_Right->setText("Fahrenheit");
+        //ui->label_Left->setText("Kelvin");
+        ui->lineEdit_T_Left->setPlaceholderText(tr("Value in kel"));
+        //ui->label_Right->setText("Fahrenheit");
+        ui->lineEdit_T_right->setPlaceholderText(tr("Value in fahr"));
         }
 }
 
