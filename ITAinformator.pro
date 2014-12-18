@@ -17,53 +17,58 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    Units/formula.cpp \
-    Units/unit.cpp \
-    Units/Temperature/temperature.cpp \
-    Units/feetstometer.cpp \
     Charts/oilprices.cpp \
     Charts/rubleinterbank.cpp \
     AdditionalFiles/modal_window.cpp \
-    Units/Temperature/farengtocel.cpp \
-    Units/conversion.cpp \
-    area.cpp \
-    volumecapacity.cpp \
-    distanceandlength.cpp \
-    weight.cpp
+    AdditionalFiles/settings.cpp \
+    AdditionalFiles/listopenedwindows.cpp \
+    AdditionalFiles/appsettings.cpp \
+    Units/temperature.cpp\
+    Units/weight.cpp\
+    Units/distanceandlength.cpp
 
 
 HEADERS  += mainwindow.h \
-    Units/formula.h \
-    Units/unit.h \
-    Units/Temperature/temperature.h \
-    Units/feetstometer.h \
     modal_window.h \
     Charts/oilprices.h \
     Charts/rubleinterbank.h \
     AdditionalFiles/modal_window.h \
-    Units/Temperature/farengtocel.h \
-    Units/conversion.h \
-    area.h \
-    volumecapacity.h \
-    distanceandlength.h \
-    weight.h
+    AdditionalFiles/settings.h \
+    AdditionalFiles/listopenedwindows.h \
+    AdditionalFiles/appsettings.h \
+    Units/temperature.h\
+    Units/weight.h\
+    Units/distanceandlength.h
 
 
 CONFIG   += c++11
 
 FORMS += \
     mainwindow.ui \
-    Units/Temperature/temperature.ui \
     Charts/oilprices.ui \
     Charts/rubleinterbank.ui \
     AdditionalFiles/modal_window.ui \
-    area.ui \
-    volumecapacity.ui \
-    distanceandlength.ui \
-    weight.ui
+    AdditionalFiles/listopenedwindows.ui \
+    Units/temperature.ui\
+    Units/weight.ui\
+    Units/distanceandlength.ui
+
+TRANSLATIONS += \
+    lang\ln_ua.ts \
+    lang\ln_pl.ts \
+    lang\ln_ru.ts
 
 
 win32:RC_FILE = IcoConvert.rc
 
-RESOURCES += \
-    Img.qrc
+RESOURCES += Img.qrc \
+
+
+OTHER_FILES += \
+    lang\ln_pl.ts \
+    lang\ln_ua.ts \
+    lang\qt_uk.ts \
+    lang\qt_pl.ts \
+    lang\qt_ru.ts \
+    lang\ln_ru.ts
+
