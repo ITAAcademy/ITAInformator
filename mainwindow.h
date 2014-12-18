@@ -102,8 +102,8 @@ private:
     DistanceAndLength   *formDistanceAndLength;
     Weight              *formWeight;
     Temperature         *formTemperature;
-    OilPrices           formOilPrices;
-    rubleInterbank      formrubleInterbank;
+    OilPrices           *formOilPrices;
+    rubleInterbank      *formrubleInterbank;
     pSettings            mSettings;
 
     ListOpenedWindows   *formListOpenedWindows;
