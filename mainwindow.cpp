@@ -249,7 +249,6 @@ void MainWindow::reTranslateUi()
             ui->actionWeight_weight->setText(tr("Weight"));
         ui->action_Oil_Charts->setText(tr("&Oil Charts"));
         ui->action_Currency->setText(tr("&Currency"));
-           // formrubleInterbank.setWindowTitle(tr("Currency"));
         ui->action_List_opened_windows->setText(tr("List opened windows"));
         ui->actionExit->setText(tr("&Exit"));
     ui->Weight->setTitle(tr("Weight conversion"));
