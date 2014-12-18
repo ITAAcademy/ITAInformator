@@ -126,14 +126,14 @@ void MainWindow::on_actionTemperature_triggered()
 
 void MainWindow::on_action_Oil_Charts_triggered()
 {
-    //formOilPrices = new OilPrices(this);
-    formOilPrices.show();
+    formOilPrices = new OilPrices (this);
+    formOilPrices -> show();
 }
 
 void MainWindow::on_action_Currency_triggered()
 {
-    //formrubleInterbank = new rubleInterbank(this);
-    formrubleInterbank.show();
+    formrubleInterbank = new rubleInterbank (this);
+    formrubleInterbank-> show();
 }
 
 void MainWindow::on_actionDistance_and_Length_triggered()
@@ -144,7 +144,7 @@ void MainWindow::on_actionDistance_and_Length_triggered()
 
 void MainWindow::on_actionWeight_weight_triggered()
 {
-    formWeight = new Weight;
+    formWeight = new Weight (this);
     formWeight -> show();
 }
 
@@ -248,9 +248,8 @@ void MainWindow::reTranslateUi()
             ui->actionDistance_and_Length->setText(tr("Distance and Length"));
             ui->actionWeight_weight->setText(tr("Weight"));
         ui->action_Oil_Charts->setText(tr("&Oil Charts"));
-            formOilPrices.setWindowTitle(tr("Oil Charts"));
         ui->action_Currency->setText(tr("&Currency"));
-            formrubleInterbank.setWindowTitle(tr("Currency"));
+           // formrubleInterbank.setWindowTitle(tr("Currency"));
         ui->action_List_opened_windows->setText(tr("List opened windows"));
         ui->actionExit->setText(tr("&Exit"));
     ui->Weight->setTitle(tr("Weight conversion"));
