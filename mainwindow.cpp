@@ -424,12 +424,12 @@ void MainWindow::on_LaCB_activated(const QString )
        ui->lineEdit_LenghtLeft->clear();
        ui->lineEdit_LenghtRight->clear();
     }
-    if(ui->TaCB->currentText() == "cm/m")
+    if(ui->LaCB->currentText() == "cm/m")
     {
        ui->lineEdit_LenghtLeft->clear();
        ui->lineEdit_LenghtRight->clear();
     }
-    if(ui->TaCB->currentText() == "m/km")
+    if(ui->LaCB->currentText() == "m/km")
     {
        ui->lineEdit_LenghtLeft->clear();
        ui->lineEdit_LenghtRight->clear();
