@@ -575,12 +575,12 @@ void MainWindow::on_IaCB_activated(const QString)
         ui->LeftITE->clear();
         ui->RightITE->clear();
         }
-    if(ui->IaCB->currentText() == tr("cell USD"))
+    if(ui->IaCB->currentText() == tr("sell USD"))
         {
         ui->LeftITE->clear();
         ui->RightITE->clear();
         }
-    if(ui->IaCB->currentText() == tr("cell Euro"))
+    if(ui->IaCB->currentText() == tr("sell Euro"))
         {
         ui->LeftITE->clear();
         ui->RightITE->clear();
