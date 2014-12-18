@@ -316,12 +316,14 @@
     <message>
         <location filename="../mainwindow.cpp" line="36"/>
         <location filename="../mainwindow.cpp" line="522"/>
+        <location filename="../mainwindow.cpp" line="578"/>
         <source>sell USD</source>
         <translation>sprzedam USD</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="37"/>
         <location filename="../mainwindow.cpp" line="528"/>
+        <location filename="../mainwindow.cpp" line="583"/>
         <source>sell Euro</source>
         <translation>sprzedam Euro</translation>
     </message>
@@ -351,16 +353,6 @@
         <location filename="../mainwindow.cpp" line="401"/>
         <source>f/c</source>
         <translation>f/c</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="578"/>
-        <source>cell USD</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="583"/>
-        <source>cell Euro</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>k/c</source>

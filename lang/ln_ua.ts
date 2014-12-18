@@ -40,24 +40,24 @@
         <location filename="../Units/distanceandlength.cpp" line="96"/>
         <location filename="../Units/distanceandlength.cpp" line="107"/>
         <source>Value in mm</source>
-        <translation type="unfinished"></translation>
+        <translation>Значення в mm</translation>
     </message>
     <message>
         <location filename="../Units/distanceandlength.cpp" line="16"/>
         <location filename="../Units/distanceandlength.cpp" line="98"/>
         <location filename="../Units/distanceandlength.cpp" line="105"/>
         <source>Value in cm</source>
-        <translation type="unfinished"></translation>
+        <translation>Значення в cm</translation>
     </message>
     <message>
         <location filename="../Units/distanceandlength.cpp" line="114"/>
         <source>Value in m</source>
-        <translation type="unfinished"></translation>
+        <translation>Значення в m</translation>
     </message>
     <message>
         <location filename="../Units/distanceandlength.cpp" line="116"/>
         <source>Value in km</source>
-        <translation type="unfinished"></translation>
+        <translation>Значення в km</translation>
     </message>
 </context>
 <context>
@@ -123,7 +123,7 @@
         <location filename="../mainwindow.ui" line="251"/>
         <location filename="../mainwindow.cpp" line="260"/>
         <source>Currency conversion</source>
-        <translation type="unfinished"></translation>
+        <translation>Конвертація валюти</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="327"/>
@@ -291,7 +291,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="29"/>
         <source>Rates of Exchange</source>
-        <translation type="unfinished"></translation>
+        <translation>Курси валют</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="30"/>
@@ -305,26 +305,28 @@
         <location filename="../mainwindow.cpp" line="510"/>
         <location filename="../mainwindow.cpp" line="568"/>
         <source>buy USD</source>
-        <translation type="unfinished"></translation>
+        <translation>Покупка дол. США</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="35"/>
         <location filename="../mainwindow.cpp" line="516"/>
         <location filename="../mainwindow.cpp" line="573"/>
         <source>buy Euro</source>
-        <translation type="unfinished"></translation>
+        <translation>Покупка євро</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="36"/>
         <location filename="../mainwindow.cpp" line="522"/>
+        <location filename="../mainwindow.cpp" line="578"/>
         <source>sell USD</source>
-        <translation type="unfinished"></translation>
+        <translation>Продажа дол. США</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="37"/>
         <location filename="../mainwindow.cpp" line="528"/>
+        <location filename="../mainwindow.cpp" line="583"/>
         <source>sell Euro</source>
-        <translation type="unfinished"></translation>
+        <translation>Продажа євро</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="39"/>
@@ -336,32 +338,22 @@
         <location filename="../mainwindow.cpp" line="45"/>
         <location filename="../mainwindow.cpp" line="46"/>
         <source>Enter value</source>
-        <translation type="unfinished"></translation>
+        <translation>Введіть значення</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="233"/>
         <source>ITAInformator</source>
-        <translation type="unfinished"></translation>
+        <translation>ITAInformator</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="253"/>
         <source>Currency</source>
-        <translation type="unfinished"></translation>
+        <translation>Валюта</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="401"/>
         <source>f/c</source>
         <translation>ф/ц</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="578"/>
-        <source>cell USD</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="583"/>
-        <source>cell Euro</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>k/c</source>
@@ -466,20 +458,20 @@
         <location filename="../Units/temperature.cpp" line="96"/>
         <location filename="../Units/temperature.cpp" line="116"/>
         <source>Value in fahr</source>
-        <translation type="unfinished"></translation>
+        <translation>Значення в fahr</translation>
     </message>
     <message>
         <location filename="../Units/temperature.cpp" line="17"/>
         <location filename="../Units/temperature.cpp" line="98"/>
         <location filename="../Units/temperature.cpp" line="107"/>
         <source>Value in cel</source>
-        <translation type="unfinished"></translation>
+        <translation>Значення в cel</translation>
     </message>
     <message>
         <location filename="../Units/temperature.cpp" line="105"/>
         <location filename="../Units/temperature.cpp" line="114"/>
         <source>Value in kel</source>
-        <translation type="unfinished"></translation>
+        <translation>Значення в kel</translation>
     </message>
 </context>
 <context>
@@ -521,20 +513,20 @@
         <location filename="../Units/weight.cpp" line="95"/>
         <location filename="../Units/weight.cpp" line="115"/>
         <source>Value in gr</source>
-        <translation type="unfinished"></translation>
+        <translation>Значення в gr</translation>
     </message>
     <message>
         <location filename="../Units/weight.cpp" line="17"/>
         <location filename="../Units/weight.cpp" line="97"/>
         <location filename="../Units/weight.cpp" line="104"/>
         <source>Value in kg</source>
-        <translation type="unfinished"></translation>
+        <translation>Значення в kg</translation>
     </message>
     <message>
         <location filename="../Units/weight.cpp" line="106"/>
         <location filename="../Units/weight.cpp" line="113"/>
         <source>Value in p</source>
-        <translation type="unfinished"></translation>
+        <translation>Значення в p</translation>
     </message>
     <message>
         <location filename="../Units/weight.cpp" line="114"/>
@@ -601,7 +593,7 @@
     <message>
         <location filename="../AdditionalFiles/modal_window.ui" line="188"/>
         <source>ITAInformator</source>
-        <translation type="unfinished"></translation>
+        <translation>ITAInformator</translation>
     </message>
     <message>
         <source>Converter - Informator</source>

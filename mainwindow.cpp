@@ -258,9 +258,14 @@ void MainWindow::reTranslateUi()
     ui->Temperature->setTitle(tr("Temperature conversion"));
     ui->Informer->setTitle(tr("Informer"));
     ui->Informer_block->setTitle(tr("Currency conversion"));
+
     ui->pushButton_ClearLenght->setText(tr("Clear"));
     ui->pushButton_ClearTemper->setText(tr("Clear"));
     ui->pushButton_ClearWeight->setText(tr("Clear"));
+    ui->pushButton_Clear_Many->setText(tr("Clear"));
+
+    ui->lineEdit_LenghtLeft->setText(tr("Enter value"));
+
 }
 
 void MainWindow::on_actionExit_triggered()
