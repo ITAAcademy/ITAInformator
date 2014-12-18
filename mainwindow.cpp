@@ -263,9 +263,6 @@ void MainWindow::reTranslateUi()
     ui->pushButton_ClearTemper->setText(tr("Clear"));
     ui->pushButton_ClearWeight->setText(tr("Clear"));
     ui->pushButton_Clear_Many->setText(tr("Clear"));
-
-    ui->lineEdit_LenghtLeft->setText(tr("Enter value"));
-
 }
 
 void MainWindow::on_actionExit_triggered()
