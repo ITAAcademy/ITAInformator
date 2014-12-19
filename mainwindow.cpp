@@ -1,10 +1,18 @@
 #include "mainwindow.h"
 
-QString myURLOilPrices2 = "<div id=\"brent\" style=\"background:; width:186px; height:61px; border: 1x solid #808080; color:#84057A; text-decoration:none; text-align:left; top; overflow: hidden; font-style:normal; font-variant:normal; font-weight:normal; font-size:9px; font-family:Verdana, sans-serif;\"><a href=\"http://www.forexpf.ru/\" title=\"Цены на нефть\" target=\"_blank\" style=\"line-height:14px;color:#000000;text-decoration:none;padding-left: 50px;\">Цены на нефть</a><br><a href=\"http://www.forexpf.ru/chart/brent/\" title=\"Brent\" target=\"_blank\" style=\"line-height:15px;color:#000000;text-decoration:none;padding-left: 33px;\">Brent</a><a href=\"http://www.forexpf.ru/chart/lightsweet/\" title=\"Light Sweet\" target=\"_blank\" style=\"line-height:15px;color:#000000;text-decoration:none;padding-left: 63px;\">Light</a></div> <script src=\"http://www.forexpf.ru/_informer_/brent_.php\"></script>";
+QString myURLOilPrices2 = "<div id=\"brent\" style=\"background:; width:186px; height:61px; border: 1x solid #808080; color:#84057A; text-decoration:none; text-align:left; top; overflow: hidden; font-style:normal; font-variant:normal; font-weight:normal; font-size:9px; font-family:Verdana, sans-serif;\">"
+        "<a href=\"http://www.forexpf.ru/\" style=\"line-height:14px;color:#000000;text-decoration:none;padding-left: 50px;\">"
+        "Цены на нефть"
+        "</a><br><a href=\"http://www.forexpf.ru/chart/brent/\" style=\"line-height:15px;color:#000000;text-decoration:none;padding-left: 33px;\">"
+        "Brent"
+        "</a><a href=\"http://www.forexpf.ru/chart/lightsweet/\" style=\"line-height:15px;color:#000000;text-decoration:none;padding-left: 63px;\">"
+        "Light"
+        "</a></div>"
+        "<script src=\"http://www.forexpf.ru/_informer_/brent_.php\"></script>";
 QString myURLrubleInterbank2 = "<table width=\"210\"border=\"1\" style=\"border-collapse: collapse; text-align:center; font-size:11px; color:#000000; \"><tr bgcolor=\"\"><td height=\"10\" valign=\"top\" colspan=\"3\"><style>A.forexpf_ { text-decoration: none;} A.forexpf_:visited {color: #000000;} </style><a href=\"http://www.forexpf.ru/\" title=\"Курсы валют\"target=\"_blank\" class=\"forexpf_\">Курсы валют</a></td></tr><tr bgcolor=\"F6EDDD\"><td></td><td>Покупка</td><td>Продажа</td></tr><tr bgcolor=\"\"><td><a href=\"http://www.forexpf.ru/chart/usdrub/\" title=\"Курс доллара\" target=\"_blank\" class=\"forexpf_\">USD/RUB</a></td><td id=\"usdrubbid\">0.00</td><td id=\"usdrubask\">0.00</td></tr><tr bgcolor=\"F6EDDD\"><td><a href=\"http://www.forexpf.ru/chart/eurrub/\"title=\"Курс Евро\"target=\"_blank\" class=\"forexpf_\">EUR/RUB</a></td><td id=\"eurrubbid\">0.00</td><td id=\"eurrubask\">0.00</td></tr><tr bgcolor=\"\"><td colspan=\"3\"id=\"euusrutm\">Данные на</td></tr></table><script type=\"text/javascript\" charset=\"utf-8\"src=\"http://informers.forexpf.ru/export/euusrub.js\"></script>";
 QString myURLOilgraphics = "<div id=\"oi1195543\" style=\"background:; width:210px; height:125; border: 1x solid #808080; color:#84057A; text-decoration:none; text-align:left; top; padding-left: 3px; overflow: hidden; font-style:normal; font-variant:normal; font-weight:bold; font-size:9px; font-family:Verdana, sans-serif;\"><a href=\"http://www.forexpf.ru/chart/brent/\" title=\"Нефть brent\" target=\"_blank\" style=\"color:#808080;text-decoration:none; \">Нефть brent</a></div><script type=\"text/javascript\" charset=\"cp1251\" src=\"http://informers.forexpf.ru/php/graphics.php?sym=CL_Brent&vsz=120&hsz=200&fxid=oi1195543&sz=60&tic=0&typ=0\"></script>";
 QString myURLDrahotsennemetals = "<div id=\"metals\" style=\"background:; width:186px; height:89px; border: 1x solid #808080; color:#84057A; text-decoration:none; text-align:left; top; overflow: hidden; font-style:normal; font-variant:normal; font-weight:normal; font-size:9px; font-family:Verdana, sans-serif;\"><a href=\"http://www.forexpf.ru/\" title=\"Драгоценные металлы\" target=\"_blank\" style=\"line-height:15px;color:#000000;text-decoration:none;padding-left: 35px;\">Драгоценные металлы</a><br><a href=\"http://www.forexpf.ru/chart/gold/\" title=\"Золото\" target=\"_blank\" style=\"line-height:15px;color:#000000;text-decoration:none;padding-left: 30px;\">Золото</a><br><a href=\"http://www.forexpf.ru/chart/palladium/\" title=\"Палладий\" target=\"_blank\" style=\"line-height:14px;color:#000000;text-decoration:none;padding-left: 23px;\">Палладий</a><br><a href=\"http://www.forexpf.ru/chart/platinum/\" title=\"Платина\" target=\"_blank\" style=\"line-height:15px;color:#000000;text-decoration:none;padding-left: 25px;\">Платина</a><br><a href=\"http://www.forexpf.ru/chart/silver/\" title=\"серебро\" target=\"_blank\" style=\"line-height:14px;color:#000000;text-decoration:none;padding-left: 26px;\">Серебро</a><br></div><script src=\"http://www.forexpf.ru/_informer_/metals_.php\"></script>";
-
+QString myURLDs = "<style> #banker_marketindex .main_banker{width:209px; } #banker_marketindex .hide_nbu{display:none} #banker_marketindex .hide_nbu + .separator_banker{display:none} #banker_marketindex .hide_forex + *{display:none} #banker_marketindex .hide_forex{display:none} #banker_marketindex .hide_mb{display:none} #banker_marketindex .hide_mb + .separator_banker{display:none}</style><div id=\"banker_marketindex\"><a href=\"http://banker.ua\">banker.ua</a></div><script type=\"text/javascript\">(function(){var i = document.createElement(\"script\");i.type = \"text/javascript\"; i.async = true; i.charset = \"UTF-8\";i.src = \"http://banker.ua/marketindex/informer/js/?t=\"+Math.floor(new Date().getTime()/3600000);var s = document.getElementsByTagName(\"script\")[0]; s.parentNode.insertBefore(i, s);})(); </script>";
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -30,6 +38,8 @@ MainWindow::MainWindow(QWidget *parent) :
         ui->IchCB->addItem(tr("Oil Charts"));
         ui->IchCB->addItem(tr("Oil graphics"));
         ui->IchCB->addItem(tr("Precious metals"));
+        ui->IchCB->addItem(tr("Exchange LDs"));
+
 
         ui->IaCB->addItem(tr("buy USD"));
         ui->IaCB->addItem(tr("buy Euro"));
@@ -480,6 +490,13 @@ void MainWindow::on_IchCB_currentTextChanged(const QString )
             ui->webView->setHtml(myURLDrahotsennemetals);
             ui->Informer_block->setDisabled(1);
         }
+        if(ui->IchCB->currentText() == "Exchange LDs")
+        {
+            ui->webView->setGeometry(50,40,250,210);
+            ui->webView->setHtml(myURLDs);
+            ui->Informer_block->setDisabled(1);
+        }
+
         ui->webView->reload();
 }
 
