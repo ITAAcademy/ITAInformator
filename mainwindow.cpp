@@ -13,6 +13,7 @@ MainWindow::MainWindow(QWidget *parent) :
     qAppTranslator = new QTranslator;
     ui->setupUi(this);
     this->setFixedSize(675,410);
+    this->setWindowFlags(this->windowFlags() & ~Qt::WindowContextHelpButtonHint);
 
         ui->TaCB->addItem("f/c");
         ui->TaCB->addItem("k/c");

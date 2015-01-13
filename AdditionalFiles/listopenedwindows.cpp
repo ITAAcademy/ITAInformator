@@ -6,7 +6,7 @@ ListOpenedWindows::ListOpenedWindows(QWidget *parent) :
     ui(new Ui::ListOpenedWindows)
 {
     ui->setupUi(this);
-
+    this->setWindowFlags(this->windowFlags() & ~Qt::WindowContextHelpButtonHint);
     const QList<QString> &refList = appActiveWindows::getInstance().allActiveWindows();
 
     for(int i = 0; i < refList.count(); ++i)

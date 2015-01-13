@@ -10,6 +10,7 @@ rubleInterbank::rubleInterbank(QWidget *parent) :
     ui(new Ui::rubleInterbank)
 {
     ui->setupUi(this);
+    this->setWindowFlags(this->windowFlags() & ~Qt::WindowContextHelpButtonHint);
 
     QPixmap pixmap_ruble(":/imagin/no-internet.png");
     ui->label_pic->setPixmap(pixmap_ruble);

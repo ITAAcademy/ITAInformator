@@ -9,6 +9,8 @@ OilPrices::OilPrices(QWidget *parent) :
     ui(new Ui::OilPrices)
 {
     ui->setupUi(this);
+    this->setWindowFlags(this->windowFlags() & ~Qt::WindowContextHelpButtonHint);
+
     QPixmap pixmap_OilPrices(":/imagin/no-internet.png");
     ui->label_img->setPixmap(pixmap_OilPrices);
     this->resize(200,80);

@@ -8,6 +8,7 @@ Weight::Weight(QWidget *parent) :
 {
     ui->setupUi(this);
     this->setFixedSize(375,150);
+    this->setWindowFlags(this->windowFlags() & ~Qt::WindowContextHelpButtonHint);
 
     ui->comboBoxWeight->addItem("gr to kg");
     ui->comboBoxWeight->addItem("kg to p");

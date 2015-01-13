@@ -8,6 +8,7 @@ Temperature::Temperature(QWidget *parent) :
 {
     ui->setupUi(this);
     this->setFixedSize(375,150);
+    this->setWindowFlags(this->windowFlags() & ~Qt::WindowContextHelpButtonHint);
 
     ui->comboBoxTemperature->addItem("f to c");
     ui->comboBoxTemperature->addItem("k to c");

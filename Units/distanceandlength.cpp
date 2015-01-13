@@ -8,6 +8,7 @@ DistanceAndLength::DistanceAndLength(QWidget *parent) :
 {
     ui->setupUi(this);
     this->setFixedSize(375,150);
+    this->setWindowFlags(this->windowFlags() & ~Qt::WindowContextHelpButtonHint);
 
     ui->comboBoxDistance->addItem("mm to cm");
     ui->comboBoxDistance->addItem("cm to m");
