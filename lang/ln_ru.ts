@@ -103,7 +103,7 @@
         <location filename="../mainwindow.ui" line="151"/>
         <location filename="../mainwindow.cpp" line="225"/>
         <source>Weight conversion</source>
-        <translation>Преобразование веса</translation>
+        <translation>Преобразование массы</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="213"/>
@@ -226,7 +226,7 @@
         <location filename="../mainwindow.ui" line="427"/>
         <location filename="../mainwindow.cpp" line="220"/>
         <source>Weight</source>
-        <translation>Вес</translation>
+        <translation>Масса</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="435"/>
@@ -472,7 +472,7 @@
     <message>
         <location filename="../Units/weight.ui" line="14"/>
         <source>Weight</source>
-        <translation>Вес</translation>
+        <translation>Масса</translation>
     </message>
     <message>
         <location filename="../Units/weight.ui" line="56"/>
