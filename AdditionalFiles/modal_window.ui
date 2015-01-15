@@ -44,7 +44,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Project manager:</string>
+     <string>Project manager</string>
     </property>
    </widget>
    <widget class="QLabel" name="pmName">
@@ -73,7 +73,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Created by the students of:</string>
+     <string>Created by students of</string>
     </property>
    </widget>
    <widget class="QLabel" name="sgName_DV">
