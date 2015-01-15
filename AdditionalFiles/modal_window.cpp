@@ -6,7 +6,9 @@ modal_window::modal_window(QWidget *parent) :
 {
     logo_palette.setColor(QPalette::WindowText, Qt::blue);
     ui->setupUi(this);
-    this->setWindowFlags(this->windowFlags() & ~Qt::WindowContextHelpButtonHint);
+    //this->setWindowFlags(this->windowFlags() & ~Qt::WindowContextHelpButtonHint); //Hint only button '?'
+    this->setWindowFlags(Qt::Dialog | Qt::CustomizeWindowHint);
+
     setGeometry(QRect(450,250,180,510));
     ui->pushButton->setText(tr("Close"));
 

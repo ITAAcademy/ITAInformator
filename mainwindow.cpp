@@ -12,6 +12,7 @@ MainWindow::MainWindow(QWidget *parent) :
     translator = new QTranslator;
     qAppTranslator = new QTranslator;
     ui->setupUi(this);
+
     this->setFixedSize(675,410);
     this->setWindowFlags(this->windowFlags() & ~Qt::WindowContextHelpButtonHint);
 
