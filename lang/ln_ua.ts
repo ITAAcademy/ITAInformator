@@ -36,26 +36,26 @@
         <translation type="vanished">м в км</translation>
     </message>
     <message>
-        <location filename="../Units/distanceandlength.cpp" line="15"/>
-        <location filename="../Units/distanceandlength.cpp" line="96"/>
-        <location filename="../Units/distanceandlength.cpp" line="107"/>
+        <location filename="../Units/distanceandlength.cpp" line="16"/>
+        <location filename="../Units/distanceandlength.cpp" line="97"/>
+        <location filename="../Units/distanceandlength.cpp" line="108"/>
         <source>Value in mm</source>
         <translation>Значення в mm</translation>
     </message>
     <message>
-        <location filename="../Units/distanceandlength.cpp" line="16"/>
-        <location filename="../Units/distanceandlength.cpp" line="98"/>
-        <location filename="../Units/distanceandlength.cpp" line="105"/>
+        <location filename="../Units/distanceandlength.cpp" line="17"/>
+        <location filename="../Units/distanceandlength.cpp" line="99"/>
+        <location filename="../Units/distanceandlength.cpp" line="106"/>
         <source>Value in cm</source>
         <translation>Значення в cm</translation>
     </message>
     <message>
-        <location filename="../Units/distanceandlength.cpp" line="114"/>
+        <location filename="../Units/distanceandlength.cpp" line="115"/>
         <source>Value in m</source>
         <translation>Значення в m</translation>
     </message>
     <message>
-        <location filename="../Units/distanceandlength.cpp" line="116"/>
+        <location filename="../Units/distanceandlength.cpp" line="117"/>
         <source>Value in km</source>
         <translation>Значення в km</translation>
     </message>
@@ -86,9 +86,10 @@
         <location filename="../mainwindow.ui" line="137"/>
         <location filename="../mainwindow.ui" line="199"/>
         <location filename="../mainwindow.ui" line="293"/>
-        <location filename="../mainwindow.cpp" line="261"/>
         <location filename="../mainwindow.cpp" line="262"/>
         <location filename="../mainwindow.cpp" line="263"/>
+        <location filename="../mainwindow.cpp" line="264"/>
+        <location filename="../mainwindow.cpp" line="265"/>
         <source>Clear</source>
         <translation>Очистити</translation>
     </message>
@@ -127,7 +128,7 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="327"/>
-        <location filename="../mainwindow.cpp" line="245"/>
+        <location filename="../mainwindow.cpp" line="247"/>
         <source>Program</source>
         <translation>Програма</translation>
     </message>
@@ -138,25 +139,25 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="346"/>
-        <location filename="../mainwindow.cpp" line="236"/>
+        <location filename="../mainwindow.cpp" line="238"/>
         <source>Tools</source>
         <translation>Інструменти</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="350"/>
-        <location filename="../mainwindow.cpp" line="237"/>
+        <location filename="../mainwindow.cpp" line="239"/>
         <source>&amp;Language</source>
         <translation>&amp;Мова</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="359"/>
-        <location filename="../mainwindow.cpp" line="242"/>
+        <location filename="../mainwindow.cpp" line="244"/>
         <source>&amp;Settings</source>
         <translation>&amp;Налаштування</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="369"/>
-        <location filename="../mainwindow.cpp" line="234"/>
+        <location filename="../mainwindow.cpp" line="236"/>
         <source>Help</source>
         <translation>Допомога</translation>
     </message>
@@ -173,33 +174,33 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="391"/>
-        <location filename="../mainwindow.cpp" line="238"/>
+        <location filename="../mainwindow.cpp" line="240"/>
         <source>En</source>
         <translation>En</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="396"/>
         <location filename="../mainwindow.ui" line="399"/>
-        <location filename="../mainwindow.cpp" line="239"/>
+        <location filename="../mainwindow.cpp" line="241"/>
         <source>Ua</source>
         <translation>Ua</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="404"/>
         <location filename="../mainwindow.ui" line="407"/>
-        <location filename="../mainwindow.cpp" line="240"/>
+        <location filename="../mainwindow.cpp" line="242"/>
         <source>Pl</source>
         <translation>Pl</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="412"/>
-        <location filename="../mainwindow.cpp" line="235"/>
+        <location filename="../mainwindow.cpp" line="237"/>
         <source>&amp;About</source>
         <translation>&amp;Про програму</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="417"/>
-        <location filename="../mainwindow.cpp" line="247"/>
+        <location filename="../mainwindow.cpp" line="249"/>
         <source>Temperature</source>
         <translation>Температура</translation>
     </message>
@@ -213,19 +214,19 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="422"/>
-        <location filename="../mainwindow.cpp" line="248"/>
+        <location filename="../mainwindow.cpp" line="250"/>
         <source>Distance and Length</source>
         <translation>Відстань і довжина</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="427"/>
-        <location filename="../mainwindow.cpp" line="249"/>
+        <location filename="../mainwindow.cpp" line="251"/>
         <source>Weight</source>
         <translation>Вага</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="435"/>
-        <location filename="../mainwindow.cpp" line="250"/>
+        <location filename="../mainwindow.cpp" line="252"/>
         <source>&amp;Oil Charts</source>
         <translation>&amp;Курс нафти</translation>
     </message>
@@ -236,7 +237,7 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="446"/>
-        <location filename="../mainwindow.cpp" line="252"/>
+        <location filename="../mainwindow.cpp" line="253"/>
         <source>&amp;Currency</source>
         <translation>&amp;Валют</translation>
     </message>
@@ -247,7 +248,7 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="454"/>
-        <location filename="../mainwindow.cpp" line="243"/>
+        <location filename="../mainwindow.cpp" line="245"/>
         <source>&amp;Font settings</source>
         <translation>&amp;Шрифта</translation>
     </message>
@@ -264,7 +265,7 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="467"/>
-        <location filename="../mainwindow.cpp" line="244"/>
+        <location filename="../mainwindow.cpp" line="246"/>
         <source>&amp;Default settings</source>
         <translation>&amp;По замовченню</translation>
     </message>
@@ -275,7 +276,7 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="475"/>
-        <location filename="../mainwindow.cpp" line="241"/>
+        <location filename="../mainwindow.cpp" line="243"/>
         <source>Ru</source>
         <translation>Ru</translation>
     </message>
@@ -289,69 +290,67 @@
         <translation type="vanished">Курс рубля</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="29"/>
+        <location filename="../mainwindow.cpp" line="31"/>
         <source>Rates of Exchange</source>
         <translation>Курси валют</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="30"/>
-        <location filename="../mainwindow.cpp" line="251"/>
+        <location filename="../mainwindow.cpp" line="32"/>
         <source>Oil Charts</source>
         <oldsource>Oil Prices</oldsource>
         <translation>Курс нафти</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="34"/>
-        <location filename="../mainwindow.cpp" line="510"/>
-        <location filename="../mainwindow.cpp" line="568"/>
+        <location filename="../mainwindow.cpp" line="36"/>
+        <location filename="../mainwindow.cpp" line="512"/>
+        <location filename="../mainwindow.cpp" line="570"/>
         <source>buy USD</source>
         <translation>Покупка дол. США</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="35"/>
-        <location filename="../mainwindow.cpp" line="516"/>
-        <location filename="../mainwindow.cpp" line="573"/>
+        <location filename="../mainwindow.cpp" line="37"/>
+        <location filename="../mainwindow.cpp" line="518"/>
+        <location filename="../mainwindow.cpp" line="575"/>
         <source>buy Euro</source>
         <translation>Покупка євро</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="36"/>
-        <location filename="../mainwindow.cpp" line="522"/>
-        <location filename="../mainwindow.cpp" line="578"/>
+        <location filename="../mainwindow.cpp" line="38"/>
+        <location filename="../mainwindow.cpp" line="524"/>
+        <location filename="../mainwindow.cpp" line="580"/>
         <source>sell USD</source>
         <translation>Продажа дол. США</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="37"/>
-        <location filename="../mainwindow.cpp" line="528"/>
-        <location filename="../mainwindow.cpp" line="583"/>
+        <location filename="../mainwindow.cpp" line="39"/>
+        <location filename="../mainwindow.cpp" line="530"/>
+        <location filename="../mainwindow.cpp" line="585"/>
         <source>sell Euro</source>
         <translation>Продажа євро</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="39"/>
-        <location filename="../mainwindow.cpp" line="40"/>
         <location filename="../mainwindow.cpp" line="41"/>
         <location filename="../mainwindow.cpp" line="42"/>
         <location filename="../mainwindow.cpp" line="43"/>
         <location filename="../mainwindow.cpp" line="44"/>
         <location filename="../mainwindow.cpp" line="45"/>
         <location filename="../mainwindow.cpp" line="46"/>
+        <location filename="../mainwindow.cpp" line="47"/>
+        <location filename="../mainwindow.cpp" line="48"/>
         <source>Enter value</source>
         <translation>Введіть значення</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="233"/>
+        <location filename="../mainwindow.cpp" line="235"/>
         <source>ITAInformator</source>
         <translation>ITAInformator</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="253"/>
         <source>Currency</source>
-        <translation>Валюта</translation>
+        <translation type="vanished">Валюта</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="401"/>
+        <location filename="../mainwindow.cpp" line="403"/>
         <source>f/c</source>
         <translation>ф/ц</translation>
     </message>
@@ -392,12 +391,12 @@
         <translation type="vanished">Інформація про валюти</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="31"/>
+        <location filename="../mainwindow.cpp" line="33"/>
         <source>Oil graphics</source>
         <translation>Графік нафти</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="32"/>
+        <location filename="../mainwindow.cpp" line="34"/>
         <source>Precious metals</source>
         <translation>Дорогоцінні матеріали</translation>
     </message>
@@ -406,7 +405,7 @@
         <translation type="vanished">ІтаІнформатор</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="246"/>
+        <location filename="../mainwindow.cpp" line="248"/>
         <source>Conversion</source>
         <translation>Перетворення</translation>
     </message>
@@ -454,22 +453,22 @@
         <translation type="vanished">к в ф</translation>
     </message>
     <message>
-        <location filename="../Units/temperature.cpp" line="16"/>
-        <location filename="../Units/temperature.cpp" line="96"/>
-        <location filename="../Units/temperature.cpp" line="116"/>
+        <location filename="../Units/temperature.cpp" line="17"/>
+        <location filename="../Units/temperature.cpp" line="97"/>
+        <location filename="../Units/temperature.cpp" line="117"/>
         <source>Value in fahr</source>
         <translation>Значення в fahr</translation>
     </message>
     <message>
-        <location filename="../Units/temperature.cpp" line="17"/>
-        <location filename="../Units/temperature.cpp" line="98"/>
-        <location filename="../Units/temperature.cpp" line="107"/>
+        <location filename="../Units/temperature.cpp" line="18"/>
+        <location filename="../Units/temperature.cpp" line="99"/>
+        <location filename="../Units/temperature.cpp" line="108"/>
         <source>Value in cel</source>
         <translation>Значення в cel</translation>
     </message>
     <message>
-        <location filename="../Units/temperature.cpp" line="105"/>
-        <location filename="../Units/temperature.cpp" line="114"/>
+        <location filename="../Units/temperature.cpp" line="106"/>
+        <location filename="../Units/temperature.cpp" line="115"/>
         <source>Value in kel</source>
         <translation>Значення в kel</translation>
     </message>
@@ -509,27 +508,27 @@
         <translation type="vanished">ф в гр</translation>
     </message>
     <message>
-        <location filename="../Units/weight.cpp" line="16"/>
-        <location filename="../Units/weight.cpp" line="95"/>
-        <location filename="../Units/weight.cpp" line="115"/>
+        <location filename="../Units/weight.cpp" line="17"/>
+        <location filename="../Units/weight.cpp" line="96"/>
+        <location filename="../Units/weight.cpp" line="116"/>
         <source>Value in gr</source>
         <translation>Значення в gr</translation>
     </message>
     <message>
-        <location filename="../Units/weight.cpp" line="17"/>
-        <location filename="../Units/weight.cpp" line="97"/>
-        <location filename="../Units/weight.cpp" line="104"/>
+        <location filename="../Units/weight.cpp" line="18"/>
+        <location filename="../Units/weight.cpp" line="98"/>
+        <location filename="../Units/weight.cpp" line="105"/>
         <source>Value in kg</source>
         <translation>Значення в kg</translation>
     </message>
     <message>
-        <location filename="../Units/weight.cpp" line="106"/>
-        <location filename="../Units/weight.cpp" line="113"/>
+        <location filename="../Units/weight.cpp" line="107"/>
+        <location filename="../Units/weight.cpp" line="114"/>
         <source>Value in p</source>
         <translation>Значення в p</translation>
     </message>
     <message>
-        <location filename="../Units/weight.cpp" line="114"/>
+        <location filename="../Units/weight.cpp" line="115"/>
         <source>Gram</source>
         <translation>Грам</translation>
     </message>
@@ -538,7 +537,7 @@
         <translation type="vanished">Кілограм</translation>
     </message>
     <message>
-        <location filename="../Units/weight.cpp" line="112"/>
+        <location filename="../Units/weight.cpp" line="113"/>
         <source>Pound</source>
         <translation>Фунт</translation>
     </message>
@@ -596,22 +595,26 @@
         <translation>ITAInformator</translation>
     </message>
     <message>
+        <location filename="../AdditionalFiles/modal_window.ui" line="230"/>
+        <source>group №A14</source>
+        <translation>групи №А14</translation>
+    </message>
+    <message>
         <source>Converter - Informator</source>
         <translation type="vanished">Конвертер - Інформер</translation>
     </message>
     <message>
         <location filename="../AdditionalFiles/modal_window.ui" line="217"/>
         <source>IT Academy</source>
-        <translation>ІТ Академії</translation>
+        <translation>ІТ-Академії</translation>
     </message>
     <message>
-        <location filename="../AdditionalFiles/modal_window.ui" line="230"/>
         <source>group #A14</source>
-        <translation>групи №А14</translation>
+        <translation type="vanished">групи №А14</translation>
     </message>
     <message>
         <location filename="../AdditionalFiles/modal_window.ui" line="244"/>
-        <location filename="../AdditionalFiles/modal_window.cpp" line="10"/>
+        <location filename="../AdditionalFiles/modal_window.cpp" line="13"/>
         <source>Close</source>
         <translation>Закрити</translation>
     </message>

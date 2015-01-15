@@ -214,7 +214,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>IT Academy</string>
+     <string>IT-Academy</string>
     </property>
    </widget>
    <widget class="QLabel" name="sgTitle_3">
