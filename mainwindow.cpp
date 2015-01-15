@@ -46,7 +46,6 @@ MainWindow::MainWindow(QWidget *parent) :
         ui->lineEdit_WeightRight->setPlaceholderText(tr("Enter value"));
         ui->LeftITE->setPlaceholderText(tr("Enter value"));
         ui->RightITE->setPlaceholderText(tr("Enter value"));
-
     if(mSettings.FirstRun())
     {
         QMessageBox::information(this, "First run", "This is the first run of the program. \n Thank you for your choice");
@@ -234,7 +233,7 @@ void MainWindow::reTranslateUi()
 {
     setWindowTitle(tr("ITAInformator"));
     ui->menuAbout->setTitle(tr("Help"));
-        ui->action_About->setText(tr("&About"));
+        ui->action_About->setText(tr("&About program"));
     ui->menuTools->setTitle(tr("Tools"));
         ui->menuLang->setTitle(tr("&Language"));
             ui->actionEn->setText(tr("En"));
