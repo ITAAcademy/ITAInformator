@@ -601,7 +601,7 @@
     <message>
         <location filename="../AdditionalFiles/modal_window.ui" line="230"/>
         <source>group #A14</source>
-        <translation>grupa #A14</translation>
+        <translation>grupa №A14</translation>
     </message>
     <message>
         <location filename="../AdditionalFiles/modal_window.ui" line="244"/>
