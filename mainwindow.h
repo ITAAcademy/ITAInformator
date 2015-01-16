@@ -22,7 +22,7 @@
 #include "Charts/rubleinterbank.h"
 #include <QNetworkInterface>
 #include <QNetworkConfigurationManager>
-
+#include <QVector>
 
 class QMdiArea;
 class QSignalMapper;
@@ -41,6 +41,13 @@ public:
 
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
+
+private:
+    void _setWebViewData(const int &aIndex);
+    void _initControls();
+    void _initChartsVectorData();
+
+    void closeEvent(QCloseEvent *);
 
 public slots:
 
@@ -88,6 +95,8 @@ private slots:
 
     void on_IaCB_activated(const QString);
 
+    void on_IchCB_currentIndexChanged(int index);
+
 private:
 
     Ui::MainWindow      *ui;
@@ -118,6 +127,8 @@ private:
     double              sum1;
 
     QNetworkConfigurationManager mgr;
+
+    QVector<QString> mvCharts;
 };
 
 #endif // MAINWINDOW_H

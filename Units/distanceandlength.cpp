@@ -16,8 +16,10 @@ DistanceAndLength::DistanceAndLength(QWidget *parent) :
     ui->lineEdit_D_Left->setPlaceholderText(tr("Value in mm"));
     ui->lineEdit_D_right->setPlaceholderText(tr("Value in cm"));
 
-//    ui->lineEdit_D_Left->setValidator(new QDoubleValidator(this));
-//    ui->lineEdit_D_right->setValidator(new QDoubleValidator(this));
+    ui->lineEdit_D_Left->setValidator(new QDoubleValidator(-9999.0,
+        9999.0, 6, ui->lineEdit_D_Left));
+    ui->lineEdit_D_right->setValidator(new QDoubleValidator(-9999.0,
+        9999.0, 6, ui->lineEdit_D_right));
 
     ui->label_Left->setVisible(0);
     ui->label_Right->setVisible(0);

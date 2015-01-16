@@ -13,39 +13,6 @@ MainWindow::MainWindow(QWidget *parent) :
     qAppTranslator = new QTranslator;
     ui->setupUi(this);
 
-    this->setFixedSize(675,410);
-    this->setWindowFlags(this->windowFlags() & ~Qt::WindowContextHelpButtonHint);
-
-        ui->TaCB->addItem("f/c");
-        ui->TaCB->addItem("k/c");
-        ui->TaCB->addItem("k/f");
-
-        ui->LaCB->addItem("mm/cm");
-        ui->LaCB->addItem("cm/m");
-        ui->LaCB->addItem("m/km");
-
-        ui->WaCB->addItem("g/kg");
-        ui->WaCB->addItem("kg/p");
-        ui->WaCB->addItem("p/g");
-
-        ui->IchCB->addItem(tr("Rates of Exchange"));
-        ui->IchCB->addItem(tr("Oil Charts"));
-        ui->IchCB->addItem(tr("Oil graphics"));
-        ui->IchCB->addItem(tr("Precious metals"));
-
-        ui->IaCB->addItem(tr("buy USD"));
-        ui->IaCB->addItem(tr("buy EUR"));
-        ui->IaCB->addItem(tr("sell USD"));
-        ui->IaCB->addItem(tr("sell EUR"));
-
-        ui->lineEdit_TempLeft->setPlaceholderText(tr("Enter value"));
-        ui->lineEdit_TempRight->setPlaceholderText(tr("Enter value"));
-        ui->lineEdit_LenghtLeft->setPlaceholderText(tr("Enter value"));
-        ui->lineEdit_LenghtRight->setPlaceholderText(tr("Enter value"));
-        ui->lineEdit_WeightLeft->setPlaceholderText(tr("Enter value"));
-        ui->lineEdit_WeightRight->setPlaceholderText(tr("Enter value"));
-        ui->LeftITE->setPlaceholderText(tr("Enter value"));
-        ui->RightITE->setPlaceholderText(tr("Enter value"));
     if(mSettings.FirstRun())
     {
         QMessageBox::information(this, "First run", "This is the first run of the program. \n Thank you for your choice");
@@ -68,7 +35,14 @@ MainWindow::MainWindow(QWidget *parent) :
         reTranslateUi();
     }
 
+    this->setFixedSize(675,410);
+    this->setWindowFlags(this->windowFlags() & ~Qt::WindowContextHelpButtonHint);
+
     ui->menuBar->setFont(QFont("Times",10,1,false));
+
+    _initChartsVectorData();
+    _initControls();
+    _setWebViewData(ui->IchCB->currentIndex());
 
     connect(ui->actionEn, SIGNAL(triggered()), this, SLOT(chLangEn()));
     connect(ui->actionUa, SIGNAL(triggered()), this, SLOT(chLangUa()));
@@ -76,8 +50,6 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->actionRu, SIGNAL(triggered()), this, SLOT(chLangRu()));
 
     //connect(&mgr, SIGNAL(onlineStateChanged(bool)), this, SLOT(isConnection(bool)));
-
-
 }
 
 MainWindow::~MainWindow()
@@ -87,6 +59,106 @@ MainWindow::~MainWindow()
     mSettings.setMainWindowFont(font());
     delete ui;
 }
+
+void MainWindow::_initChartsVectorData()
+{
+    mvCharts.clear();
+
+    mvCharts.push_back(myURLrubleInterbank2);
+    mvCharts.push_back(myURLOilPrices2);
+    mvCharts.push_back(myURLOilgraphics);
+    mvCharts.push_back(myURLDrahotsennemetals);
+}
+
+void MainWindow::_setWebViewData(const int &aIndex)
+{
+    switch(aIndex)
+    {
+        case 0:
+        {
+            ui->webView->setGeometry(55,90,225,105);
+            ui->Informer_block->setDisabled(0);
+            break;
+        }
+        case 1:
+        {
+            ui->webView->setGeometry(70,90,200,80);
+            ui->Informer_block->setDisabled(1);
+            break;
+        }
+        case 2:
+        {
+            ui->webView->setGeometry(50,70,235,140);
+            ui->Informer_block->setDisabled(1);
+            break;
+        }
+        case 3:
+        {
+            ui->webView->setGeometry(70,90,200,106);
+            ui->Informer_block->setDisabled(1);
+            break;
+        }
+    }
+    ui->webView->setHtml(mvCharts[aIndex]);
+    ui->webView->reload();
+}
+void MainWindow::_initControls()
+{
+    ui->TaCB->addItem("f/c");
+    ui->TaCB->addItem("k/c");
+    ui->TaCB->addItem("k/f");
+
+    ui->LaCB->addItem("mm/cm");
+    ui->LaCB->addItem("cm/m");
+    ui->LaCB->addItem("m/km");
+
+    ui->WaCB->addItem("g/kg");
+    ui->WaCB->addItem("kg/p");
+    ui->WaCB->addItem("p/g");
+
+    ui->IchCB->addItem(tr("Rates of Exchange"));
+    ui->IchCB->addItem(tr("Oil Charts"));
+    ui->IchCB->addItem(tr("Oil graphics"));
+    ui->IchCB->addItem(tr("Precious metals"));
+
+    ui->IaCB->addItem(tr("buy USD"));
+    ui->IaCB->addItem(tr("buy Euro"));
+    ui->IaCB->addItem(tr("sell USD"));
+    ui->IaCB->addItem(tr("sell Euro"));
+
+    ui->lineEdit_TempLeft->setPlaceholderText(tr("Enter value"));
+    ui->lineEdit_TempRight->setPlaceholderText(tr("Enter value"));
+    ui->lineEdit_LenghtLeft->setPlaceholderText(tr("Enter value"));
+    ui->lineEdit_LenghtRight->setPlaceholderText(tr("Enter value"));
+    ui->lineEdit_WeightLeft->setPlaceholderText(tr("Enter value"));
+    ui->lineEdit_WeightRight->setPlaceholderText(tr("Enter value"));
+
+    ui->LeftITE->setPlaceholderText(tr("Enter value"));
+    ui->RightITE->setPlaceholderText(tr("Enter value"));
+
+    ui->menuBar->setFont(QFont("Times",10,1,false));
+
+    ui->LeftITE->setValidator(new QDoubleValidator(-9999.0,
+        9999.0, 6, ui->LeftITE));
+    ui->RightITE->setValidator(new QDoubleValidator(-9999.0,
+        9999.0, 6, ui->RightITE));
+
+    ui->lineEdit_TempLeft->setValidator(new QDoubleValidator(-9999.0,
+        9999.0, 6, ui->lineEdit_TempLeft));
+    ui->lineEdit_TempRight->setValidator(new QDoubleValidator(-9999.0,
+        9999.0, 6, ui->lineEdit_TempRight));
+
+    ui->lineEdit_LenghtLeft->setValidator(new QDoubleValidator(-9999.0,
+        9999.0, 6, ui->lineEdit_LenghtLeft));
+    ui->lineEdit_LenghtRight->setValidator(new QDoubleValidator(-9999.0,
+        9999.0, 6, ui->lineEdit_LenghtRight));
+
+    ui->lineEdit_WeightLeft->setValidator(new QDoubleValidator(-9999.0,
+        9999.0, 6, ui->lineEdit_WeightLeft));
+    ui->lineEdit_WeightRight->setValidator(new QDoubleValidator(-9999.0,
+        9999.0, 6, ui->lineEdit_WeightRight));
+}
+
 
 void MainWindow::appChangeLanguage()
 {
@@ -123,6 +195,7 @@ void MainWindow::on_actionTemperature_triggered()
 {
     formTemperature = new Temperature (this);
     formTemperature->show();
+    //formTemperature.setFocus();
 }
 
 void MainWindow::on_action_Oil_Charts_triggered()
@@ -268,6 +341,13 @@ void MainWindow::on_actionExit_triggered()
 {
     QApplication::closeAllWindows();
 }
+
+
+void MainWindow::closeEvent(QCloseEvent *)
+{
+    QWindowList wl = QApplication::topLevelWindows();
+}
+
 
 void MainWindow::on_lineEdit_TempLeft_textChanged(const QString)
 {
@@ -456,32 +536,32 @@ void MainWindow::on_WaCB_activated(const QString)
 
 void MainWindow::on_IchCB_currentTextChanged(const QString )
 {
-        if(ui->IchCB->currentText() == "Rates of Exchange")
-        {
-        ui->webView->setGeometry(55,90,225,105);
-        ui->webView->setHtml(myURLrubleInterbank2);
-        ui->Informer_block->setDisabled(0);
-        }
-        if(ui->IchCB->currentText() == "Oil Charts")
-        {
-            ui->webView->setGeometry(70,90,200,80);
-            ui->webView->setHtml(myURLOilPrices2);
-            ui->Informer_block->setDisabled(1);
-        }
+//        if(ui->IchCB->currentText() == "Rates of Exchange")
+//        {
+//        ui->webView->setGeometry(55,90,225,105);
+//        ui->webView->setHtml(myURLrubleInterbank2);
+//        ui->Informer_block->setDisabled(0);
+//        }
+//        if(ui->IchCB->currentText() == "Oil Charts")
+//        {
+//            ui->webView->setGeometry(70,90,200,80);
+//            ui->webView->setHtml(myURLOilPrices2);
+//            ui->Informer_block->setDisabled(1);
+//        }
 
-        if(ui->IchCB->currentText() == "Oil graphics")
-        {
-            ui->webView->setGeometry(50,70,235,140);
-            ui->webView->setHtml(myURLOilgraphics);
-            ui->Informer_block->setDisabled(1);
-        }
-        if(ui->IchCB->currentText() == "Precious metals")
-        {
-            ui->webView->setGeometry(70,90,200,106);
-            ui->webView->setHtml(myURLDrahotsennemetals);
-            ui->Informer_block->setDisabled(1);
-        }
-        ui->webView->reload();
+//        if(ui->IchCB->currentText() == "Oil graphics")
+//        {
+//            ui->webView->setGeometry(50,70,235,140);
+//            ui->webView->setHtml(myURLOilgraphics);
+//            ui->Informer_block->setDisabled(1);
+//        }
+//        if(ui->IchCB->currentText() == "Precious metals")
+//        {
+//            ui->webView->setGeometry(70,90,200,106);
+//            ui->webView->setHtml(myURLDrahotsennemetals);
+//            ui->Informer_block->setDisabled(1);
+//        }
+//        ui->webView->reload();
 }
 
 void MainWindow::on_webView_loadFinished(bool)
@@ -507,9 +587,17 @@ void MainWindow::on_webView_loadFinished(bool)
 //---Begin Dima new
 void MainWindow::on_LeftITE_textChanged(const QString)
 {
-    if(ui->LeftITE->hasFocus()) {
-        if(ui->IaCB->currentText() == tr("buy USD")) {
-            double RubToUsdBuy = ui->LeftITE->text().toDouble();
+    if(ui->LeftITE->hasFocus())                         //Begin 'Change ',' to '.'
+    {
+        if(ui->IaCB->currentText() == tr("buy USD"))
+        {
+            QString str = ui->LeftITE->text();
+            int index = str.indexOf(',');
+            if(index != -1)
+                str[index] = '.';
+
+            double RubToUsdBuy = str.toDouble();        //End 'Change ',' to '.'
+
             ui->RightITE->setText(QString::number(RubToUsdBuy / mCoofRubToUsdBuy));
         }
     }
@@ -592,4 +680,10 @@ void MainWindow::on_pushButton_Clear_Many_clicked()
 {
     ui->LeftITE->clear();
     ui->RightITE->clear();
+}
+
+
+void MainWindow::on_IchCB_currentIndexChanged(int index)
+{
+    _setWebViewData(index);
 }

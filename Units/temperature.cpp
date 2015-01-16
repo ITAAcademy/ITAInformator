@@ -17,6 +17,11 @@ Temperature::Temperature(QWidget *parent) :
     ui->lineEdit_T_Left->setPlaceholderText(tr("Value in fahr"));
     ui->lineEdit_T_right->setPlaceholderText(tr("Value in cel"));
 
+    ui->lineEdit_T_Left->setValidator(new QDoubleValidator(-9999.0,
+        9999.0, 6, ui->lineEdit_T_Left));
+    ui->lineEdit_T_right->setValidator(new QDoubleValidator(-9999.0,
+        9999.0, 6, ui->lineEdit_T_right));
+
     ui->label_Left->setVisible(0);
     ui->label_Right->setVisible(0);
 }

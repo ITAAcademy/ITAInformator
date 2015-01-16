@@ -17,6 +17,11 @@ Weight::Weight(QWidget *parent) :
     ui->lineEdit_W_Left->setPlaceholderText(tr("Value in gr"));
     ui->lineEdit_W_right->setPlaceholderText(tr("Value in kg"));
 
+    ui->lineEdit_W_Left->setValidator(new QDoubleValidator(-9999.0,
+        9999.0, 6, ui->lineEdit_W_Left));
+    ui->lineEdit_W_right->setValidator(new QDoubleValidator(-9999.0,
+        9999.0, 6, ui->lineEdit_W_right));
+
     ui->label_Left->setVisible(0);
     ui->label_Right->setVisible(0);
 }
