@@ -34,9 +34,9 @@ MainWindow::MainWindow(QWidget *parent) :
         ui->IchCB->addItem(tr("Precious metals"));
 
         ui->IaCB->addItem(tr("buy USD"));
-        ui->IaCB->addItem(tr("buy Euro"));
+        ui->IaCB->addItem(tr("buy EUR"));
         ui->IaCB->addItem(tr("sell USD"));
-        ui->IaCB->addItem(tr("sell Euro"));
+        ui->IaCB->addItem(tr("sell EUR"));
 
         ui->lineEdit_TempLeft->setPlaceholderText(tr("Enter value"));
         ui->lineEdit_TempRight->setPlaceholderText(tr("Enter value"));

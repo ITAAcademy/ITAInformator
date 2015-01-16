@@ -313,6 +313,15 @@
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="37"/>
+        <source>buy EUR</source>
+        <translation>Покупка євро</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="39"/>
+        <source>sell EUR</source>
+        <translation>Продажа євро</translation>
+    </message>
+    <message>
         <location filename="../mainwindow.cpp" line="517"/>
         <location filename="../mainwindow.cpp" line="574"/>
         <source>buy Euro</source>
@@ -326,7 +335,6 @@
         <translation>Продажа дол. США</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="39"/>
         <location filename="../mainwindow.cpp" line="529"/>
         <location filename="../mainwindow.cpp" line="584"/>
         <source>sell Euro</source>
