@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>675</width>
-    <height>410</height>
+    <height>360</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,7 +20,7 @@
       <x>5</x>
       <y>5</y>
       <width>320</width>
-      <height>110</height>
+      <height>100</height>
      </rect>
     </property>
     <property name="title">
@@ -29,9 +29,9 @@
     <widget class="QComboBox" name="TaCB">
      <property name="geometry">
       <rect>
-       <x>115</x>
-       <y>40</y>
-       <width>90</width>
+       <x>121</x>
+       <y>25</y>
+       <width>80</width>
        <height>30</height>
       </rect>
      </property>
@@ -39,9 +39,9 @@
     <widget class="QLineEdit" name="lineEdit_TempRight">
      <property name="geometry">
       <rect>
-       <x>220</x>
-       <y>40</y>
-       <width>90</width>
+       <x>215</x>
+       <y>25</y>
+       <width>100</width>
        <height>30</height>
       </rect>
      </property>
@@ -52,9 +52,9 @@
     <widget class="QLineEdit" name="lineEdit_TempLeft">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>40</y>
-       <width>90</width>
+       <x>5</x>
+       <y>25</y>
+       <width>100</width>
        <height>30</height>
       </rect>
      </property>
@@ -66,9 +66,9 @@
      <property name="geometry">
       <rect>
        <x>120</x>
-       <y>80</y>
-       <width>75</width>
-       <height>27</height>
+       <y>60</y>
+       <width>82</width>
+       <height>30</height>
       </rect>
      </property>
      <property name="text">
@@ -80,9 +80,9 @@
     <property name="geometry">
      <rect>
       <x>5</x>
-      <y>130</y>
+      <y>110</y>
       <width>320</width>
-      <height>110</height>
+      <height>100</height>
      </rect>
     </property>
     <property name="title">
@@ -91,9 +91,9 @@
     <widget class="QComboBox" name="LaCB">
      <property name="geometry">
       <rect>
-       <x>115</x>
-       <y>30</y>
-       <width>90</width>
+       <x>121</x>
+       <y>25</y>
+       <width>80</width>
        <height>30</height>
       </rect>
      </property>
@@ -101,9 +101,9 @@
     <widget class="QLineEdit" name="lineEdit_LenghtRight">
      <property name="geometry">
       <rect>
-       <x>220</x>
-       <y>30</y>
-       <width>90</width>
+       <x>215</x>
+       <y>25</y>
+       <width>100</width>
        <height>30</height>
       </rect>
      </property>
@@ -114,9 +114,9 @@
     <widget class="QLineEdit" name="lineEdit_LenghtLeft">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>30</y>
-       <width>90</width>
+       <x>5</x>
+       <y>25</y>
+       <width>100</width>
        <height>30</height>
       </rect>
      </property>
@@ -128,9 +128,9 @@
      <property name="geometry">
       <rect>
        <x>120</x>
-       <y>70</y>
-       <width>75</width>
-       <height>27</height>
+       <y>60</y>
+       <width>82</width>
+       <height>30</height>
       </rect>
      </property>
      <property name="text">
@@ -142,9 +142,9 @@
     <property name="geometry">
      <rect>
       <x>5</x>
-      <y>255</y>
+      <y>215</y>
       <width>320</width>
-      <height>110</height>
+      <height>100</height>
      </rect>
     </property>
     <property name="title">
@@ -153,9 +153,9 @@
     <widget class="QComboBox" name="WaCB">
      <property name="geometry">
       <rect>
-       <x>115</x>
-       <y>40</y>
-       <width>90</width>
+       <x>121</x>
+       <y>25</y>
+       <width>80</width>
        <height>30</height>
       </rect>
      </property>
@@ -163,9 +163,9 @@
     <widget class="QLineEdit" name="lineEdit_WeightRight">
      <property name="geometry">
       <rect>
-       <x>220</x>
-       <y>40</y>
-       <width>90</width>
+       <x>215</x>
+       <y>25</y>
+       <width>100</width>
        <height>30</height>
       </rect>
      </property>
@@ -176,9 +176,9 @@
     <widget class="QLineEdit" name="lineEdit_WeightLeft">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>40</y>
-       <width>90</width>
+       <x>5</x>
+       <y>25</y>
+       <width>100</width>
        <height>30</height>
       </rect>
      </property>
@@ -190,9 +190,9 @@
      <property name="geometry">
       <rect>
        <x>120</x>
-       <y>80</y>
-       <width>75</width>
-       <height>27</height>
+       <y>60</y>
+       <width>82</width>
+       <height>30</height>
       </rect>
      </property>
      <property name="text">
@@ -206,7 +206,7 @@
       <x>330</x>
       <y>5</y>
       <width>340</width>
-      <height>235</height>
+      <height>205</height>
      </rect>
     </property>
     <property name="title">
@@ -215,10 +215,10 @@
     <widget class="QWebView" name="webView">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>60</y>
-       <width>320</width>
-       <height>160</height>
+       <x>49</x>
+       <y>55</y>
+       <width>241</width>
+       <height>111</height>
       </rect>
      </property>
      <property name="url">
@@ -230,9 +230,9 @@
     <widget class="QComboBox" name="IchCB">
      <property name="geometry">
       <rect>
-       <x>120</x>
+       <x>108</x>
        <y>15</y>
-       <width>100</width>
+       <width>124</width>
        <height>30</height>
       </rect>
      </property>
@@ -242,9 +242,9 @@
     <property name="geometry">
      <rect>
       <x>330</x>
-      <y>255</y>
+      <y>215</y>
       <width>340</width>
-      <height>110</height>
+      <height>100</height>
      </rect>
     </property>
     <property name="title">
@@ -253,9 +253,9 @@
     <widget class="QComboBox" name="IaCB">
      <property name="geometry">
       <rect>
-       <x>120</x>
-       <y>40</y>
-       <width>100</width>
+       <x>108</x>
+       <y>25</y>
+       <width>124</width>
        <height>30</height>
       </rect>
      </property>
@@ -263,9 +263,9 @@
     <widget class="QLineEdit" name="LeftITE">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>40</y>
-       <width>90</width>
+       <x>4</x>
+       <y>25</y>
+       <width>100</width>
        <height>30</height>
       </rect>
      </property>
@@ -273,9 +273,9 @@
     <widget class="QLineEdit" name="RightITE">
      <property name="geometry">
       <rect>
-       <x>240</x>
-       <y>40</y>
-       <width>90</width>
+       <x>236</x>
+       <y>25</y>
+       <width>100</width>
        <height>30</height>
       </rect>
      </property>
@@ -283,10 +283,10 @@
     <widget class="QPushButton" name="pushButton_Clear_Many">
      <property name="geometry">
       <rect>
-       <x>135</x>
-       <y>78</y>
-       <width>75</width>
-       <height>27</height>
+       <x>130</x>
+       <y>60</y>
+       <width>82</width>
+       <height>30</height>
       </rect>
      </property>
      <property name="text">
@@ -334,9 +334,17 @@
      <addaction name="actionDistance_and_Length"/>
      <addaction name="actionWeight_weight"/>
     </widget>
+    <widget class="QMenu" name="menuInformers">
+     <property name="title">
+      <string>Informers</string>
+     </property>
+     <addaction name="action_Currency"/>
+     <addaction name="action_Oil_Charts"/>
+     <addaction name="actionOil_graphics"/>
+     <addaction name="actionPrecious_metals_charts"/>
+    </widget>
     <addaction name="menuConversion"/>
-    <addaction name="action_Oil_Charts"/>
-    <addaction name="action_Currency"/>
+    <addaction name="menuInformers"/>
     <addaction name="action_List_opened_windows"/>
     <addaction name="separator"/>
     <addaction name="actionExit"/>
@@ -432,7 +440,7 @@
     <bool>false</bool>
    </property>
    <property name="text">
-    <string>&amp;Oil Charts</string>
+    <string>&amp;Oil charts</string>
    </property>
    <property name="shortcut">
     <string>Alt+O</string>
@@ -443,7 +451,7 @@
     <bool>false</bool>
    </property>
    <property name="text">
-    <string>&amp;Currency</string>
+    <string>&amp;Currency charts</string>
    </property>
    <property name="shortcut">
     <string>Alt+C</string>
@@ -455,11 +463,17 @@
    </property>
   </action>
   <action name="action_List_opened_windows">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="text">
     <string>&amp;List opened windows</string>
    </property>
    <property name="toolTip">
     <string>List opened windows</string>
+   </property>
+   <property name="visible">
+    <bool>false</bool>
    </property>
   </action>
   <action name="action_Default_settings">
@@ -473,6 +487,16 @@
   <action name="actionRu">
    <property name="text">
     <string>Ru</string>
+   </property>
+  </action>
+  <action name="actionOil_graphics">
+   <property name="text">
+    <string>Oil graphics</string>
+   </property>
+  </action>
+  <action name="actionPrecious_metals_charts">
+   <property name="text">
+    <string>Precious metals prices</string>
    </property>
   </action>
  </widget>

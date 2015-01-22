@@ -2,7 +2,7 @@
 
 QString myURLOilPrices2 = "<div id=\"brent\" style=\"background:; width:186px; height:61px; border: 1x solid #808080; color:#84057A; text-decoration:none; text-align:left; top; overflow: hidden; font-style:normal; font-variant:normal; font-weight:normal; font-size:9px; font-family:Verdana, sans-serif;\"><a href=\"http://www.forexpf.ru/\" title=\"Цены на нефть\" target=\"_blank\" style=\"line-height:14px;color:#000000;text-decoration:none;padding-left: 50px;\">Цены на нефть</a><br><a href=\"http://www.forexpf.ru/chart/brent/\" title=\"Brent\" target=\"_blank\" style=\"line-height:15px;color:#000000;text-decoration:none;padding-left: 33px;\">Brent</a><a href=\"http://www.forexpf.ru/chart/lightsweet/\" title=\"Light Sweet\" target=\"_blank\" style=\"line-height:15px;color:#000000;text-decoration:none;padding-left: 63px;\">Light</a></div> <script src=\"http://www.forexpf.ru/_informer_/brent_.php\"></script>";
 QString myURLrubleInterbank2 = "<table width=\"210\"border=\"1\" style=\"border-collapse: collapse; text-align:center; font-size:11px; color:#000000; \"><tr bgcolor=\"\"><td height=\"10\" valign=\"top\" colspan=\"3\"><style>A.forexpf_ { text-decoration: none;} A.forexpf_:visited {color: #000000;} </style><a href=\"http://www.forexpf.ru/\" title=\"Курсы валют\"target=\"_blank\" class=\"forexpf_\">Курсы валют</a></td></tr><tr bgcolor=\"F6EDDD\"><td></td><td>Покупка</td><td>Продажа</td></tr><tr bgcolor=\"\"><td><a href=\"http://www.forexpf.ru/chart/usdrub/\" title=\"Курс доллара\" target=\"_blank\" class=\"forexpf_\">USD/RUB</a></td><td id=\"usdrubbid\">0.00</td><td id=\"usdrubask\">0.00</td></tr><tr bgcolor=\"F6EDDD\"><td><a href=\"http://www.forexpf.ru/chart/eurrub/\"title=\"Курс Евро\"target=\"_blank\" class=\"forexpf_\">EUR/RUB</a></td><td id=\"eurrubbid\">0.00</td><td id=\"eurrubask\">0.00</td></tr><tr bgcolor=\"\"><td colspan=\"3\"id=\"euusrutm\">Данные на</td></tr></table><script type=\"text/javascript\" charset=\"utf-8\"src=\"http://informers.forexpf.ru/export/euusrub.js\"></script>";
-QString myURLOilgraphics = "<div id=\"oi1195543\" style=\"background:; width:210px; height:125; border: 1x solid #808080; color:#84057A; text-decoration:none; text-align:left; top; padding-left: 3px; overflow: hidden; font-style:normal; font-variant:normal; font-weight:bold; font-size:9px; font-family:Verdana, sans-serif;\"><a href=\"http://www.forexpf.ru/chart/brent/\" title=\"Нефть brent\" target=\"_blank\" style=\"color:#808080;text-decoration:none; \">Нефть brent</a></div><script type=\"text/javascript\" charset=\"cp1251\" src=\"http://informers.forexpf.ru/php/graphics.php?sym=CL_Brent&vsz=120&hsz=200&fxid=oi1195543&sz=60&tic=0&typ=0\"></script>";
+QString myURLOilgraphics2 = "<div id=\"oi1195543\" style=\"background:; width:210px; height:125; border: 1x solid #808080; color:#84057A; text-decoration:none; text-align:left; top; padding-left: 3px; overflow: hidden; font-style:normal; font-variant:normal; font-weight:bold; font-size:9px; font-family:Verdana, sans-serif;\"><a href=\"http://www.forexpf.ru/chart/brent/\" title=\"Нефть brent\" target=\"_blank\" style=\"color:#808080;text-decoration:none; \">Нефть brent</a></div><script type=\"text/javascript\" charset=\"cp1251\" src=\"http://informers.forexpf.ru/php/graphics.php?sym=CL_Brent&vsz=120&hsz=200&fxid=oi1195543&sz=60&tic=0&typ=0\"></script>";
 QString myURLDrahotsennemetals = "<div id=\"metals\" style=\"background:; width:186px; height:89px; border: 1x solid #808080; color:#84057A; text-decoration:none; text-align:left; top; overflow: hidden; font-style:normal; font-variant:normal; font-weight:normal; font-size:9px; font-family:Verdana, sans-serif;\"><a href=\"http://www.forexpf.ru/\" title=\"Драгоценные металлы\" target=\"_blank\" style=\"line-height:15px;color:#000000;text-decoration:none;padding-left: 35px;\">Драгоценные металлы</a><br><a href=\"http://www.forexpf.ru/chart/gold/\" title=\"Золото\" target=\"_blank\" style=\"line-height:15px;color:#000000;text-decoration:none;padding-left: 30px;\">Золото</a><br><a href=\"http://www.forexpf.ru/chart/palladium/\" title=\"Палладий\" target=\"_blank\" style=\"line-height:14px;color:#000000;text-decoration:none;padding-left: 23px;\">Палладий</a><br><a href=\"http://www.forexpf.ru/chart/platinum/\" title=\"Платина\" target=\"_blank\" style=\"line-height:15px;color:#000000;text-decoration:none;padding-left: 25px;\">Платина</a><br><a href=\"http://www.forexpf.ru/chart/silver/\" title=\"серебро\" target=\"_blank\" style=\"line-height:14px;color:#000000;text-decoration:none;padding-left: 26px;\">Серебро</a><br></div><script src=\"http://www.forexpf.ru/_informer_/metals_.php\"></script>";
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -17,8 +17,8 @@ MainWindow::MainWindow(QWidget *parent) :
     {
         QMessageBox::information(this, "First run", "This is the first run of the program. \n Thank you for your choice");
         setWindowTitle("ITAInformator");
-        setGeometry(QRect(355,100,760,558));
-        setFont(QFont("Times",10,1,false));
+        setGeometry(QRect(384,205,675,350));
+        //setFont(QFont("Times",9,1,false));
         pLang = "en";
 
         mSettings.setMainWindowRect(geometry());
@@ -35,11 +35,12 @@ MainWindow::MainWindow(QWidget *parent) :
         reTranslateUi();
     }
 
-    this->setFixedSize(675,410);
+    this->setFixedSize(675,360);
     this->setWindowFlags(this->windowFlags() & ~Qt::WindowContextHelpButtonHint);
 
     ui->menuBar->setFont(QFont("Times",10,1,false));
 
+    _placeHolderName();
     _initChartsVectorData();
     _initControls();
     _setWebViewData(ui->IchCB->currentIndex());
@@ -66,7 +67,7 @@ void MainWindow::_initChartsVectorData()
 
     mvCharts.push_back(myURLrubleInterbank2);
     mvCharts.push_back(myURLOilPrices2);
-    mvCharts.push_back(myURLOilgraphics);
+    mvCharts.push_back(myURLOilgraphics2);
     mvCharts.push_back(myURLDrahotsennemetals);
 }
 
@@ -76,25 +77,25 @@ void MainWindow::_setWebViewData(const int &aIndex)
     {
         case 0:
         {
-            ui->webView->setGeometry(55,90,225,105);
+            ui->webView->setGeometry(60,60,225,105);
             ui->Informer_block->setDisabled(0);
             break;
         }
         case 1:
         {
-            ui->webView->setGeometry(70,90,200,80);
+            ui->webView->setGeometry(70,70,200,80);
             ui->Informer_block->setDisabled(1);
             break;
         }
         case 2:
         {
-            ui->webView->setGeometry(50,70,235,140);
+            ui->webView->setGeometry(50,50,245,145);
             ui->Informer_block->setDisabled(1);
             break;
         }
         case 3:
         {
-            ui->webView->setGeometry(70,90,200,106);
+            ui->webView->setGeometry(70,60,200,106);
             ui->Informer_block->setDisabled(1);
             break;
         }
@@ -102,63 +103,6 @@ void MainWindow::_setWebViewData(const int &aIndex)
     ui->webView->setHtml(mvCharts[aIndex]);
     ui->webView->reload();
 }
-void MainWindow::_initControls()
-{
-    ui->TaCB->addItem("f/c");
-    ui->TaCB->addItem("k/c");
-    ui->TaCB->addItem("k/f");
-
-    ui->LaCB->addItem("mm/cm");
-    ui->LaCB->addItem("cm/m");
-    ui->LaCB->addItem("m/km");
-
-    ui->WaCB->addItem("g/kg");
-    ui->WaCB->addItem("kg/p");
-    ui->WaCB->addItem("p/g");
-
-    ui->IchCB->addItem(tr("Rates of Exchange"));
-    ui->IchCB->addItem(tr("Oil Charts"));
-    ui->IchCB->addItem(tr("Oil graphics"));
-    ui->IchCB->addItem(tr("Precious metals"));
-
-    ui->IaCB->addItem(tr("buy USD"));
-    ui->IaCB->addItem(tr("buy Euro"));
-    ui->IaCB->addItem(tr("sell USD"));
-    ui->IaCB->addItem(tr("sell Euro"));
-
-    ui->lineEdit_TempLeft->setPlaceholderText(tr("Enter value"));
-    ui->lineEdit_TempRight->setPlaceholderText(tr("Enter value"));
-    ui->lineEdit_LenghtLeft->setPlaceholderText(tr("Enter value"));
-    ui->lineEdit_LenghtRight->setPlaceholderText(tr("Enter value"));
-    ui->lineEdit_WeightLeft->setPlaceholderText(tr("Enter value"));
-    ui->lineEdit_WeightRight->setPlaceholderText(tr("Enter value"));
-
-    ui->LeftITE->setPlaceholderText(tr("Enter value"));
-    ui->RightITE->setPlaceholderText(tr("Enter value"));
-
-    ui->menuBar->setFont(QFont("Times",10,1,false));
-
-    ui->LeftITE->setValidator(new QDoubleValidator(-9999.0,
-        9999.0, 6, ui->LeftITE));
-    ui->RightITE->setValidator(new QDoubleValidator(-9999.0,
-        9999.0, 6, ui->RightITE));
-
-    ui->lineEdit_TempLeft->setValidator(new QDoubleValidator(-9999.0,
-        9999.0, 6, ui->lineEdit_TempLeft));
-    ui->lineEdit_TempRight->setValidator(new QDoubleValidator(-9999.0,
-        9999.0, 6, ui->lineEdit_TempRight));
-
-    ui->lineEdit_LenghtLeft->setValidator(new QDoubleValidator(-9999.0,
-        9999.0, 6, ui->lineEdit_LenghtLeft));
-    ui->lineEdit_LenghtRight->setValidator(new QDoubleValidator(-9999.0,
-        9999.0, 6, ui->lineEdit_LenghtRight));
-
-    ui->lineEdit_WeightLeft->setValidator(new QDoubleValidator(-9999.0,
-        9999.0, 6, ui->lineEdit_WeightLeft));
-    ui->lineEdit_WeightRight->setValidator(new QDoubleValidator(-9999.0,
-        9999.0, 6, ui->lineEdit_WeightRight));
-}
-
 
 void MainWindow::appChangeLanguage()
 {
@@ -186,8 +130,8 @@ void MainWindow::appChangeLanguage()
 
 void MainWindow::on_action_About_triggered()
 {
-    modal_window formmodal_window; // Specifies the new name of the class
-    formmodal_window.setModal(true); // say that it is modal form
+    modal_window formmodal_window;      // Specifies the new name of the class
+    formmodal_window.setModal(true);    // say that it is modal form
     formmodal_window.exec();
 }
 
@@ -200,8 +144,8 @@ void MainWindow::on_actionTemperature_triggered()
 
 void MainWindow::on_action_Oil_Charts_triggered()
 {
-    formOilPrices = new OilPrices (this);
-    formOilPrices -> show();
+//    formOilPrices = new OilPrices (this);
+//    formOilPrices -> show();
 }
 
 void MainWindow::on_action_Currency_triggered()
@@ -232,11 +176,11 @@ void MainWindow::on_action_Font_settings_triggered()
     setFont(font);
 }
 
-void MainWindow::on_action_List_opened_windows_triggered()
-{
-    formListOpenedWindows = new ListOpenedWindows (this);
-    formListOpenedWindows->show();
-}
+//void MainWindow::on_action_List_opened_windows_triggered()
+//{
+//    formListOpenedWindows = new ListOpenedWindows (this);
+//    formListOpenedWindows->show();
+//}
 
 void MainWindow::on_action_Default_settings_triggered()
 {
@@ -302,6 +246,53 @@ void MainWindow::chLangRu()
     pLang = "ru";
 }
 
+void MainWindow::_initControls()
+{
+    ui->TaCB->addItem("f/c");
+    ui->TaCB->addItem("k/c");
+    ui->TaCB->addItem("k/f");
+
+    ui->LaCB->addItem("mm/cm");
+    ui->LaCB->addItem("cm/m");
+    ui->LaCB->addItem("m/km");
+
+    ui->WaCB->addItem("g/kg");
+    ui->WaCB->addItem("kg/p");
+    ui->WaCB->addItem("p/g");
+
+    ui->IchCB->addItem(tr("Rates of Exchange"));
+    ui->IchCB->addItem(tr("Oil Charts"));
+    ui->IchCB->addItem(tr("Oil graphics"));
+    ui->IchCB->addItem(tr("Precious metals"));
+
+    ui->IaCB->addItem(tr("buy USD"));
+    ui->IaCB->addItem(tr("buy Euro"));
+    ui->IaCB->addItem(tr("sell USD"));
+    ui->IaCB->addItem(tr("sell Euro"));
+
+    ui->menuBar->setFont(QFont("Times",10,1,false));
+
+    ui->LeftITE->setValidator(new QDoubleValidator(-9999.0,
+        9999.0, 6, ui->LeftITE));
+    ui->RightITE->setValidator(new QDoubleValidator(-9999.0,
+        9999.0, 6, ui->RightITE));
+
+    ui->lineEdit_TempLeft->setValidator(new QDoubleValidator(-9999.0,
+        9999.0, 6, ui->lineEdit_TempLeft));
+    ui->lineEdit_TempRight->setValidator(new QDoubleValidator(-9999.0,
+        9999.0, 6, ui->lineEdit_TempRight));
+
+    ui->lineEdit_LenghtLeft->setValidator(new QDoubleValidator(-9999.0,
+        9999.0, 6, ui->lineEdit_LenghtLeft));
+    ui->lineEdit_LenghtRight->setValidator(new QDoubleValidator(-9999.0,
+        9999.0, 6, ui->lineEdit_LenghtRight));
+
+    ui->lineEdit_WeightLeft->setValidator(new QDoubleValidator(-9999.0,
+        9999.0, 6, ui->lineEdit_WeightLeft));
+    ui->lineEdit_WeightRight->setValidator(new QDoubleValidator(-9999.0,
+        9999.0, 6, ui->lineEdit_WeightRight));
+}
+
 void MainWindow::reTranslateUi()
 {
     setWindowTitle(tr("ITAInformator"));
@@ -323,7 +314,7 @@ void MainWindow::reTranslateUi()
             ui->actionWeight_weight->setText(tr("Weight"));
         ui->action_Oil_Charts->setText(tr("&Oil Charts"));
         ui->action_Currency->setText(tr("&Currency"));
-        ui->action_List_opened_windows->setText(tr("List opened windows"));
+        //ui->action_List_opened_windows->setText(tr("List opened windows"));
         ui->actionExit->setText(tr("&Exit"));
     ui->Weight->setTitle(tr("Weight conversion"));
     ui->Lenght->setTitle(tr("Lenght conversion"));
@@ -335,6 +326,8 @@ void MainWindow::reTranslateUi()
     ui->pushButton_ClearTemper->setText(tr("Clear"));
     ui->pushButton_ClearWeight->setText(tr("Clear"));
     ui->pushButton_Clear_Many->setText(tr("Clear"));
+
+    _placeHolderName();
 }
 
 void MainWindow::on_actionExit_triggered()
@@ -342,18 +335,16 @@ void MainWindow::on_actionExit_triggered()
     QApplication::closeAllWindows();
 }
 
-
 void MainWindow::closeEvent(QCloseEvent *)
 {
     QWindowList wl = QApplication::topLevelWindows();
 }
 
-
 void MainWindow::on_lineEdit_TempLeft_textChanged(const QString)
 {
     if(ui->lineEdit_TempLeft->hasFocus())
     {
-    if(ui->TaCB->currentText() == ("f/c"))
+    if(ui->TaCB->currentText() == "f/c")
         {
         double Farengate = ui->lineEdit_TempLeft->text().toDouble();
         ui->lineEdit_TempRight->setText(QString::number((Farengate - 32)*5/9));
@@ -375,7 +366,7 @@ void MainWindow::on_lineEdit_TempRight_textChanged(const QString)
 {
    if(ui->lineEdit_TempRight->hasFocus())
    {
-    if(ui->TaCB->currentText() == ("f/c"))
+    if(ui->TaCB->currentText() == "f/c")
         {
         double Celsius = ui->lineEdit_TempRight->text().toDouble();
         ui->lineEdit_TempLeft->setText(QString::number((Celsius *9/5)+32 ));
@@ -479,7 +470,7 @@ void MainWindow::on_lineEdit_WeightRight_textChanged(const QString)
 
 void MainWindow::on_TaCB_activated(const QString )
 {
-    if(ui->TaCB->currentText() == tr("f/c"))
+    if(ui->TaCB->currentText() == "f/c")
     {
        ui->lineEdit_TempLeft->clear();
        ui->lineEdit_TempRight->clear();
@@ -498,7 +489,7 @@ void MainWindow::on_TaCB_activated(const QString )
 
 void MainWindow::on_LaCB_activated(const QString )
 {
-    if(ui->LaCB->currentText() == ("mm/cm"))
+    if(ui->LaCB->currentText() == "mm/cm")
     {
        ui->lineEdit_LenghtLeft->clear();
        ui->lineEdit_LenghtRight->clear();
@@ -534,36 +525,6 @@ void MainWindow::on_WaCB_activated(const QString)
     }
 }
 
-void MainWindow::on_IchCB_currentTextChanged(const QString )
-{
-//        if(ui->IchCB->currentText() == "Rates of Exchange")
-//        {
-//        ui->webView->setGeometry(55,90,225,105);
-//        ui->webView->setHtml(myURLrubleInterbank2);
-//        ui->Informer_block->setDisabled(0);
-//        }
-//        if(ui->IchCB->currentText() == "Oil Charts")
-//        {
-//            ui->webView->setGeometry(70,90,200,80);
-//            ui->webView->setHtml(myURLOilPrices2);
-//            ui->Informer_block->setDisabled(1);
-//        }
-
-//        if(ui->IchCB->currentText() == "Oil graphics")
-//        {
-//            ui->webView->setGeometry(50,70,235,140);
-//            ui->webView->setHtml(myURLOilgraphics);
-//            ui->Informer_block->setDisabled(1);
-//        }
-//        if(ui->IchCB->currentText() == "Precious metals")
-//        {
-//            ui->webView->setGeometry(70,90,200,106);
-//            ui->webView->setHtml(myURLDrahotsennemetals);
-//            ui->Informer_block->setDisabled(1);
-//        }
-//        ui->webView->reload();
-}
-
 void MainWindow::on_webView_loadFinished(bool)
 {
     QVariant usdrubbidCoefficientBuy;
@@ -584,10 +545,10 @@ void MainWindow::on_webView_loadFinished(bool)
     mCoofRubInUsdSale = usdrubaskCoefficientSale.toDouble();
     mCoofRubInEurSale = eurrubaskCoefficientSale.toDouble();
 }
-//---Begin Dima new
-void MainWindow::on_LeftITE_textChanged(const QString)
+
+void MainWindow::on_LeftITE_textChanged(const QString)          // correct work??? see here
 {
-    if(ui->LeftITE->hasFocus())                         //Begin 'Change ',' to '.'
+    if(ui->LeftITE->hasFocus())
     {
         if(ui->IaCB->currentText() == tr("buy USD"))
         {
@@ -596,44 +557,115 @@ void MainWindow::on_LeftITE_textChanged(const QString)
             if(index != -1)
                 str[index] = '.';
 
-            double RubToUsdBuy = str.toDouble();        //End 'Change ',' to '.'
+            double RubToUsdBuy = str.toDouble();
 
             ui->RightITE->setText(QString::number(RubToUsdBuy / mCoofRubToUsdBuy));
         }
     }
-    if(ui->LeftITE->hasFocus()) {
-        if(ui->IaCB->currentText() == tr("buy Euro")) {
-            double RubToEurBuy = ui->LeftITE->text().toDouble();
+    if(ui->LeftITE->hasFocus())
+    {
+        if(ui->IaCB->currentText() == tr("buy Euro"))
+        {
+            QString str = ui->LeftITE->text();
+            int index = str.indexOf(',');
+            if(index != -1)
+                str[index] = '.';
+
+            double RubToEurBuy = str.toDouble();
+
             ui->RightITE->setText(QString::number(RubToEurBuy / mCoofRubToEurBuy));
         }
     }
-    if(ui->LeftITE->hasFocus()) {
-        if(ui->IaCB->currentText() == tr("sell USD")) {
-            double RubInUsdSale = ui->LeftITE->text().toDouble();
+    if(ui->LeftITE->hasFocus())
+    {
+        if(ui->IaCB->currentText() == tr("sell USD"))
+        {
+            QString str = ui->LeftITE->text();
+            int index = str.indexOf(',');
+            if(index != -1)
+                str[index] = '.';
+
+            double RubInUsdSale = str.toDouble();
+
             ui->RightITE->setText(QString::number(RubInUsdSale / mCoofRubInUsdSale));
         }
     }
-    if(ui->LeftITE->hasFocus()) {
-        if(ui->IaCB->currentText() == tr("sell Euro")) {
-            double RubInEurSale = ui->LeftITE->text().toDouble();
+    if(ui->LeftITE->hasFocus())
+    {
+        if(ui->IaCB->currentText() == tr("sell Euro"))
+        {
+            QString str = ui->LeftITE->text();
+            int index = str.indexOf(',');
+            if(index != -1)
+                str[index] = '.';
+
+            double RubInEurSale = str.toDouble();
+
             ui->RightITE->setText(QString::number(RubInEurSale / mCoofRubInEurSale));
         }
     }
 }
 
-void MainWindow::on_RightITE_textChanged(const QString)
+void MainWindow::on_RightITE_textChanged(const QString)         // correct work??? see here
 {
-//    double UsdToRubToBuy = ui->RightITE->text().toDouble();
-//    ui->LeftITE->setText(QString::number(UsdToRubToBuy * mCoofRubToUsdBuy));
-//    double EurToRubBuy = ui->RightITE->text().toDouble();
-//    ui->LeftITE->setText(QString::number(EurToRubBuy * mCoofRubToEurBuy));
+    if(ui->RightITE->hasFocus())
+    {
+        if(ui->IaCB->currentText() == tr("buy USD"))
+        {
+            QString str = ui->RightITE->text();
+            int index = str.indexOf(',');
+            if(index != -1)
+                str[index] = '.';
 
-//    double UsdInRubSale = ui->RightITE->text().toDouble();
-//    ui->LeftITE->setText(QString::number(UsdInRubSale * mCoofRubInUsdSale));
-//    double EurInRubSale = ui->RightITE->text().toDouble();
-//    ui->LeftITE->setText(QString::number(EurInRubSale * mCoofRubInEurSale));
+            double RubToUsdBuy = str.toDouble();
+
+            ui->LeftITE->setText(QString::number(RubToUsdBuy / mCoofRubToUsdBuy));
+        }
+    }
+    if(ui->RightITE->hasFocus())
+    {
+        if(ui->IaCB->currentText() == tr("buy Euro"))
+        {
+            QString str = ui->RightITE->text();
+            int index = str.indexOf(',');
+            if(index != -1)
+                str[index] = '.';
+
+            double RubToEurBuy = str.toDouble();
+
+            ui->LeftITE->setText(QString::number(RubToEurBuy / mCoofRubToEurBuy));
+        }
+    }
+    if(ui->RightITE->hasFocus())
+    {
+        if(ui->IaCB->currentText() == tr("sell USD"))
+        {
+            QString str = ui->RightITE->text();
+            int index = str.indexOf(',');
+            if(index != -1)
+                str[index] = '.';
+
+            double RubInUsdSale = str.toDouble();
+
+            ui->LeftITE->setText(QString::number(RubInUsdSale / mCoofRubInUsdSale));
+        }
+    }
+    if(ui->RightITE->hasFocus())
+    {
+        if(ui->IaCB->currentText() == tr("sell Euro"))
+        {
+            QString str = ui->RightITE->text();
+            int index = str.indexOf(',');
+            if(index != -1)
+                str[index] = '.';
+
+            double RubInEurSale = str.toDouble();
+
+            ui->LeftITE->setText(QString::number(RubInEurSale / mCoofRubInEurSale));
+        }
+    }
 }
-//---End Dima new
+
 void MainWindow::on_pushButton_ClearTemper_clicked()
 {
     ui->lineEdit_TempLeft->clear();
@@ -686,4 +718,16 @@ void MainWindow::on_pushButton_Clear_Many_clicked()
 void MainWindow::on_IchCB_currentIndexChanged(int index)
 {
     _setWebViewData(index);
+}
+
+void MainWindow::_placeHolderName()
+{
+    ui->lineEdit_TempLeft->setPlaceholderText(tr("Enter value"));
+    ui->lineEdit_TempRight->setPlaceholderText(tr("Enter value"));
+    ui->lineEdit_LenghtLeft->setPlaceholderText(tr("Enter value"));
+    ui->lineEdit_LenghtRight->setPlaceholderText(tr("Enter value"));
+    ui->lineEdit_WeightLeft->setPlaceholderText(tr("Enter value"));
+    ui->lineEdit_WeightRight->setPlaceholderText(tr("Enter value"));
+    ui->LeftITE->setPlaceholderText(tr("Enter value"));
+    ui->RightITE->setPlaceholderText(tr("Enter value"));
 }

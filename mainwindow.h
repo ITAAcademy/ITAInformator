@@ -15,7 +15,7 @@
 #include "Units/distanceandlength.h"
 #include "Units/weight.h"
 #include "Units/temperature.h"
-#include "AdditionalFiles/listopenedwindows.h"
+//#include "AdditionalFiles/listopenedwindows.h"
 #include "AdditionalFiles/modal_window.h"
 #include "AdditionalFiles/settings.h"
 #include "Charts/oilprices.h"
@@ -46,6 +46,7 @@ private:
     void _setWebViewData(const int &aIndex);
     void _initControls();
     void _initChartsVectorData();
+    void _placeHolderName();
 
     void closeEvent(QCloseEvent *);
 
@@ -67,7 +68,7 @@ private slots:
     void on_actionDistance_and_Length_triggered();
     void on_actionWeight_weight_triggered();
     void on_action_Font_settings_triggered();
-    void on_action_List_opened_windows_triggered();
+    //void on_action_List_opened_windows_triggered();
     void on_action_Default_settings_triggered();
     void on_actionExit_triggered();
     void on_lineEdit_TempRight_textChanged  (const QString );
@@ -81,7 +82,6 @@ private slots:
     void on_WaCB_activated                  (const QString );
     void on_LeftITE_textChanged             (const QString );
     void on_RightITE_textChanged            (const QString );
-    void on_IchCB_currentTextChanged        (const QString);
     void on_webView_loadFinished            (bool);
 
 
@@ -96,6 +96,10 @@ private slots:
     void on_IaCB_activated(const QString);
 
     void on_IchCB_currentIndexChanged(int index);
+
+//    void on_actionOil_graphics_triggered();
+
+//    void on_actionPrecious_metals_charts_triggered();
 
 private:
 
@@ -115,7 +119,7 @@ private:
     rubleInterbank      *formrubleInterbank;
     pSettings            mSettings;
 
-    ListOpenedWindows   *formListOpenedWindows;
+    //ListOpenedWindows   *formListOpenedWindows;
 
 //    QLineEdit           *lineEdit_TempLeft;
 //    QLineEdit           *lineEdit_TempRight;
