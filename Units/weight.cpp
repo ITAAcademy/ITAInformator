@@ -6,8 +6,12 @@ Weight::Weight(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Weight)
 {
+
     ui->setupUi(this);
-    this->setFixedSize(375,150);
+
+    this->setFixedSize(320,100);
+    this->setGeometry(QRect(1019,349,320,100));
+
     this->setWindowFlags(this->windowFlags() & ~Qt::WindowContextHelpButtonHint);
 
     ui->comboBoxWeight->addItem("gr to kg");
@@ -16,6 +20,10 @@ Weight::Weight(QWidget *parent) :
 
     ui->lineEdit_W_Left->setPlaceholderText(tr("Value in gr"));
     ui->lineEdit_W_right->setPlaceholderText(tr("Value in kg"));
+
+
+    ui->pushButton_ClearWeight->setText(tr("Clear"));
+    setWindowTitle(tr("Weight"));
 
     ui->lineEdit_W_Left->setValidator(new QDoubleValidator(-9999.0,
         9999.0, 6, ui->lineEdit_W_Left));

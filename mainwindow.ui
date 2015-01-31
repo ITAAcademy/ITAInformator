@@ -422,17 +422,26 @@
   </action>
   <action name="actionTemperature">
    <property name="text">
-    <string>Temperature</string>
+    <string>&amp;Temperature</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+T</string>
    </property>
   </action>
   <action name="actionDistance_and_Length">
    <property name="text">
-    <string>Distance and Length</string>
+    <string>&amp;Distance and Length</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+D</string>
    </property>
   </action>
   <action name="actionWeight_weight">
    <property name="text">
-    <string>Weight</string>
+    <string>&amp;Weight</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+W</string>
    </property>
   </action>
   <action name="action_Oil_Charts">
@@ -491,12 +500,18 @@
   </action>
   <action name="actionOil_graphics">
    <property name="text">
-    <string>Oil graphics</string>
+    <string>&amp;Oil graphics</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+G</string>
    </property>
   </action>
   <action name="actionPrecious_metals_charts">
    <property name="text">
-    <string>Precious metals prices</string>
+    <string>&amp;Precious metals prices</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+M</string>
    </property>
   </action>
  </widget>

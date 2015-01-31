@@ -25,7 +25,9 @@ SOURCES += main.cpp\
     AdditionalFiles/appsettings.cpp \
     Units/temperature.cpp\
     Units/weight.cpp\
-    Units/distanceandlength.cpp
+    Units/distanceandlength.cpp \
+    Charts/oilgraphics.cpp \
+    Charts/metals.cpp
 
 
 HEADERS  += mainwindow.h \
@@ -38,7 +40,9 @@ HEADERS  += mainwindow.h \
     AdditionalFiles/appsettings.h \
     Units/temperature.h\
     Units/weight.h\
-    Units/distanceandlength.h
+    Units/distanceandlength.h \
+    Charts/oilgraphics.h \
+    Charts/metals.h
 
 
 CONFIG   += c++11
@@ -51,7 +55,9 @@ FORMS += \
     AdditionalFiles/listopenedwindows.ui \
     Units/temperature.ui\
     Units/weight.ui\
-    Units/distanceandlength.ui
+    Units/distanceandlength.ui \
+    Charts/oilgraphics.ui \
+    Charts/metals.ui
 
 TRANSLATIONS += \
     lang\ln_ua.ts \

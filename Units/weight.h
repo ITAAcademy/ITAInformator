@@ -4,6 +4,7 @@
 #include <QDialog>
 #include "ui_weight.h"
 #include "AdditionalFiles/appsettings.h"
+#include <QTranslator>
 
 namespace Ui {
 class Weight;

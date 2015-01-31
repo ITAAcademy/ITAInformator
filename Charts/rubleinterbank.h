@@ -7,6 +7,7 @@
 #include <QString>
 #include "ui_rubleinterbank.h"
 #include "AdditionalFiles/appsettings.h"
+#include <QRect>
 
 namespace Ui {
 class rubleInterbank;

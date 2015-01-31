@@ -11,11 +11,11 @@ OilPrices::OilPrices(QWidget *parent) :
     ui->setupUi(this);
     this->setWindowFlags(this->windowFlags() & ~Qt::WindowContextHelpButtonHint);
 
-    QPixmap pixmap_OilPrices(":/imagin/no-internet.png");
-    ui->label_img->setPixmap(pixmap_OilPrices);
-    this->resize(200,80);
+    setWindowTitle(tr("Oil Prices"));
+
+    this->setFixedSize(205,75);
+    this->setGeometry(QRect(113,240,205,75));
     QWebView *inform_view = new QWebView(this);
-    inform_view->resize(200,80);
     inform_view->setHtml(myURLOilPrices);
     inform_view->show();
 

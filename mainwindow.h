@@ -23,6 +23,8 @@
 #include <QNetworkInterface>
 #include <QNetworkConfigurationManager>
 #include <QVector>
+#include "Charts/oilgraphics.h"
+#include "Charts/metals.h"
 
 class QMdiArea;
 class QSignalMapper;
@@ -97,9 +99,17 @@ private slots:
 
     void on_IchCB_currentIndexChanged(int index);
 
-//    void on_actionOil_graphics_triggered();
+    void on_actionOil_graphics_triggered();
 
-//    void on_actionPrecious_metals_charts_triggered();
+    void on_actionPrecious_metals_charts_triggered();
+
+    void on_actionEn_triggered();
+
+    void on_actionUa_triggered();
+
+    void on_actionPl_triggered();
+
+    void on_actionRu_triggered();
 
 private:
 
@@ -117,6 +127,8 @@ private:
     Temperature         *formTemperature;
     OilPrices           *formOilPrices;
     rubleInterbank      *formrubleInterbank;
+    OilGraphics         *formOilGraphics;
+    Metals              *formMetals;
     pSettings            mSettings;
 
     //ListOpenedWindows   *formListOpenedWindows;

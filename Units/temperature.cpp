@@ -7,7 +7,8 @@ Temperature::Temperature(QWidget *parent) :
     ui(new Ui::Temperature)
 {
     ui->setupUi(this);
-    this->setFixedSize(375,150);
+    this->setFixedSize(320,100);
+    this->setGeometry(QRect(1019,69,320,100));
     this->setWindowFlags(this->windowFlags() & ~Qt::WindowContextHelpButtonHint);
 
     ui->comboBoxTemperature->addItem("f to c");
@@ -16,6 +17,9 @@ Temperature::Temperature(QWidget *parent) :
 
     ui->lineEdit_T_Left->setPlaceholderText(tr("Value in fahr"));
     ui->lineEdit_T_right->setPlaceholderText(tr("Value in cel"));
+
+    ui->pushButton_clearTemper->setText(tr("Clear"));
+    setWindowTitle(tr("Temperature"));
 
     ui->lineEdit_T_Left->setValidator(new QDoubleValidator(-9999.0,
         9999.0, 6, ui->lineEdit_T_Left));

@@ -7,7 +7,8 @@ DistanceAndLength::DistanceAndLength(QWidget *parent) :
     ui(new Ui::DistanceAndLength)
 {
     ui->setupUi(this);
-    this->setFixedSize(375,150);
+    this->setFixedSize(320,100);
+    this->setGeometry(QRect(1019,209,320,100));
     this->setWindowFlags(this->windowFlags() & ~Qt::WindowContextHelpButtonHint);
 
     ui->comboBoxDistance->addItem("mm to cm");
@@ -15,6 +16,8 @@ DistanceAndLength::DistanceAndLength(QWidget *parent) :
     ui->comboBoxDistance->addItem("m to km");
     ui->lineEdit_D_Left->setPlaceholderText(tr("Value in mm"));
     ui->lineEdit_D_right->setPlaceholderText(tr("Value in cm"));
+    ui->pushButton_clearLenght->setText(tr("Clear"));
+    setWindowTitle(tr("Distance and Length"));
 
     ui->lineEdit_D_Left->setValidator(new QDoubleValidator(-9999.0,
         9999.0, 6, ui->lineEdit_D_Left));
